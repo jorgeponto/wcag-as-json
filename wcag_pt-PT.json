@@ -2,7 +2,7 @@
     {
         "ref_id": "1",
         "title": "Percetível",
-        "description": "A informação e as componentes de interface do utilizador devem ser aprsentadas aos utilizadores de forma a que possam ser por eles percecionada.",
+        "description": "A informação e as componentes de interface do utilizador devem ser aprsentadas aos utilizadores de forma a que possam ser por eles percecionadas.",
         "url": "https://www.w3.org/TR/WCAG22/#perceivable",
         "guidelines": [
             {
@@ -19,15 +19,15 @@
                 "success_criteria": [
                     {
                         "ref_id": "1.1.1",
-                        "title": "Non-text Content",
-                        "description": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
+                        "title": "Conteúdo Não-texto",
+                        "description": "Todo o conteúdo não-texto que é apresentado ao utilizador dispõe de uma alternativa em texto que serve um propósito equivalente, exceto para as situações listadas abaixo.",
                         "url": "https://www.w3.org/TR/WCAG22/#non-text-content",
                         "level": "A",
                         "special_cases": [
                             {
-                                "type": "exception",
-                                "title": "Controls, Input",
-                                "description": "If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)"
+                                "type": "exceção",
+                                "title": "Controlos, Entrada",
+                                "description": "Se o conteúdo não-texto é um controlo ou aceita entrada por parte do utilizador, então o mesmo tem um nome que descreve o seu proposíto. (consulte a Diretriz 4.1 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada por utilizadores.)"
                             },
                             {
                                 "type": "exception",
