@@ -71,8 +71,8 @@
             },
             {
                 "ref_id": "1.2",
-                "title": "Time-based Media",
-                "description": "Provide alternatives for time-based media.",
+                "title": "Media baseada no tempo",
+                "description": "Forneça alternativas para media baseada no tempo.",
                 "url": "https://www.w3.org/TR/WCAG22/#time-based-media",
                 "references": [
                     {
@@ -83,20 +83,20 @@
                 "success_criteria": [
                     {
                         "ref_id": "1.2.1",
-                        "title": "Audio-only and Video-only (Prerecorded)",
-                        "description": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such.",
+                        "title": "Apenas de Áudio e Apenas de Vídeo (Gravado)",
+                        "description": "Para media gravada composta apenas de áudio e apenas de vídeo, as condições seguintes são verdadeiras, exceto quando o áudio ou o vídeo é um alternativo em media para o texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Prerecorded Audio-only",
-                                "description": "An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content."
+                                "title": "Apenas de Áudio Gravado",
+                                "description": "É fornecido um alternativo para a media baseada no tempo que apresenta informação equivalente para conteúdo composto apenas de áudio gravado."
                             },
                             {
                                 "type": "all_true",
-                                "title": "Prerecorded Video-only",
-                                "description": "Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content."
+                                "title": "Apenas de Vídeo Gravado",
+                                "description": "É fornecido um media baseado no tempo composto apenas de vídeo ou uma pista de áudio que apresenta informação equivalente para conteúdo composto apenas de vídeo gravado."
                             }
                         ],
                         "notes": null,
