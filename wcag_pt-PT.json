@@ -113,8 +113,8 @@
                     },
                     {
                         "ref_id": "1.2.2",
-                        "title": "Captions (Prerecorded)",
-                        "description": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                        "title": "Legendas (Gravado)",
+                        "description": "São fornecidas legendas para todo o conteúdo áudio gravado em formato de media sincronizado, exceto quando a media é uma alternativa em media para texto e este propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#captions-prerecorded",
                         "level": "A",
                         "special_cases": null,
@@ -132,8 +132,8 @@
                     },
                     {
                         "ref_id": "1.2.3",
-                        "title": "Audio Description or Media Alternative (Prerecorded)",
-                        "description": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+                        "title": "Áudiodescrição ou Alternativa em Media (Gravado)",
+                        "description": "É disponibilizada para a media sincronizada uma alternativa à media baseada no tempo ou audiodescrição do conteúdo de vídeo gravado, excepto quando a media é uma alternativa em media para o texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded",
                         "level": "A",
                         "special_cases": null,
