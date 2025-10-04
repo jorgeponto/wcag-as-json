@@ -25,34 +25,34 @@
                         "level": "A",
                         "special_cases": [
                             {
-                                "type": "exceção",
+                                "type": "exception",
                                 "title": "Controlos, Entrada",
                                 "description": "Se o conteúdo não-texto é um controlo ou aceita entrada por parte do utilizador, então o mesmo tem um nome que descreve o seu proposíto. (consulte a Diretriz 4.1 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada por utilizadores.)"
                             },
                             {
                                 "type": "exception",
-                                "title": "Time-based Media",
-                                "description": "If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)"
+                                "title": "Media baseada no Tempo",
+                                "description": "Se o conteúdo não-texto é media baseada no tempo, então os alternativos em texto fornecem, pelo menos, identificação descritiva do conteúdo não-texto. (Consulte a Diretriz 1.2 para requisitos adicionais para media.)"
                             },
                             {
                                 "type": "exception",
-                                "title": "Test",
-                                "description": "If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content."
+                                "title": "Teste",
+                                "description": "Se o conteúdo não-texto é um teste ou exercício que se tornaria inválido se apresentado em texto, então os alternativos em texto fornecem, pelo menos, identificação descritiva de conteúdo não-texto."
                             },
                             {
                                 "type": "exception",
-                                "title": "Sensory",
-                                "description": "If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content."
+                                "title": "Sensorial",
+                                "description": "Se o conteúdo não-texto tem por intenção primária criar uma experiência sensorial específica, então os alternativos em texto fornecem, pelo menos, identificação descritiva do conteúdo não-texto."
                             },
                             {
                                 "type": "exception",
                                 "title": "CAPTCHA",
-                                "description": "If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities."
+                                "description": "Se o propósito do conteúdo não-texto se destina a confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas em texto que identificam e descrevem o propósito do conteúdo não-texto, bem como formas alternativas de CAPTCHA que usem modos de saída apropriados a diferentes tipos de perceção sensorial para acomodar diferentes incapacidades."
                             },
                             {
                                 "type": "exception",
-                                "title": "Decoration, Formatting, Invisible",
-                                "description": "If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology."
+                                "title": "Decoração, Formatação, Invisível",
+                                "description": "Se o conteúdo não-texto é decoração pura, a sua utilidade é apenas para formatação visual, ou não é apresentado aos utilizadores, então esse conteúdo é implementado de forma a que possa ser ignorado pela tecnologia de apoio."
                             }
                         ],
                         "notes": null,
@@ -324,7 +324,7 @@
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "For requirements related to color, refer to Guideline 1.4."
+                                "content": "For requirements related to color, Consulte a Diretriz 1.4."
                             }
                         ],
                         "references": [
@@ -1061,7 +1061,7 @@
                         ],
                         "notes": [
                             {
-                                "content": "For requirements related to flickering or flashing content, refer to Guideline 2.3. (https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions)"
+                                "content": "For requirements related to flickering or flashing content, Consulte a Diretriz 2.3. (https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions)"
                             },
                             {
                                 "content": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference (https://www.w3.org/TR/WCAG22/#cc5)"
