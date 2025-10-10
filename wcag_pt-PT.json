@@ -20,7 +20,7 @@
                     {
                         "ref_id": "1.1.1",
                         "title": "Conteúdo Não-texto",
-                        "description": "Todo o conteúdo não-texto que é apresentado ao utilizador dispõe de uma alternativa em texto que serve um propósito equivalente, exceto para as situações listadas abaixo.",
+                        "description": "Todo o conteúdo não-texto que é apresentado ao utilizador dispõe de uma alternativa em texto que serve propósito equivalente, exceto para as situações listadas abaixo.",
                         "url": "https://www.w3.org/TR/WCAG22/#non-text-content",
                         "level": "A",
                         "special_cases": [
@@ -91,12 +91,12 @@
                             {
                                 "type": "all_true",
                                 "title": "Apenas de Áudio Gravado",
-                                "description": "É fornecido um alternativo para a media baseada no tempo que apresenta informação equivalente para conteúdo composto apenas de áudio gravado."
+                                "description": "Está disponível um alternativo para a media baseada no tempo que apresenta informação equivalente para o conteúdo composto apenas de áudio gravado."
                             },
                             {
                                 "type": "all_true",
                                 "title": "Apenas de Vídeo Gravado",
-                                "description": "É fornecido um media baseado no tempo composto apenas de vídeo ou uma pista de áudio que apresenta informação equivalente para conteúdo composto apenas de vídeo gravado."
+                                "description": "Está disponível um media baseado no tempo composto apenas de vídeo ou uma pista de áudio que apresenta informação equivalente para o conteúdo composto apenas de vídeo gravado."
                             }
                         ],
                         "notes": null,
@@ -114,7 +114,7 @@
                     {
                         "ref_id": "1.2.2",
                         "title": "Legendas (Gravado)",
-                        "description": "São fornecidas legendas para todo o conteúdo áudio gravado em formato de media sincronizado, exceto quando a media é uma alternativa em media para texto e este propósito está claramente identificado como tal.",
+                        "description": "Estão disponíveis legendas para todo o conteúdo áudio gravado em formato de media sincronizado, exceto quando a media é uma alternativa em media para texto e este propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#captions-prerecorded",
                         "level": "A",
                         "special_cases": null,
@@ -133,7 +133,7 @@
                     {
                         "ref_id": "1.2.3",
                         "title": "Áudiodescrição ou Alternativa em Media (Gravado)",
-                        "description": "É disponibilizada para a media sincronizada uma alternativa à media baseada no tempo ou audiodescrição do conteúdo de vídeo gravado, excepto quando a media é uma alternativa em media para o texto e esse propósito está claramente identificado como tal.",
+                        "description": "Está disponível para a media sincronizada uma alternativa à media baseada no tempo ou audiodescrição do conteúdo de vídeo gravado, excepto quando a media é uma alternativa em media para o texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded",
                         "level": "A",
                         "special_cases": null,
@@ -152,7 +152,7 @@
                     {
                         "ref_id": "1.2.4",
                         "title": "Legendas (Em direto)",
-                        "description": "Disponibilizam-se legendas para todo o conteúdo áudio em direto em media sincronizada.",
+                        "description": "Está disponível legendas para todo o conteúdo áudio em direto em media sincronizada.",
                         "url": "https://www.w3.org/TR/WCAG22/#captions-live",
                         "level": "AA",
                         "special_cases": null,
@@ -171,7 +171,7 @@
                     {
                         "ref_id": "1.2.5",
                         "title": "Áudiodescrição (Gravado)",
-                        "description": "Disponibiliza-se áudiodescrição para todo o conteúdo vídeo gravado em media sincronizada.",
+                        "description": "Está disponível áudiodescrição para todo o conteúdo vídeo gravado em media sincronizada.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-description-prerecorded",
                         "level": "AA",
                         "special_cases": null,
@@ -190,7 +190,7 @@
                     {
                         "ref_id": "1.2.6",
                         "title": "Língua Gestual (Gravado)",
-                        "description": "Disponibiliza-se interpretação em Língua Gestual para todo o conteúdo áudio gravado em media sincronizada.",
+                        "description": "Está disponível interpretação em Língua Gestual para todo o conteúdo áudio gravado em media sincronizada.",
                         "url": "https://www.w3.org/TR/WCAG22/#sign-language-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -209,7 +209,7 @@
                     {
                         "ref_id": "1.2.7",
                         "title": "Áudiodescrição alargada (Gravado)",
-                        "description": "Sempre que as pausas no áudio de fundo são insuficientes para encaixar a áudiodescrição necessária para transmitir o sentido do vídeo, é disponibilizada áudiodescrição alargada para todo o conteúdo vídeo gravado em media sincronizada.",
+                        "description": "Sempre que as pausas no áudio de fundo são insuficientes para encaixar a áudiodescrição necessária para transmitir o sentido do vídeo, está disponível áudiodescrição alargada para todo o conteúdo vídeo gravado em media sincronizada.",
                         "url": "https://www.w3.org/TR/WCAG22/#extended-audio-description-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -228,7 +228,7 @@
                     {
                         "ref_id": "1.2.8",
                         "title": "Alternativa em Media (Gravado)",
-                        "description": "Disponibiliza-se uma alternativa em media baseada no tempo para toda a media sincronizada gravada e para toda a media só de vídeo gravada.",
+                        "description": "Está disponível uma alternativa em media baseada no tempo para toda a media sincronizada gravada e para toda a media só de vídeo gravada.",
                         "url": "https://www.w3.org/TR/WCAG22/#media-alternative-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -247,7 +247,7 @@
                     {
                         "ref_id": "1.2.9",
                         "title": "Audio-only (Live)",
-                        "description": " An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
+                        "description": "Está disponível uma alternativa à media baseada no tempo que apresenta informação equivalente para o conteúdo só de áudio transmitido em direto.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-only-live",
                         "level": "AAA",
                         "special_cases": null,
