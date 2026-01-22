@@ -8,61 +8,61 @@
             {
                 "ref_id": "1.1",
                 "title": "Alternativas em Texto",
-                "description": "Forneça alternativas em texto para qualquer conteúdo não-texto de forma a que este possa ser modificado noutro formato que a pessoa necessite, como sejam a impressão ampliada, o braille, a fala, os símbolos ou linguagem mais fácil.",
+                "description": "Forneça alternativas em texto para qualquer conteúdo não texto, de forma a que possa ser convertido noutras formas de que as pessoas necessitam, tais como impressão em tamanho grande, braille, fala, símbolos ou linguagem mais simples.",
                 "url": "https://www.w3.org/TR/WCAG22/#text-alternatives",
                 "references": [
                     {
-                        "title": "Compreendendo a Diretriz 1.1",
+                        "title": "Compreender a Diretriz 1.1",
                         "url": "https://www.w3.org/WAI/WCAG22/Understanding/text-alternatives.html"
                     }
                 ],
                 "success_criteria": [
                     {
                         "ref_id": "1.1.1",
-                        "title": "Conteúdo Não-texto",
-                        "description": "Todo o conteúdo não-texto que é apresentado ao utilizador dispõe de uma alternativa em texto que serve propósito equivalente, exceto para as situações listadas abaixo.",
+                        "title": "Conteúdo Não texto",
+                        "description": "Todo o conteúdo não texto que é apresentado ao utilizador dispõe de uma alternativa em texto que serve um propósito equivalente, exceto nas situações listadas abaixo.",
                         "url": "https://www.w3.org/TR/WCAG22/#non-text-content",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "exception",
                                 "title": "Controlos, Entrada",
-                                "description": "Se o conteúdo não-texto é um controlo ou aceita entrada por parte do utilizador, então o mesmo tem um nome que descreve o seu proposíto. (consulte a Diretriz 4.1 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada por utilizadores.)"
+                                "description": "Se o conteúdo não texto for um controlo ou aceitar entrada por parte do utilizador, então o mesmo tem um nome que descreve o seu propósito. (Consulte a Diretriz 4.1 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada por parte do utilizador.)"
                             },
                             {
                                 "type": "exception",
-                                "title": "Media baseada no Tempo",
-                                "description": "Se o conteúdo não-texto é media baseada no tempo, então os alternativos em texto fornecem, pelo menos, identificação descritiva do conteúdo não-texto. (Consulte a Diretriz 1.2 para requisitos adicionais para media.)"
+                                "title": "Multimédia Dependente do Tempo",
+                                "description": "Se o conteúdo não texto for multimédia dependente do tempo, então as alternativas em texto fornecem, pelo menos, a identificação descritiva do conteúdo não texto. (Consulte a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)"
                             },
                             {
                                 "type": "exception",
                                 "title": "Teste",
-                                "description": "Se o conteúdo não-texto é um teste ou exercício que se tornaria inválido se apresentado em texto, então os alternativos em texto fornecem, pelo menos, identificação descritiva de conteúdo não-texto."
+                                "description": "Se o conteúdo não texto for um teste ou exercício que se tornaria inválido se apresentado em texto, então as alternativas em texto fornecem, pelo menos, a identificação descritiva do conteúdo não texto."
                             },
                             {
                                 "type": "exception",
                                 "title": "Sensorial",
-                                "description": "Se o conteúdo não-texto tem por intenção primária criar uma experiência sensorial específica, então os alternativos em texto fornecem, pelo menos, identificação descritiva do conteúdo não-texto."
+                                "description": "Se o conteúdo não texto tiver como intenção principal criar uma experiência sensorial específica, então as alternativas em texto fornecem, pelo menos, a identificação descritiva do conteúdo não texto."
                             },
                             {
                                 "type": "exception",
                                 "title": "CAPTCHA",
-                                "description": "Se o propósito do conteúdo não-texto se destina a confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas em texto que identificam e descrevem o propósito do conteúdo não-texto, bem como formas alternativas de CAPTCHA que usem modos de saída apropriados a diferentes tipos de perceção sensorial para acomodar diferentes incapacidades."
+                                "description": "Se o propósito do conteúdo não texto for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas em texto que identificam e descrevem o propósito do conteúdo não texto, bem como formas alternativas de CAPTCHA que utilizem modos de saída apropriados a diferentes tipos de perceção sensorial, para acomodar diferentes deficiências."
                             },
                             {
                                 "type": "exception",
                                 "title": "Decoração, Formatação, Invisível",
-                                "description": "Se o conteúdo não-texto é decoração pura, a sua utilidade é apenas para formatação visual, ou não é apresentado aos utilizadores, então esse conteúdo é implementado de forma a que possa ser ignorado pela tecnologia de apoio."
+                                "description": "Se o conteúdo não texto for puramente decorativo, se for utilizado apenas para formatação visual, ou se não for apresentado aos utilizadores, então esse conteúdo é implementado de forma a que possa ser ignorado por tecnologias de apoio."
                             }
                         ],
                         "notes": null,
                         "references": [
                             {
-                                "title": "Como Satisfazer o 1.1.1",
+                                "title": "Como Cumprir 1.1.1",
                                 "url": "https://www.w3.org/WAI/WCAG22/quickref/#non-text-content"
                             },
                             {
-                                "title": "Compreendendo o 1.1.1",
+                                "title": "Compreender 1.1.1",
                                 "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
                             }
                         ]
@@ -84,19 +84,19 @@
                     {
                         "ref_id": "1.2.1",
                         "title": "Apenas de Áudio e Apenas de Vídeo (Gravado)",
-                        "description": "Para media gravada composta apenas de áudio e apenas de vídeo, as condições seguintes são verdadeiras, exceto quando o áudio ou o vídeo é um alternativo em media ao texto e esse propósito está claramente identificado como tal.",
+                        "description": "Para media gravada composta apenas de áudio e apenas de vídeo, as condições seguintes são verdadeiras, exceto quando o áudio ou o vídeo constitui uma alternativa em media ao texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "all_true",
                                 "title": "Apenas de Áudio Gravado",
-                                "description": "Está disponível um alternativo à media baseada no tempo que apresenta informação equivalente ao conteúdo composto apenas de áudio gravado."
+                                "description": "Está disponível uma alternativa à media baseada no tempo que apresenta informação equivalente ao conteúdo composto apenas de áudio gravado."
                             },
                             {
                                 "type": "all_true",
                                 "title": "Apenas de Vídeo Gravado",
-                                "description": "Está disponível um media baseado no tempo composto apenas de vídeo ou uma pista de áudio que apresenta informação equivalente ao conteúdo composto apenas de vídeo gravado."
+                                "description": "Está disponível uma alternativa à media baseada no tempo ou uma pista de áudio que apresenta informação equivalente ao conteúdo composto apenas de vídeo gravado."
                             }
                         ],
                         "notes": null,
@@ -114,7 +114,7 @@
                     {
                         "ref_id": "1.2.2",
                         "title": "Legendas (Gravado)",
-                        "description": "Estão disponíveis legendas para todo o conteúdo áudio gravado em formato de media sincronizado, exceto quando a media é uma alternativa em media ao texto e este propósito está claramente identificado como tal.",
+                        "description": "Estão disponíveis legendas para todo o conteúdo áudio gravado em media sincronizado, exceto quando a media constitui uma alternativa em media ao texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#captions-prerecorded",
                         "level": "A",
                         "special_cases": null,
@@ -133,7 +133,7 @@
                     {
                         "ref_id": "1.2.3",
                         "title": "Áudiodescrição ou Alternativa Multimédia (Gravado)",
-                        "description": "Para a multimédia está disponível uma alternativa multimédia ou audiodescrição do conteúdo de vídeo gravado, excepto quando a multimédia é, ela própria, uma alternativa multimédia ao texto e tal propósito é identificado de forma clara como tal.",
+                        "description": "Para media sincronizada, está disponível uma alternativa em media ou áudiodescrição do conteúdo de vídeo gravado, exceto quando a media é, ela própria, uma alternativa em media ao texto e esse propósito está claramente identificado como tal.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded",
                         "level": "A",
                         "special_cases": null,
@@ -152,7 +152,7 @@
                     {
                         "ref_id": "1.2.4",
                         "title": "Legendas (Transmissão em direto)",
-                        "description": "Estão disponíveis legendas em multimédia sincronizada para todo o conteúdo áudio transmitido em direto.",
+                        "description": "Estão disponíveis legendas em media sincronizado para todo o conteúdo áudio transmitido em direto.",
                         "url": "https://www.w3.org/TR/WCAG22/#captions-live",
                         "level": "AA",
                         "special_cases": null,
@@ -171,7 +171,7 @@
                     {
                         "ref_id": "1.2.5",
                         "title": "Áudiodescrição (Gravado)",
-                        "description": "Está disponível áudiodescrição em multimédia sincronizada para todo o conteúdo vídeo gravado.",
+                        "description": "Está disponível áudiodescrição em media sincronizado para todo o conteúdo de vídeo gravado.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-description-prerecorded",
                         "level": "AA",
                         "special_cases": null,
@@ -190,7 +190,7 @@
                     {
                         "ref_id": "1.2.6",
                         "title": "Língua Gestual (Gravado)",
-                        "description": "Está disponível interpretação em Língua Gestual em multimédia sincronizada para todo o conteúdo áudio gravado.",
+                        "description": "Está disponível interpretação em Língua Gestual em media sincronizado para todo o conteúdo áudio gravado.",
                         "url": "https://www.w3.org/TR/WCAG22/#sign-language-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -209,7 +209,7 @@
                     {
                         "ref_id": "1.2.7",
                         "title": "Áudiodescrição alargada (Gravado)",
-                        "description": "Sempre que as pausas no áudio de fundo são insuficientes para encaixar a áudiodescrição necessária à transmissão do sentido do vídeo, está disponível áudiodescrição alargada em multimédia sincronizada para o conteúdo vídeo gravado.",
+                        "description": "Sempre que as pausas no áudio em primeiro plano forem insuficientes para encaixar a áudiodescrição necessária à transmissão do sentido do vídeo, está disponível áudiodescrição alargada em media sincronizado para o conteúdo de vídeo gravado.",
                         "url": "https://www.w3.org/TR/WCAG22/#extended-audio-description-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -228,7 +228,7 @@
                     {
                         "ref_id": "1.2.8",
                         "title": "Alternativa Multimédia (Gravado)",
-                        "description": "Está disponível uma alternativa multimédia para multimédia sincronizada gravada e para multimédia vídeo gravada.",
+                        "description": "Está disponível uma alternativa à media baseada no tempo para toda a media sincronizada gravada e para toda a media composta apenas de vídeo gravado.",
                         "url": "https://www.w3.org/TR/WCAG22/#media-alternative-prerecorded",
                         "level": "AAA",
                         "special_cases": null,
@@ -246,8 +246,8 @@
                     },
                     {
                         "ref_id": "1.2.9",
-                        "title": "Apenas áudio (Transmissão em Direto)",
-                        "description": "Está disponível uma alternativa ao multimédia que apresenta informação equivalente ao conteúdo áudio, e apenas a este, transmitido em direto.",
+                        "title": "Apenas áudio (Transmissão em direto)",
+                        "description": "Está disponível uma alternativa à media baseada no tempo que apresenta informação equivalente ao conteúdo composto apenas de áudio transmitido em direto.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-only-live",
                         "level": "AAA",
                         "special_cases": null,
@@ -267,8 +267,8 @@
             },
             {
                 "ref_id": "1.3",
-                "title": "Adaptable",
-                "description": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
+                "title": "Adaptável",
+                "description": "Crie conteúdo que possa ser apresentado de diferentes formas (por exemplo, com uma estrutura mais simples) sem perda de informação ou de estrutura.",
                 "url": "https://www.w3.org/TR/WCAG22/#adaptable",
                 "references": [
                     {
@@ -279,8 +279,8 @@
                 "success_criteria": [
                     {
                         "ref_id": "1.3.1",
-                        "title": "Info and Relationships",
-                        "description": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
+                        "title": "Informação e Relações",
+                        "description": "A informação, a estrutura e as relações transmitidas através da apresentação podem ser determinadas programaticamente ou estão disponíveis em texto.",
                         "url": "https://www.w3.org/TR/WCAG22/#info-and-relationships",
                         "level": "A",
                         "special_cases": null,
@@ -298,8 +298,8 @@
                     },
                     {
                         "ref_id": "1.3.2",
-                        "title": "Meaningful Sequence",
-                        "description": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
+                        "title": "Sequência com Significado",
+                        "description": "Quando a sequência pela qual o conteúdo é apresentado afeta o seu significado, uma sequência de leitura correta pode ser determinada programaticamente.",
                         "url": "https://www.w3.org/TR/WCAG22/#meaningful-sequence",
                         "level": "A",
                         "special_cases": null,
@@ -317,14 +317,14 @@
                     },
                     {
                         "ref_id": "1.3.3",
-                        "title": "Sensory Characteristics",
-                        "description": "Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.",
+                        "title": "Características Sensoriais",
+                        "description": "As instruções fornecidas para compreender e utilizar o conteúdo não se baseiam exclusivamente em características sensoriais dos componentes, tais como forma, tamanho, localização visual, orientação ou som.",
                         "url": "https://www.w3.org/TR/WCAG22/#sensory-characteristics",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "For requirements related to color, Consulte a Diretriz 1.4."
+                                "content": "Para requisitos relacionados com cor, consulte a Diretriz 1.4."
                             }
                         ],
                         "references": [
@@ -340,14 +340,14 @@
                     },
                     {
                         "ref_id": "1.3.4",
-                        "title": "Orientation",
-                        "description": "Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.",
+                        "title": "Orientação",
+                        "description": "O conteúdo não restringe a sua visualização e utilização a uma única orientação do ecrã, tal como retrato ou paisagem, a menos que uma orientação específica do ecrã seja essencial.",
                         "url": "https://www.w3.org/TR/WCAG22/#orientation",
                         "level": "AA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable."
+                                "content": "Exemplos em que uma determinada orientação do ecrã pode ser essencial são um cheque bancário, uma aplicação de piano, diapositivos para um projetor ou televisão, ou conteúdo de realidade virtual em que a orientação binária do ecrã não se aplica."
                             }
                         ],
                         "references": [
@@ -363,18 +363,18 @@
                     },
                     {
                         "ref_id": "1.3.5",
-                        "title": "Identify Input Purpose",
-                        "description": "The purpose of each input field collecting information about the user can be programmatically determined when:",
+                        "title": "Identificar o Propósito de Entrada",
+                        "description": "O propósito de cada campo de entrada que recolhe informação sobre o utilizador pode ser determinado programaticamente quando:",
                         "url": "https://www.w3.org/TR/WCAG22/#identify-input-purpose",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "The input field serves a purpose identified in the Input Purposes for User Interface Components section; and"
+                                "title": "O campo de entrada serve um propósito identificado na secção Propósitos de Entrada para Componentes da Interface do Utilizador; e"
                             },
                             {
                                 "type": "all_true",
-                                "title": "The content is implemented using technologies with support for identifying the expected meaning for form input data."
+                                "title": "O conteúdo é implementado utilizando tecnologias com suporte para identificar o significado esperado dos dados de entrada de formulários."
                             }
                         ],
                         "notes": null,
@@ -391,8 +391,8 @@
                     },
                     {
                         "ref_id": "1.3.6",
-                        "title": "Identify Purpose",
-                        "description": "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.",
+                        "title": "Identificar o Propósito",
+                        "description": "Em conteúdo implementado com linguagens de marcação, o propósito dos Componentes da Interface do Utilizador, ícones e regiões pode ser determinado programaticamente.",
                         "url": "https://www.w3.org/TR/WCAG22/#identify-purpose",
                         "level": "AAA",
                         "special_cases": null,
@@ -412,8 +412,8 @@
             },
             {
                 "ref_id": "1.4",
-                "title": "Distinguishable",
-                "description": "Make it easier for users to see and hear content including separating foreground from background.",
+                "title": "Distinguível",
+                "description": "Torne mais fácil para os utilizadores ver e ouvir o conteúdo, incluindo a separação do primeiro plano em relação ao fundo.",
                 "url": "https://www.w3.org/TR/WCAG22/#distinguishable",
                 "references": [
                     {
@@ -424,14 +424,14 @@
                 "success_criteria": [
                     {
                         "ref_id": "1.4.1",
-                        "title": "Use of Color",
-                        "description": "Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.",
+                        "title": "Uso da Cor",
+                        "description": "A cor não é usada como único meio visual para transmitir informação, indicar uma ação, solicitar uma resposta ou distinguir um elemento visual.",
                         "url": "https://www.w3.org/TR/WCAG22/#use-of-color",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
+                                "content": "Este critério de sucesso aborda especificamente a perceção da cor. Outras formas de perceção são abrangidas pela Diretriz 1.3, incluindo o acesso programático à cor e a outras codificações de apresentação visual."
                             }
                         ],
                         "references": [
@@ -447,14 +447,14 @@
                     },
                     {
                         "ref_id": "1.4.2",
-                        "title": "Audio Control",
-                        "description": "If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.",
+                        "title": "Controlo de Áudio",
+                        "description": "Se algum áudio numa página Web for reproduzido automaticamente durante mais de 3 segundos, então está disponível um mecanismo para colocar o áudio em pausa ou para o parar, ou está disponível um mecanismo para controlar o volume do áudio independentemente do nível de volume global do sistema.",
                         "url": "https://www.w3.org/TR/WCAG22/#audio-control",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference. (https://www.w3.org/TR/WCAG22/#cc5)"
+                                "content": "Uma vez que qualquer conteúdo que não satisfaça este critério de sucesso pode interferir com a capacidade do utilizador para utilizar toda a página, todo o conteúdo da página Web (quer seja ou não usado para satisfazer outros critérios de sucesso) deve satisfazer este critério de sucesso. Consulte o Requisito de Conformidade 5: Não Interferência. (https://www.w3.org/TR/WCAG22/#cc5)"
                             }
                         ],
                         "references": [
@@ -470,25 +470,25 @@
                     },
                     {
                         "ref_id": "1.4.3",
-                        "title": "Contrast (Minimum)",
-                        "description": " The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:",
+                        "title": "Contraste (Mínimo)",
+                        "description": "A apresentação visual de texto e de imagens de texto tem uma relação de contraste de, pelo menos, 4.5:1, exceto para o seguinte:",
                         "url": "https://www.w3.org/TR/WCAG22/#contrast-minimum",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Large Text",
-                                "description": "Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;"
+                                "title": "Texto Grande",
+                                "description": "Texto em escala grande e imagens de texto em escala grande têm uma relação de contraste de, pelo menos, 3:1;"
                             },
                             {
                                 "type": "exception",
                                 "title": "Incidental",
-                                "description": "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement."
+                                "description": "Texto ou imagens de texto que façam parte de um componente de interface do utilizador inativo, que sejam puramente decorativos, que não estejam visíveis para ninguém, ou que façam parte de uma imagem que contenha outro conteúdo visual significativo, não têm requisito de contraste."
                             },
                             {
                                 "type": "exception",
-                                "title": "Logotypes",
-                                "description": "Text that is part of a logo or brand name has no minimum contrast requirement."
+                                "title": "Logótipos",
+                                "description": "Texto que faça parte de um logótipo ou de um nome de marca não tem requisito mínimo de contraste."
                             }
                         ],
                         "notes": null,
@@ -505,8 +505,8 @@
                     },
                     {
                         "ref_id": "1.4.4",
-                        "title": "Resize text",
-                        "description": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
+                        "title": "Redimensionar texto",
+                        "description": "Exceto para legendas e imagens de texto, o texto pode ser redimensionado até 200 por cento sem recurso a tecnologia de apoio, sem perda de conteúdo ou de funcionalidade.",
                         "url": "https://www.w3.org/TR/WCAG22/#resize-text",
                         "level": "AA",
                         "special_cases": null,
@@ -524,25 +524,25 @@
                     },
                     {
                         "ref_id": "1.4.5",
-                        "title": "Images of Text",
-                        "description": "If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:",
+                        "title": "Imagens de Texto",
+                        "description": "Se as tecnologias usadas conseguirem alcançar a apresentação visual, é usado texto para transmitir informação em vez de imagens de texto, exceto para o seguinte:",
                         "url": "https://www.w3.org/TR/WCAG22/#images-of-text",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Customizable",
-                                "description": "The image of text can be visually customized to the user's requirements;"
+                                "title": "Personalizável",
+                                "description": "A imagem de texto pode ser visualmente personalizada de acordo com os requisitos do utilizador;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Essential",
-                                "description": "A particular presentation of text is essential to the information being conveyed."
+                                "title": "Essencial",
+                                "description": "Uma apresentação específica do texto é essencial para a informação que está a ser transmitida."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Logotypes (text that is part of a logo or brand name) are considered essential."
+                                "content": "Logótipos (texto que faça parte de um logótipo ou nome de marca) são considerados essenciais."
                             }
                         ],
                         "references": [
@@ -558,25 +558,25 @@
                     },
                     {
                         "ref_id": "1.4.6",
-                        "title": "Contrast (Enhanced)",
-                        "description": "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: ",
+                        "title": "Contraste (Melhorado)",
+                        "description": "A apresentação visual de texto e de imagens de texto tem uma relação de contraste de, pelo menos, 7:1, exceto para o seguinte:",
                         "url": "https://www.w3.org/TR/WCAG22/#contrast-enhanced",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Large Text",
-                                "description": "Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;"
+                                "title": "Texto Grande",
+                                "description": "Texto em escala grande e imagens de texto em escala grande têm uma relação de contraste de, pelo menos, 4.5:1;"
                             },
                             {
                                 "type": "exception",
                                 "title": "Incidental",
-                                "description": "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement."
+                                "description": "Texto ou imagens de texto que façam parte de um componente de interface do utilizador inativo, que sejam puramente decorativos, que não estejam visíveis para ninguém, ou que façam parte de uma imagem que contenha outro conteúdo visual significativo, não têm requisito de contraste."
                             },
                             {
                                 "type": "exception",
-                                "title": "Logotypes",
-                                "description": "Text that is part of a logo or brand name has no minimum contrast requirement."
+                                "title": "Logótipos",
+                                "description": "Texto que faça parte de um logótipo ou de um nome de marca não tem requisito mínimo de contraste."
                             }
                         ],
                         "notes": null,
@@ -593,30 +593,30 @@
                     },
                     {
                         "ref_id": "1.4.7",
-                        "title": "Low or No Background Audio",
-                        "description": "For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:",
+                        "title": "Áudio de Fundo Baixo ou Sem Áudio de Fundo",
+                        "description": "Para conteúdo apenas de áudio gravado que (1) contenha predominantemente fala no primeiro plano, (2) não seja um CAPTCHA áudio ou um logótipo áudio, e (3) não seja vocalização destinada principalmente a expressão musical, como cantar ou rap, pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#low-or-no-background-audio",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "No Background",
-                                "description": "The audio does not contain background sounds."
+                                "title": "Sem Fundo",
+                                "description": "O áudio não contém sons de fundo."
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Turn Off",
-                                "description": "The background sounds can be turned off."
+                                "title": "Desligar",
+                                "description": "Os sons de fundo podem ser desligados."
                             },
                             {
                                 "type": "at_least_one",
                                 "title": "20 dB",
-                                "description": "The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds."
+                                "description": "Os sons de fundo estão, pelo menos, 20 decibéis abaixo do conteúdo de fala no primeiro plano, com exceção de sons ocasionais que durem apenas um ou dois segundos."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Per the definition of 'decibel,' background sound that meets this requirement will be approximately four times quieter than the foreground speech content."
+                                "content": "De acordo com a definição de \"decibel\", o som de fundo que satisfaça este requisito será aproximadamente quatro vezes mais baixo do que o conteúdo de fala no primeiro plano."
                             }
                         ],
                         "references": [
@@ -632,30 +632,30 @@
                     },
                     {
                         "ref_id": "1.4.8",
-                        "title": "Visual Presentation",
-                        "description": "For the visual presentation of blocks of text, a mechanism is available to achieve the following:",
+                        "title": "Apresentação Visual",
+                        "description": "Para a apresentação visual de blocos de texto, está disponível um mecanismo para alcançar o seguinte:",
                         "url": "https://www.w3.org/TR/WCAG22/#visual-presentation",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Foreground and background colors can be selected by the user."
+                                "title": "As cores do primeiro plano e do fundo podem ser selecionadas pelo utilizador."
                             },
                             {
                                 "type": "all_true",
-                                "title": "Width is no more than 80 characters or glyphs (40 if CJK)."
+                                "title": "A largura não é superior a 80 caracteres ou glifos (40 se CJK)."
                             },
                             {
                                 "type": "all_true",
-                                "title": "Text is not justified (aligned to both the left and the right margins)."
+                                "title": "O texto não é justificado (alinhado simultaneamente à margem esquerda e à margem direita)."
                             },
                             {
                                 "type": "all_true",
-                                "title": "Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing."
+                                "title": "O espaçamento entre linhas (entrelinhamento) é, pelo menos, de um espaço e meio dentro dos parágrafos, e o espaçamento entre parágrafos é, pelo menos, 1.5 vezes superior ao espaçamento entre linhas."
                             },
                             {
                                 "type": "all_true",
-                                "title": "Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window."
+                                "title": "O texto pode ser redimensionado até 200 por cento sem recurso a tecnologia de apoio, de forma a não exigir deslocamento horizontal para ler uma linha de texto numa janela em ecrã completo."
                             }
                         ],
                         "notes": null,
@@ -672,14 +672,14 @@
                     },
                     {
                         "ref_id": "1.4.9",
-                        "title": "Images of Text (No Exception)",
-                        "description": "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
+                        "title": "Imagens de Texto (Sem Exceção)",
+                        "description": "Imagens de texto são usadas apenas para decoração pura ou quando uma apresentação específica do texto é essencial para a informação que está a ser transmitida.",
                         "url": "https://www.w3.org/TR/WCAG22/#images-of-text-no-exception",
                         "level": "AAA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Logotypes (text that is part of a logo or brand name) are considered essential."
+                                "content": "Logótipos (texto que faça parte de um logótipo ou nome de marca) são considerados essenciais."
                             }
                         ],
                         "references": [
@@ -695,30 +695,30 @@
                     },
                     {
                         "ref_id": "1.4.10",
-                        "title": "Reflow",
-                        "description": "Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:",
+                        "title": "Refluxo",
+                        "description": "O conteúdo pode ser apresentado sem perda de informação ou de funcionalidade e sem exigir deslocamento em duas dimensões para:",
                         "url": "https://www.w3.org/TR/WCAG22/#reflow",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Vertical scrolling content at a width equivalent to 320 CSS pixels;"
+                                "title": "Conteúdo com deslocamento vertical numa largura equivalente a 320 píxeis CSS;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Horizontal scrolling content at a height equivalent to 256 CSS pixels."
+                                "title": "Conteúdo com deslocamento horizontal numa altura equivalente a 256 píxeis CSS."
                             },
                             {
                                 "type": "exception",
-                                "title": "Except for parts of the content which require two-dimensional layout for usage or meaning."
+                                "title": "Exceto para partes do conteúdo que exijam uma disposição bidimensional para utilização ou significado."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Note: 320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which are designed to scroll horizontally (e.g. with vertical text), the 256 CSS pixels is equivalent to a starting viewport height of 1024px at 400% zoom."
+                                "content": "Nota: 320 píxeis CSS equivalem a uma largura de viewport inicial de 1280 píxeis CSS a 400% de ampliação. Para conteúdo Web concebido para deslocamento horizontal (por exemplo, com texto vertical), 256 píxeis CSS equivalem a uma altura de viewport inicial de 1024 píxeis a 400% de ampliação."
                             },
                             {
-                                "content": "Examples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content."
+                                "content": "Exemplos de conteúdo que exige uma disposição bidimensional são imagens, mapas, diagramas, vídeo, jogos, apresentações, tabelas de dados e interfaces em que é necessário manter barras de ferramentas visíveis enquanto se manipula o conteúdo."
                             }
                         ],
                         "references": [
@@ -734,20 +734,20 @@
                     },
                     {
                         "ref_id": "1.4.11",
-                        "title": "Non-text Contrast",
-                        "description": "The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):",
+                        "title": "Contraste Não texto",
+                        "description": "A apresentação visual do seguinte tem uma relação de contraste de, pelo menos, 3:1 em relação à(s) cor(es) adjacente(s):",
                         "url": "https://www.w3.org/TR/WCAG22/#non-text-contrast",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "User Interface Components",
-                                "description": "Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;"
+                                "title": "Componentes da Interface do Utilizador",
+                                "description": "A informação visual necessária para identificar componentes e estados da interface do utilizador, exceto para componentes inativos ou quando a aparência do componente é determinada pelo agente do utilizador e não é modificada pelo autor;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Graphical Objects",
-                                "description": "Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed."
+                                "title": "Objetos Gráficos",
+                                "description": "Partes de gráficos necessárias para compreender o conteúdo, exceto quando uma apresentação específica dos gráficos é essencial para a informação que está a ser transmitida."
                             }
                         ],
                         "notes": null,
@@ -764,30 +764,30 @@
                     },
                     {
                         "ref_id": "1.4.12",
-                        "title": "Text Spacing",
-                        "description": "In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:",
+                        "title": "Espaçamento do Texto",
+                        "description": "Em conteúdo implementado utilizando linguagens de marcação que suportem as seguintes propriedades de estilo de texto, não ocorre perda de conteúdo ou de funcionalidade ao definir todas as seguintes propriedades e ao não alterar qualquer outra propriedade de estilo:",
                         "url": "https://www.w3.org/TR/WCAG22/#text-spacing",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Line height (line spacing) to at least 1.5 times the font size;"
+                                "title": "Altura da linha (espaçamento entre linhas) para, pelo menos, 1.5 vezes o tamanho da fonte;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Spacing following paragraphs to at least 2 times the font size;"
+                                "title": "Espaçamento após parágrafos para, pelo menos, 2 vezes o tamanho da fonte;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Letter spacing (tracking) to at least 0.12 times the font size;"
+                                "title": "Espaçamento entre letras (tracking) para, pelo menos, 0.12 vezes o tamanho da fonte;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Word spacing to at least 0.16 times the font size."
+                                "title": "Espaçamento entre palavras para, pelo menos, 0.16 vezes o tamanho da fonte."
                             },
                             {
                                 "type": "exception",
-                                "title": "Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script."
+                                "title": "Exceção: As línguas e sistemas de escrita humanos que não utilizem uma ou mais destas propriedades de estilo de texto em texto escrito podem conformar utilizando apenas as propriedades que existam para essa combinação de língua e sistema de escrita."
                             }
                         ],
                         "notes": null,
@@ -804,37 +804,37 @@
                     },
                     {
                         "ref_id": "1.4.13",
-                        "title": "Content on Hover or Focus",
-                        "description": "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:",
+                        "title": "Conteúdo ao Pairar ou em Foco",
+                        "description": "Quando receber e depois remover o pairar do ponteiro ou o foco do teclado desencadeia conteúdo adicional a tornar-se visível e depois a ocultar-se, as condições seguintes são verdadeiras:",
                         "url": "https://www.w3.org/TR/WCAG22/#content-on-hover-or-focus",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Dismissable",
-                                "description": "A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;"
+                                "title": "Dispensável",
+                                "description": "Está disponível um mecanismo para dispensar o conteúdo adicional sem mover o pairar do ponteiro ou o foco do teclado, a menos que o conteúdo adicional comunique um erro de entrada ou não obscureça nem substitua outro conteúdo;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Hoverable",
-                                "description": "If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;"
+                                "title": "Pairovel",
+                                "description": "Se o pairar do ponteiro puder desencadear o conteúdo adicional, então o ponteiro pode ser movido sobre o conteúdo adicional sem que o conteúdo adicional desapareça;"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Persistent",
-                                "description": "The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid."
+                                "title": "Persistente",
+                                "description": "O conteúdo adicional permanece visível até que o desencadeador de pairar ou de foco seja removido, o utilizador o dispense, ou a sua informação já não seja válida."
                             },
                             {
                                 "type": "exception",
-                                "title": "Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author."
+                                "title": "Exceção: A apresentação visual do conteúdo adicional é controlada pelo agente do utilizador e não é modificada pelo autor."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute."
+                                "content": "Exemplos de conteúdo adicional controlado pelo agente do utilizador incluem as dicas de ferramenta do navegador criadas através do uso do atributo HTML title."
                             },
                             {
-                                "content": "Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion."
+                                "content": "Dicas de ferramenta personalizadas, submenus e outros popups não modais que são apresentados ao pairar e em foco são exemplos de conteúdo adicional abrangido por este critério."
                             }
                         ],
                         "references": [
@@ -855,13 +855,13 @@
     {
         "ref_id": "2",
         "title": "Operável",
-        "description": "User interface components and navigation must be operable.",
+        "description": "Os componentes da interface do utilizador e a navegação devem ser operáveis.",
         "url": "https://www.w3.org/TR/WCAG22/#operable",
         "guidelines": [
             {
                 "ref_id": "2.1",
-                "title": "Keyboard Accessible",
-                "description": "Make all functionality available from a keyboard.",
+                "title": "Acessível através do Teclado",
+                "description": "Torne toda a funcionalidade disponível através do teclado.",
                 "url": "https://www.w3.org/TR/WCAG22/#keyboard-accessible",
                 "references": [
                     {
@@ -872,17 +872,17 @@
                 "success_criteria": [
                     {
                         "ref_id": "2.1.1",
-                        "title": "Keyboard",
-                        "description": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.",
+                        "title": "Teclado",
+                        "description": "Toda a funcionalidade do conteúdo é operável através de uma interface de teclado, sem exigir temporizações específicas para teclas individuais, exceto quando a função subjacente requer entrada que dependa do percurso do movimento do utilizador e não apenas dos pontos finais.",
                         "url": "https://www.w3.org/TR/WCAG22/#keyboard",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not."
+                                "content": "Esta exceção relaciona-se com a função subjacente e não com a técnica de entrada. Por exemplo, ao usar escrita manual para introduzir texto, a técnica de entrada (escrita manual) exige entrada dependente do percurso, mas a função subjacente (introdução de texto) não exige."
                             },
                             {
-                                "content": "This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation."
+                                "content": "Isto não proíbe, nem deve desencorajar, a disponibilização de entrada por rato ou outros métodos de entrada, para além do funcionamento através do teclado."
                             }
                         ],
                         "references": [
@@ -898,14 +898,14 @@
                     },
                     {
                         "ref_id": "2.1.2",
-                        "title": "No Keyboard Trap",
-                        "description": "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.",
+                        "title": "Sem Armadilha de Teclado",
+                        "description": "Se o foco do teclado puder ser movido para um componente da página utilizando uma interface de teclado, então o foco pode ser movido para fora desse componente utilizando apenas uma interface de teclado e, se forem necessárias mais do que as teclas de seta ou de tabulação sem modificadores, ou outros métodos de saída padrão, o utilizador é informado sobre o método para mover o foco para fora.",
                         "url": "https://www.w3.org/TR/WCAG22/#no-keyboard-trap",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. (https://www.w3.org/TR/WCAG22/#cc5)"
+                                "content": "Uma vez que qualquer conteúdo que não satisfaça este critério de sucesso pode interferir com a capacidade do utilizador para utilizar toda a página, todo o conteúdo da página Web (quer seja ou não usado para satisfazer outros critérios de sucesso) deve satisfazer este critério de sucesso. Consulte o Requisito de Conformidade 5: Não Interferência. (https://www.w3.org/TR/WCAG22/#cc5)"
                             }
                         ],
                         "references": [
@@ -921,8 +921,8 @@
                     },
                     {
                         "ref_id": "2.1.3",
-                        "title": "Keyboard (No Exception)",
-                        "description": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
+                        "title": "Teclado (Sem Exceção)",
+                        "description": "Toda a funcionalidade do conteúdo é operável através de uma interface de teclado, sem exigir temporizações específicas para teclas individuais.",
                         "url": "https://www.w3.org/TR/WCAG22/#keyboard-no-exception",
                         "level": "AAA",
                         "special_cases": null,
@@ -940,25 +940,25 @@
                     },
                     {
                         "ref_id": "2.1.4",
-                        "title": "Character Key Shortcuts",
-                        "description": "If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:",
+                        "title": "Atalhos de Teclas de Caracteres",
+                        "description": "Se um atalho de teclado for implementado no conteúdo utilizando apenas letras (incluindo letras maiúsculas e minúsculas), pontuação, números ou símbolos, então pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#character-key-shortcuts",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "Turn off",
-                                "description": "A mechanism is available to turn the shortcut off;"
+                                "title": "Desativar",
+                                "description": "Está disponível um mecanismo para desativar o atalho;"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Remap",
-                                "description": "A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);"
+                                "title": "Remapear",
+                                "description": "Está disponível um mecanismo para remapear o atalho para utilizar um ou mais caracteres de teclado não imprimíveis (por exemplo, Ctrl, Alt, etc.);"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Active only on focus",
-                                "description": "The keyboard shortcut for a user interface component is only active when that component has focus."
+                                "title": "Ativo apenas em foco",
+                                "description": "O atalho de teclado para um componente da interface do utilizador só está ativo quando esse componente tem foco."
                             }
                         ],
                         "notes": null,
@@ -977,8 +977,8 @@
             },
             {
                 "ref_id": "2.2",
-                "title": "Enough Time",
-                "description": "Provide users enough time to read and use content.",
+                "title": "Tempo Suficiente",
+                "description": "Dê aos utilizadores tempo suficiente para ler e utilizar o conteúdo.",
                 "url": "https://www.w3.org/TR/WCAG22/#enough-time",
                 "references": [
                     {
@@ -989,45 +989,45 @@
                 "success_criteria": [
                     {
                         "ref_id": "2.2.1",
-                        "title": "Timing Adjustable",
-                        "description": "For each time limit that is set by the content, at least one of the following is true:",
+                        "title": "Tempo Ajustável",
+                        "description": "Para cada limite de tempo definido pelo conteúdo, pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#timing-adjustable",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "Turn off",
-                                "description": "The user is allowed to turn off the time limit before encountering it; or"
+                                "title": "Desativar",
+                                "description": "O utilizador pode desativar o limite de tempo antes de o encontrar; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Adjust",
-                                "description": "The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or"
+                                "title": "Ajustar",
+                                "description": "O utilizador pode ajustar o limite de tempo antes de o encontrar, num intervalo suficientemente amplo que seja, pelo menos, dez vezes superior ao comprimento da configuração por defeito; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Extend",
-                                "description": "The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, 'press the space bar'), and the user is allowed to extend the time limit at least ten times; or"
+                                "title": "Prolongar",
+                                "description": "O utilizador é avisado antes do tempo expirar e é-lhe dado, pelo menos, 20 segundos para prolongar o limite de tempo com uma ação simples (por exemplo, \"pressione a barra de espaço\"), e o utilizador pode prolongar o limite de tempo pelo menos dez vezes; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Real-time Exception",
-                                "description": "The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or"
+                                "title": "Exceção em Tempo Real",
+                                "description": "O limite de tempo é uma parte obrigatória de um evento em tempo real (por exemplo, um leilão), e não é possível qualquer alternativa ao limite de tempo; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Essential Exception",
-                                "description": "The time limit is essential and extending it would invalidate the activity; or"
+                                "title": "Exceção Essencial",
+                                "description": "O limite de tempo é essencial e prolongá-lo invalidaria a atividade; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "20 Hour Exception",
-                                "description": "The time limit is longer than 20 hours."
+                                "title": "Exceção de 20 Horas",
+                                "description": "O limite de tempo é superior a 20 horas."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1 (https://www.w3.org/TR/WCAG22/#on-focus), which puts limits on changes of content or context as a result of user action."
+                                "content": "Este critério de sucesso ajuda a assegurar que os utilizadores conseguem completar tarefas sem alterações inesperadas no conteúdo ou no contexto resultantes de um limite de tempo. Este critério de sucesso deve ser considerado em conjunto com o Critério de Sucesso 3.2.1 (https://www.w3.org/TR/WCAG22/#on-focus), que estabelece limites às alterações de conteúdo ou de contexto resultantes da ação do utilizador."
                             }
                         ],
                         "references": [
@@ -1043,34 +1043,34 @@
                     },
                     {
                         "ref_id": "2.2.2",
-                        "title": "Pause, Stop, Hide",
-                        "description": "For moving, blinking, scrolling, or auto-updating information, all of the following are true:",
+                        "title": "Pausar, Parar, Ocultar",
+                        "description": "Para informação em movimento, intermitente, em deslocamento ou de atualização automática, todas as seguintes condições são verdadeiras:",
                         "url": "https://www.w3.org/TR/WCAG22/#pause-stop-hide",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "Moving, blinking, scrolling",
-                                "description": "For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and"
+                                "title": "Em movimento, intermitente, em deslocamento",
+                                "description": "Para qualquer informação em movimento, intermitente ou em deslocamento que (1) comece automaticamente, (2) dure mais de cinco segundos e (3) seja apresentada em paralelo com outro conteúdo, existe um mecanismo para o utilizador a colocar em pausa, parar ou ocultar, a menos que o movimento, a intermitência ou o deslocamento façam parte de uma atividade em que sejam essenciais; e"
                             },
                             {
                                 "type": "all_true",
-                                "title": "Auto-updating",
-                                "description": "For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential."
+                                "title": "Atualização automática",
+                                "description": "Para qualquer informação de atualização automática que (1) comece automaticamente e (2) seja apresentada em paralelo com outro conteúdo, existe um mecanismo para o utilizador a colocar em pausa, parar ou ocultar, ou para controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que seja essencial."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "For requirements related to flickering or flashing content, Consulte a Diretriz 2.3. (https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions)"
+                                "content": "Para requisitos relacionados com cintilação ou conteúdo que pisca, consulte a Diretriz 2.3. (https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions)"
                             },
                             {
-                                "content": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference (https://www.w3.org/TR/WCAG22/#cc5)"
+                                "content": "Uma vez que qualquer conteúdo que não satisfaça este critério de sucesso pode interferir com a capacidade do utilizador para utilizar toda a página, todo o conteúdo da página Web (quer seja ou não usado para satisfazer outros critérios de sucesso) deve satisfazer este critério de sucesso. Consulte o Requisito de Conformidade 5: Não Interferência (https://www.w3.org/TR/WCAG22/#cc5)"
                             },
                             {
-                                "content": "Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so."
+                                "content": "Não é obrigatório que o conteúdo que é atualizado periodicamente por software ou que é transmitido para o agente do utilizador preserve ou apresente informação que tenha sido gerada ou recebida entre o início da pausa e a retoma da apresentação, uma vez que isso pode não ser tecnicamente possível e, em muitas situações, poderia ser enganador fazê-lo."
                             },
                             {
-                                "content": "An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken."
+                                "content": "Uma animação que ocorre como parte de uma fase de pré-carregamento ou situação semelhante pode ser considerada essencial se não puder ocorrer interação durante essa fase para todos os utilizadores e se não indicar progresso puder confundir os utilizadores ou levá-los a pensar que o conteúdo estava bloqueado ou com falha."
                             }
                         ],
                         "references": [
@@ -1086,8 +1086,8 @@
                     },
                     {
                         "ref_id": "2.2.3",
-                        "title": "No Timing",
-                        "description": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.",
+                        "title": "Sem Temporização",
+                        "description": "A temporização não é uma parte essencial do evento ou atividade apresentada pelo conteúdo, exceto para media sincronizada não interativa e eventos em tempo real.",
                         "url": "https://www.w3.org/TR/WCAG22/#no-timing",
                         "level": "AAA",
                         "special_cases": null,
@@ -1105,8 +1105,8 @@
                     },
                     {
                         "ref_id": "2.2.4",
-                        "title": "Interruptions",
-                        "description": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.",
+                        "title": "Interrupções",
+                        "description": "As interrupções podem ser adiadas ou suprimidas pelo utilizador, exceto as interrupções que envolvam uma emergência.",
                         "url": "https://www.w3.org/TR/WCAG22/#interruptions",
                         "level": "AAA",
                         "special_cases": null,
@@ -1124,8 +1124,8 @@
                     },
                     {
                         "ref_id": "2.2.5",
-                        "title": "Re-authenticating",
-                        "description": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.",
+                        "title": "Reautenticação",
+                        "description": "Quando uma sessão autenticada expira, o utilizador pode continuar a atividade sem perda de dados após reautenticar-se.",
                         "url": "https://www.w3.org/TR/WCAG22/#re-authenticating",
                         "level": "AAA",
                         "special_cases": null,
@@ -1143,14 +1143,14 @@
                     },
                     {
                         "ref_id": "2.2.6",
-                        "title": "Timeouts",
-                        "description": "Users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.",
+                        "title": "Tempos de Inatividade",
+                        "description": "Os utilizadores são avisados sobre a duração de qualquer inatividade que possa causar perda de dados, exceto quando os dados são preservados durante mais de 20 horas quando o utilizador não executa qualquer ação.",
                         "url": "https://www.w3.org/TR/WCAG22/#timeouts",
                         "level": "AAA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion."
+                                "content": "Os regulamentos de privacidade podem exigir consentimento explícito do utilizador antes de a identificação do utilizador ter sido autenticada e antes de os dados do utilizador serem preservados. Nos casos em que o utilizador seja menor de idade, o consentimento explícito pode não ser solicitado na maioria das jurisdições, países ou regiões. É aconselhada a consulta de profissionais de privacidade e de assessoria jurídica ao considerar a preservação de dados como abordagem para satisfazer este critério de sucesso."
                             }
                         ],
                         "references": [
@@ -1168,8 +1168,8 @@
             },
             {
                 "ref_id": "2.3",
-                "title": "Seizures",
-                "description": "Do not design content in a way that is known to cause seizures.",
+                "title": "Convulsões",
+                "description": "Não desenhe conteúdo de forma conhecida por causar convulsões.",
                 "url": "https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions",
                 "references": [
                     {
@@ -1180,14 +1180,14 @@
                 "success_criteria": [
                     {
                         "ref_id": "2.3.1",
-                        "title": "Three Flashes or Below Threshold",
-                        "description": "Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.",
+                        "title": "Três Intermitências ou Abaixo do Limite",
+                        "description": "As páginas Web não contêm nada que pisque mais de três vezes em qualquer período de um segundo ou o piscar está abaixo dos limites gerais de intermitência e de intermitência vermelha.",
                         "url": "https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. (https://www.w3.org/TR/WCAG22/#cc5)"
+                                "content": "Uma vez que qualquer conteúdo que não satisfaça este critério de sucesso pode interferir com a capacidade do utilizador para utilizar toda a página, todo o conteúdo da página Web (quer seja ou não usado para satisfazer outros critérios de sucesso) deve satisfazer este critério de sucesso. Consulte o Requisito de Conformidade 5: Não Interferência. (https://www.w3.org/TR/WCAG22/#cc5)"
                             }
                         ],
                         "references": [
@@ -1203,8 +1203,8 @@
                     },
                     {
                         "ref_id": "2.3.2",
-                        "title": "Three Flashes",
-                        "description": "Web pages do not contain anything that flashes more than three times in any one second period.",
+                        "title": "Três Intermitências",
+                        "description": "As páginas Web não contêm nada que pisque mais de três vezes em qualquer período de um segundo.",
                         "url": "https://www.w3.org/TR/WCAG22/#three-flashes",
                         "level": "AAA",
                         "special_cases": null,
@@ -1222,8 +1222,8 @@
                     },
                     {
                         "ref_id": "2.3.3",
-                        "title": "Animation from Interactions",
-                        "description": "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.",
+                        "title": "Animação por Interações",
+                        "description": "A animação de movimento desencadeada por interação pode ser desativada, a menos que a animação seja essencial para a funcionalidade ou para a informação que está a ser transmitida.",
                         "url": "https://www.w3.org/TR/WCAG22/#animation-from-interactions",
                         "level": "AAA",
                         "special_cases": null,
@@ -1243,8 +1243,8 @@
             },
             {
                 "ref_id": "2.4",
-                "title": "Navigable",
-                "description": "Provide ways to help users navigate, find content, and determine where they are.",
+                "title": "Navegável",
+                "description": "Forneça formas de ajudar os utilizadores a navegar, encontrar conteúdo e determinar onde se encontram.",
                 "url": "https://www.w3.org/TR/WCAG22/#navigable",
                 "references": [
                     {
@@ -1255,8 +1255,8 @@
                 "success_criteria": [
                     { 
                         "ref_id": "2.4.1",
-                        "title": "Bypass Blocks",
-                        "description": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
+                        "title": "Contornar Blocos",
+                        "description": "Está disponível um mecanismo para contornar blocos de conteúdo que são repetidos em múltiplas páginas Web.",
                         "url": "https://www.w3.org/TR/WCAG22/#bypass-blocks",
                         "level": "A",
                         "special_cases": null,
@@ -1274,8 +1274,8 @@
                     },
                     {
                         "ref_id": "2.4.2",
-                        "title": "Page Titled",
-                        "description": "Web pages have titles that describe topic or purpose.",
+                        "title": "Página com Título",
+                        "description": "As páginas Web têm títulos que descrevem o tema ou o propósito.",
                         "url": "https://www.w3.org/TR/WCAG22/#page-titled",
                         "level": "A",
                         "special_cases": null,
@@ -1293,8 +1293,8 @@
                     },
                     {
                         "ref_id": "2.4.3",
-                        "title": "Focus Order",
-                        "description": "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.",
+                        "title": "Ordem do Foco",
+                        "description": "Se uma página Web puder ser navegada sequencialmente e as sequências de navegação afetarem o significado ou a operação, os componentes que podem receber foco recebem-no numa ordem que preserva o significado e a operabilidade.",
                         "url": "https://www.w3.org/TR/WCAG22/#focus-order",
                         "level": "A",
                         "special_cases": null,
@@ -1312,8 +1312,8 @@
                     },
                     {
                         "ref_id": "2.4.4",
-                        "title": "Link Purpose (In Context)",
-                        "description": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
+                        "title": "Propósito do Link (No Contexto)",
+                        "description": "O propósito de cada link pode ser determinado apenas a partir do texto do link ou a partir do texto do link em conjunto com o contexto do link determinado programaticamente, exceto quando o propósito do link for ambíguo para os utilizadores em geral.",
                         "url": "https://www.w3.org/TR/WCAG22/#link-purpose-in-context",
                         "level": "A",
                         "special_cases": null,
@@ -1331,8 +1331,8 @@
                     },
                     {
                         "ref_id": "2.4.5",
-                        "title": "Multiple Ways",
-                        "description": "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.",
+                        "title": "Múltiplas Formas",
+                        "description": "Está disponível mais do que uma forma de localizar uma página Web dentro de um conjunto de páginas Web, exceto quando a página Web é o resultado de, ou um passo num, processo.",
                         "url": "https://www.w3.org/TR/WCAG22/#link-purpose-in-context",
                         "level": "AA",
                         "special_cases": null,
@@ -1350,8 +1350,8 @@
                     },
                     {
                         "ref_id": "2.4.6",
-                        "title": "Headings and Labels",
-                        "description": "Headings and labels describe topic or purpose.",
+                        "title": "Cabeçalhos e Etiquetas",
+                        "description": "Os cabeçalhos e as etiquetas descrevem o tema ou o propósito.",
                         "url": "https://www.w3.org/TR/WCAG22/#headings-and-labels",
                         "level": "AA",
                         "special_cases": null,
@@ -1369,8 +1369,8 @@
                     },
                     {
                         "ref_id": "2.4.7",
-                        "title": "Focus Visible",
-                        "description": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
+                        "title": "Foco Visível",
+                        "description": "Qualquer interface do utilizador operável através do teclado tem um modo de operação em que o indicador de foco do teclado é visível.",
                         "url": "https://www.w3.org/TR/WCAG22/#focus-visible",
                         "level": "AA",
                         "special_cases": null,
@@ -1388,8 +1388,8 @@
                     },
                     {
                         "ref_id": "2.4.8",
-                        "title": "Location",
-                        "description": "Information about the user's location within a set of Web pages is available.",
+                        "title": "Localização",
+                        "description": "Está disponível informação sobre a localização do utilizador dentro de um conjunto de páginas Web.",
                         "url": "https://www.w3.org/TR/WCAG22/#location",
                         "level": "AAA",
                         "special_cases": null,
@@ -1407,8 +1407,8 @@
                     },
                     {
                         "ref_id": "2.4.9",
-                        "title": "Link Purpose (Link Only)",
-                        "description": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.",
+                        "title": "Propósito do Link (Apenas Link)",
+                        "description": "Está disponível um mecanismo que permite identificar o propósito de cada link apenas a partir do texto do link, exceto quando o propósito do link for ambíguo para os utilizadores em geral.",
                         "url": "https://www.w3.org/TR/WCAG22/#link-purpose-link-only",
                         "level": "AAA",
                         "special_cases": null,
@@ -1426,17 +1426,17 @@
                     },
                     {
                         "ref_id": "2.4.10",
-                        "title": "Section Headings",
-                        "description": "Section headings are used to organize the content.",
+                        "title": "Cabeçalhos de Secção",
+                        "description": "São usados cabeçalhos de secção para organizar o conteúdo.",
                         "url": "https://www.w3.org/TR/WCAG22/#section-headings",
                         "level": "AAA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "'Heading' is used in its general sense and includes titles and other ways to add a heading to different types of content."
+                                "content": "\"Cabeçalho\" é usado no seu sentido geral e inclui títulos e outras formas de acrescentar um cabeçalho a diferentes tipos de conteúdo."
                             },
                             {
-                                "content": "This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2. (https://www.w3.org/TR/WCAG22/#name-role-value)"
+                                "content": "Este critério de sucesso abrange secções dentro de texto escrito, não componentes da interface do utilizador. Os componentes da interface do utilizador são abrangidos pelo Critério de Sucesso 4.1.2. (https://www.w3.org/TR/WCAG22/#name-role-value)"
                             }
                         ],
                         "references": [
@@ -1452,17 +1452,17 @@
                     },
                     {
                         "ref_id": "2.4.11",
-                        "title": "Focus Not Obscured (Minimum)",
-                        "description": "When a user interface component receives keyboard focus, the component is not entirely hidden due to author-created content.",
+                        "title": "Foco Não Obscurecido (Mínimo)",
+                        "description": "Quando um componente da interface do utilizador recebe foco do teclado, o componente não fica totalmente oculto devido a conteúdo criado pelo autor.",
                         "url": "https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum",
                         "level": "AA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Where content in a configurable interface can be repositioned by the user, then only the initial positions of user-movable content are considered for testing and conformance of this Success Criterion."
+                                "content": "Quando o conteúdo numa interface configurável pode ser reposicionado pelo utilizador, apenas as posições iniciais do conteúdo que o utilizador pode mover são consideradas para testes e conformidade deste Critério de Sucesso."
                             },
                             {
-                                "content": "Content opened by the user may obscure the component receiving focus. If the user can reveal the focused component without advancing the keyboard focus, the component with focus is not considered hidden due to author-created content."
+                                "content": "Conteúdo aberto pelo utilizador pode obscurecer o componente que recebe foco. Se o utilizador conseguir revelar o componente com foco sem avançar o foco do teclado, o componente com foco não é considerado oculto devido a conteúdo criado pelo autor."
                             }
                         ],
                         "references": [
@@ -1478,8 +1478,8 @@
                     },
                     {
                         "ref_id": "2.4.12",
-                        "title": "Focus Not Obscured (Enhanced)",
-                        "description": "When a user interface component receives keyboard focus, no part of the component is hidden by author-created content.",
+                        "title": "Foco Não Obscurecido (Melhorado)",
+                        "description": "Quando um componente da interface do utilizador recebe foco do teclado, nenhuma parte do componente fica oculta devido a conteúdo criado pelo autor.",
                         "url": "https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced",
                         "level": "AAA",
                         "special_cases": null,
@@ -1497,37 +1497,37 @@
                     },
                     {
                         "ref_id": "2.4.13",
-                        "title": "Focus Appearance",
-                        "description": "When the keyboard focus indicator is visible, an area of the focus indicator meets all the following:",
+                        "title": "Aparência do Foco",
+                        "description": "Quando o indicador de foco do teclado é visível, uma área do indicador de foco satisfaz todas as seguintes condições:",
                         "url": "https://www.w3.org/TR/WCAG22/#focus-appearance",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "all_true",
-                                "title": "is at least as large as the area of a 2 CSS pixel thick perimeter of the unfocused component or sub-component, and"
+                                "title": "tem, pelo menos, a mesma dimensão que a área de um perímetro de 2 píxeis CSS de espessura do componente ou subcomponente sem foco; e"
                             },
                             {
                                 "type": "all_true",
-                                "title": "has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states."
+                                "title": "tem uma relação de contraste de, pelo menos, 3:1 entre os mesmos píxeis nos estados com foco e sem foco."
                             },
                             {
                                 "type": "exception",
-                                "title": "The focus indicator is determined by the user agent and cannot be adjusted by the author, or"
+                                "title": "O indicador de foco é determinado pelo agente do utilizador e não pode ser ajustado pelo autor; ou"
                             },
                             {
                                 "type": "exception",
-                                "title": "The focus indicator and the indicator’s background color are not modified by the author."
+                                "title": "O indicador de foco e a cor de fundo do indicador não são modificados pelo autor."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "What is perceived as the user interface component or sub-component (to determine enclosure or size) depends on its visual presentation. The visual presentation includes the component's visible content, border, and component-specific background. It does not include shadow and glow effects outside the component's content, background, or border."
+                                "content": "O que é percecionado como componente da interface do utilizador ou subcomponente (para determinar delimitação ou dimensão) depende da sua apresentação visual. A apresentação visual inclui o conteúdo visível do componente, a borda e o fundo específico do componente. Não inclui efeitos de sombra ou brilho fora do conteúdo, do fundo ou da borda do componente."
                             },
                             {
-                                "content": "Examples of sub-components that may receive a focus indicator are menu items in an opened drop-down menu, or focusable cells in a grid."
+                                "content": "Exemplos de subcomponentes que podem receber um indicador de foco são itens de menu num menu suspenso aberto, ou células focáveis numa grelha."
                             },
                             {
-                                "content": "Contrast calculations can be based on colors defined within the technology (such as HTML, CSS and SVG). Pixels modified by user agent resolution enhancements and anti-aliasing can be ignored."
+                                "content": "Os cálculos de contraste podem basear-se em cores definidas dentro da tecnologia (tais como HTML, CSS e SVG). Píxeis modificados por melhorias de resolução do agente do utilizador e por anti-aliasing podem ser ignorados."
                             }
                         ],
                         "references": [
@@ -1545,8 +1545,8 @@
             },
             {
                 "ref_id": "2.5",
-                "title": "Input Modalities",
-                "description": "Make it easier for users to operate functionality through various inputs beyond keyboard.",
+                "title": "Modalidades de Entrada",
+                "description": "Torne mais fácil para os utilizadores operar a funcionalidade através de várias entradas para além do teclado.",
                 "url": "https://www.w3.org/TR/WCAG22/#input-modalities",
                 "references": [
                     {
@@ -1557,14 +1557,14 @@
                 "success_criteria": [
                     { 
                         "ref_id": "2.5.1",
-                        "title": "Pointer Gestures",
-                        "description": "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
+                        "title": "Gestos do Ponteiro",
+                        "description": "Toda a funcionalidade que utiliza gestos multiponto ou baseados em percurso para operação pode ser operada com um único ponteiro sem um gesto baseado em percurso, a menos que um gesto multiponto ou baseado em percurso seja essencial.",
                         "url": "https://www.w3.org/TR/WCAG22/#pointer-gestures",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
+                                "content": "Este requisito aplica-se ao conteúdo Web que interpreta ações do ponteiro (isto é, não se aplica a ações que são necessárias para operar o agente do utilizador ou a tecnologia de apoio)."
                             }
                         ],
                         "references": [
@@ -1580,38 +1580,38 @@
                     },
                     { 
                         "ref_id": "2.5.2",
-                        "title": "Pointer Cancellation",
-                        "description": "For functionality that can be operated using a single pointer, at least one of the following is true:",
+                        "title": "Cancelamento do Ponteiro",
+                        "description": "Para funcionalidade que pode ser operada utilizando um único ponteiro, pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#pointer-cancellation",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "No Down-Event",
-                                "description": "The down-event of the pointer is not used to execute any part of the function;"
+                                "title": "Sem Evento de Pressionar",
+                                "description": "O evento de pressionar do ponteiro não é usado para executar qualquer parte da função;"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Abort or Undo",
-                                "description": "Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;"
+                                "title": "Abortar ou Anular",
+                                "description": "A conclusão da função ocorre no evento de libertar, e está disponível um mecanismo para abortar a função antes da conclusão ou para anular a função após a conclusão;"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Up Reversal",
-                                "description": "The up-event reverses any outcome of the preceding down-event;"
+                                "title": "Reversão ao Libertar",
+                                "description": "O evento de libertar reverte qualquer resultado do evento de pressionar precedente;"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Essential",
-                                "description": "Completing the function on the down-event is essential."
+                                "title": "Essencial",
+                                "description": "Concluir a função no evento de pressionar é essencial."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Functions that emulate a keyboard or numeric keypad key press are considered essential."
+                                "content": "As funções que emulam a pressão de uma tecla de teclado ou de um teclado numérico são consideradas essenciais."
                             },
                             {
-                                "content": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
+                                "content": "Este requisito aplica-se ao conteúdo Web que interpreta ações do ponteiro (isto é, não se aplica a ações que são necessárias para operar o agente do utilizador ou a tecnologia de apoio)."
                             }
                         ],
                         "references": [
@@ -1627,14 +1627,14 @@
                     },
                     { 
                         "ref_id": "2.5.3",
-                        "title": "Label in Name",
-                        "description": "For user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+                        "title": "Etiqueta no Nome",
+                        "description": "Para componentes da interface do utilizador com etiquetas que incluam texto ou imagens de texto, o nome contém o texto que é apresentado visualmente.",
                         "url": "https://www.w3.org/TR/WCAG22/#label-in-name",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "A best practice is to have the text of the label at the start of the name."
+                                "content": "Uma boa prática é ter o texto da etiqueta no início do nome."
                             }
                         ],
                         "references": [
@@ -1650,20 +1650,20 @@
                     },
                     { 
                         "ref_id": "2.5.4",
-                        "title": "Motion Actuation",
-                        "description": "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:",
+                        "title": "Ativação por Movimento",
+                        "description": "A funcionalidade que pode ser operada pelo movimento do dispositivo ou pelo movimento do utilizador também pode ser operada por componentes da interface do utilizador e a resposta ao movimento pode ser desativada para evitar ativações acidentais, exceto quando:",
                         "url": "https://www.w3.org/TR/WCAG22/#motion-actuation",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Supported Interface",
-                                "description": "The motion is used to operate functionality through an accessibility supported interface;"
+                                "title": "Interface com Suporte",
+                                "description": "O movimento é usado para operar a funcionalidade através de uma interface com suporte de acessibilidade;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Essential",
-                                "description": "The motion is essential for the function and doing so would invalidate the activity."
+                                "title": "Essencial",
+                                "description": "O movimento é essencial para a função e fazê-lo invalidaria a atividade."
                             }
                         ],
                         "notes": null,
@@ -1680,44 +1680,44 @@
                     },
                     { 
                         "ref_id": "2.5.5",
-                        "title": "Target Size",
-                        "description": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:",
+                        "title": "Tamanho do Alvo",
+                        "description": "O tamanho do alvo para entradas por ponteiro é, pelo menos, 44 por 44 píxeis CSS, exceto quando:",
                         "url": "https://www.w3.org/TR/WCAG22/#target-size",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Equivalent",
-                                "description": "The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;"
+                                "title": "Equivalente",
+                                "description": "O alvo está disponível através de um link ou controlo equivalente na mesma página que tenha, pelo menos, 44 por 44 píxeis CSS;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Inline",
-                                "description": "The target is in a sentence or block of text;"
+                                "title": "Em linha",
+                                "description": "O alvo está numa frase ou num bloco de texto;"
                             },
                             {
                                 "type": "exception",
-                                "title": "User Agent Control",
-                                "description": "The size of the target is determined by the user agent and is not modified by the author;"
+                                "title": "Controlo pelo Agente do Utilizador",
+                                "description": "O tamanho do alvo é determinado pelo agente do utilizador e não é modificado pelo autor;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Essential",
-                                "description": "A particular presentation of the target is essential to the information being conveyed."
+                                "title": "Essencial",
+                                "description": "Uma apresentação específica do alvo é essencial para a informação que está a ser transmitida."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "Targets that allow for values to be selected spatially based on position within the target are considered one target for the purpose of the success criterion. Examples include sliders, color pickers displaying a gradient of colors, or editable areas where you position the cursor."
+                                "content": "Os alvos que permitem selecionar valores espacialmente com base na posição dentro do alvo são considerados um único alvo para o propósito deste critério de sucesso. Exemplos incluem controlos deslizantes, seletores de cor que apresentem um gradiente de cores ou áreas editáveis onde se posiciona o cursor."
                             },
                             {
-                                "content": "For inline targets the line-height should be interpreted as perpendicular to the flow of text. For example, in a language displayed vertically, the line-height would be horizontal."
+                                "content": "Para alvos em linha, a altura da linha deve ser interpretada como perpendicular ao fluxo do texto. Por exemplo, numa língua apresentada verticalmente, a altura da linha seria horizontal."
                             }
                         ],
                         "references": [
                             {
                                 "title": "Como Satisfazer o 2.5.5",
-                                "url": "https://www.w3.org/WAI/WCAG22/quickref/#target-size"
+                                "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size.html"
                             },
                             {
                                 "title": "Compreendendo o 2.5.5",
@@ -1727,8 +1727,8 @@
                     },
                     { 
                         "ref_id": "2.5.6",
-                        "title": "Concurrent Input Mechanisms",
-                        "description": "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.",
+                        "title": "Mecanismos de Entrada Concorrentes",
+                        "description": "O conteúdo Web não restringe o uso das modalidades de entrada disponíveis numa plataforma, exceto quando a restrição é essencial, necessária para assegurar a segurança do conteúdo, ou necessária para respeitar as definições do utilizador.",
                         "url": "https://www.w3.org/TR/WCAG22/#concurrent-input-mechanisms",
                         "level": "AAA",
                         "special_cases": null,
@@ -1746,14 +1746,14 @@
                     },
                     { 
                         "ref_id": "2.5.7",
-                        "title": "Dragging Movements",
-                        "description": "All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential or the functionality is determined by the user agent and not modified by the author.",
+                        "title": "Movimentos de Arrastamento",
+                        "description": "Toda a funcionalidade que utiliza um movimento de arrastamento para operação pode ser alcançada com um único ponteiro sem arrastamento, a menos que o arrastamento seja essencial ou que a funcionalidade seja determinada pelo agente do utilizador e não seja modificada pelo autor.",
                         "url": "https://www.w3.org/TR/WCAG22/#dragging-movements",
                         "level": "AA",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology)."
+                                "content": "Este requisito aplica-se ao conteúdo Web que interpreta ações do ponteiro (isto é, não se aplica a ações que são necessárias para operar o agente do utilizador ou a tecnologia de apoio)."
                             }
                         ],
                         "references": [
@@ -1769,36 +1769,36 @@
                     },
                     { 
                         "ref_id": "2.5.8",
-                        "title": "Target Size (Minimum)",
-                        "description": "The size of the target for pointer inputs is at least 24 by 24 CSS pixels, except where:",
+                        "title": "Tamanho do Alvo (Mínimo)",
+                        "description": "O tamanho do alvo para entradas por ponteiro é, pelo menos, 24 por 24 píxeis CSS, exceto quando:",
                         "url": "https://www.w3.org/TR/WCAG22/#target-size-minimum",
                         "level": "AA",
                         "notes": null,
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Spacing",
-                                "description": "Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if a 24 CSS pixel diameter circle is centered on the bounding box of each, the circles do not intersect another target or the circle for another undersized target;"
+                                "title": "Espaçamento",
+                                "description": "Alvos subdimensionados (com menos de 24 por 24 píxeis CSS) são posicionados de forma que, se um círculo de 24 píxeis CSS de diâmetro for centrado na caixa delimitadora de cada alvo, os círculos não interceptam outro alvo nem o círculo de outro alvo subdimensionado;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Equivalent",
-                                "description": "The function can be achieved through a different control on the same page that meets this criterion;"
+                                "title": "Equivalente",
+                                "description": "A função pode ser alcançada através de um controlo diferente na mesma página que satisfaça este critério;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Inline",
-                                "description": "The target is in a sentence or its size is otherwise constrained by the line-height of non-target text;"
+                                "title": "Em linha",
+                                "description": "O alvo está numa frase ou o seu tamanho é de outra forma restringido pela altura da linha do texto que não é alvo;"
                             },
                             {
                                 "type": "exception",
-                                "title": "User agent control",
-                                "description": "The size of the target is determined by the user agent and is not modified by the author;"
+                                "title": "Controlo pelo agente do utilizador",
+                                "description": "O tamanho do alvo é determinado pelo agente do utilizador e não é modificado pelo autor;"
                             },
                             {
                                 "type": "exception",
-                                "title": "Essential",
-                                "description": "A particular presentation of the target is essential or is legally required for the information being conveyed."
+                                "title": "Essencial",
+                                "description": "Uma apresentação específica do alvo é essencial ou é legalmente exigida para a informação que está a ser transmitida."
                             }
                         ],
                         "references": [
@@ -1819,13 +1819,13 @@
     {
         "ref_id": "3",
         "title": "Compreensível",
-        "description": "Information and the operation of user interface must be understandable.",
+        "description": "A informação e o funcionamento da interface do utilizador devem ser compreensíveis.",
         "url": "https://www.w3.org/TR/WCAG22/#understandable",
         "guidelines": [
             {
                 "ref_id": "3.1",
-                "title": "Readable",
-                "description": "Make text content readable and understandable.",
+                "title": "Legível",
+                "description": "Torne o conteúdo de texto legível e compreensível.",
                 "url": "https://www.w3.org/TR/WCAG22/#readable",
                 "references": [
                     {
@@ -1836,8 +1836,8 @@
                 "success_criteria": [
                     {
                         "ref_id": "3.1.1",
-                        "title": "Language of Page",
-                        "description": "The default human language of each Web page can be programmatically determined.",
+                        "title": "Língua da Página",
+                        "description": "A língua humana por defeito de cada página Web pode ser determinada programaticamente.",
                         "url": "https://www.w3.org/TR/WCAG22/#language-of-page",
                         "level": "A",
                         "special_cases": null,
@@ -1855,8 +1855,8 @@
                     },
                     {
                         "ref_id": "3.1.2",
-                        "title": "Language of Parts",
-                        "description": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.",
+                        "title": "Língua das Partes",
+                        "description": "A língua humana de cada passagem ou frase no conteúdo pode ser determinada programaticamente, exceto para nomes próprios, termos técnicos, palavras de língua indeterminada e palavras ou frases que se tenham tornado parte do vernáculo do texto imediatamente circundante.",
                         "url": "https://www.w3.org/TR/WCAG22/#language-of-parts",
                         "level": "AA",
                         "special_cases": null,
@@ -1874,8 +1874,8 @@
                     },
                     {
                         "ref_id": "3.1.3",
-                        "title": "Unusual Words",
-                        "description": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
+                        "title": "Palavras Não Usuais",
+                        "description": "Está disponível um mecanismo para identificar definições específicas de palavras ou frases usadas de forma não usual ou restrita, incluindo expressões idiomáticas e jargão.",
                         "url": "https://www.w3.org/TR/WCAG22/#unusual-words",
                         "level": "AAA",
                         "special_cases": null,
@@ -1893,8 +1893,8 @@
                     },
                     {
                         "ref_id": "3.1.4",
-                        "title": "Abbreviations",
-                        "description": "A mechanism for identifying the expanded form or meaning of abbreviations is available.",
+                        "title": "Abreviaturas",
+                        "description": "Está disponível um mecanismo para identificar a forma expandida ou o significado de abreviaturas.",
                         "url": "https://www.w3.org/TR/WCAG22/#abbreviations",
                         "level": "AAA",
                         "special_cases": null,
@@ -1912,8 +1912,8 @@
                     },
                     {
                         "ref_id": "3.1.5",
-                        "title": "Reading Level",
-                        "description": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.",
+                        "title": "Nível de Leitura",
+                        "description": "Quando o texto requer capacidade de leitura mais avançada do que o nível do ensino secundário inferior, após a remoção de nomes próprios e títulos, está disponível conteúdo suplementar ou uma versão que não exija capacidade de leitura mais avançada do que o nível do ensino secundário inferior.",
                         "url": "https://www.w3.org/TR/WCAG22/#reading-level",
                         "level": "AAA",
                         "special_cases": null,
@@ -1931,8 +1931,8 @@
                     },
                     {
                         "ref_id": "3.1.6",
-                        "title": "Pronunciation",
-                        "description": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.",
+                        "title": "Pronúncia",
+                        "description": "Está disponível um mecanismo para identificar a pronúncia específica de palavras em que o significado das palavras, no contexto, seja ambíguo sem conhecer a pronúncia.",
                         "url": "https://www.w3.org/TR/WCAG22/#pronunciation",
                         "level": "AAA",
                         "special_cases": null,
@@ -1952,8 +1952,8 @@
             },
             {
                 "ref_id": "3.2",
-                "title": "Predictable",
-                "description": "Make Web pages appear and operate in predictable ways.",
+                "title": "Previsível",
+                "description": "Faça com que as páginas Web apareçam e funcionem de forma previsível.",
                 "url": "https://www.w3.org/TR/WCAG22/#predictable",
                 "references": [
                     {
@@ -1964,8 +1964,8 @@
                 "success_criteria": [
                     {
                         "ref_id": "3.2.1",
-                        "title": "On Focus",
-                        "description": "When any component receives focus, it does not initiate a change of context.",
+                        "title": "Ao Receber Foco",
+                        "description": "Quando qualquer componente recebe foco, não inicia uma mudança de contexto.",
                         "url": "https://www.w3.org/TR/WCAG22/#on-focus",
                         "level": "A",
                         "special_cases": null,
@@ -1983,8 +1983,8 @@
                     },
                     {
                         "ref_id": "3.2.2",
-                        "title": "On Input",
-                        "description": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
+                        "title": "Ao Introduzir Dados",
+                        "description": "Alterar a definição de qualquer componente da interface do utilizador não provoca automaticamente uma mudança de contexto, a menos que o utilizador tenha sido avisado do comportamento antes de utilizar o componente.",
                         "url": "https://www.w3.org/TR/WCAG22/#on-input",
                         "level": "A",
                         "special_cases": null,
@@ -2002,8 +2002,8 @@
                     },
                     {
                         "ref_id": "3.2.3",
-                        "title": "Consistent Navigation",
-                        "description": "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+                        "title": "Navegação Consistente",
+                        "description": "Os mecanismos de navegação que se repetem em múltiplas páginas Web dentro de um conjunto de páginas Web ocorrem sempre na mesma ordem relativa, a menos que uma mudança seja iniciada pelo utilizador.",
                         "url": "https://www.w3.org/TR/WCAG22/#consistent-navigation",
                         "level": "AA",
                         "special_cases": null,
@@ -2021,8 +2021,8 @@
                     },
                     {
                         "ref_id": "3.2.4",
-                        "title": "Consistent Identification",
-                        "description": "Components that have the same functionality within a set of Web pages are identified consistently.",
+                        "title": "Identificação Consistente",
+                        "description": "Os componentes que têm a mesma funcionalidade dentro de um conjunto de páginas Web são identificados de forma consistente.",
                         "url": "https://www.w3.org/TR/WCAG22/#consistent-identification",
                         "level": "AA",
                         "special_cases": null,
@@ -2040,8 +2040,8 @@
                     },
                     {
                         "ref_id": "3.2.5",
-                        "title": "Change on Request",
-                        "description": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
+                        "title": "Mudança a Pedido",
+                        "description": "As mudanças de contexto são iniciadas apenas a pedido do utilizador ou está disponível um mecanismo para desativar tais mudanças.",
                         "url": "https://www.w3.org/TR/WCAG22/#change-on-request",
                         "level": "AAA",
                         "special_cases": null,
@@ -2059,35 +2059,35 @@
                     },
                     {
                         "ref_id": "3.2.6",
-                        "title": "Consistent Help",
-                        "description": "If a Web page contains any of the following help mechanisms, and those mechanisms are repeated on multiple Web pages within a set of Web pages, they occur in the same order relative to other page content, unless a change is initiated by the user:",
+                        "title": "Ajuda Consistente",
+                        "description": "Se uma página Web contiver qualquer um dos seguintes mecanismos de ajuda e esses mecanismos se repetirem em múltiplas páginas Web dentro de um conjunto de páginas Web, ocorrem na mesma ordem relativa em relação a outro conteúdo da página, a menos que uma mudança seja iniciada pelo utilizador:",
                         "url": "https://www.w3.org/TR/WCAG22/#consistent-help",
                         "level": "A",
                         "special_cases": [
                             
                                 {
                                     "type": "at_least_one",
-                                    "title": "Human contact details;"
+                                    "title": "Detalhes de contacto humano;"
                                 },
                                 {
                                     "type": "at_least_one",
-                                    "title": "Human contact mechanism;"
+                                    "title": "Mecanismo de contacto humano;"
                                 },
                                 {
                                     "type": "at_least_one",
-                                    "title": "Self-help option;"
+                                    "title": "Opção de autoajuda;"
                                 },
                                 {
                                     "type": "at_least_one",
-                                    "title": "A fully automated contact mechanism."
+                                    "title": "Um mecanismo de contacto totalmente automatizado."
                                 }
                         ],
                         "notes": [
                             {
-                                "content": "A fully automated contact mechanism."
+                                "content": "Um mecanismo de contacto totalmente automatizado."
                             },
                             {
-                                "content": "For this Success Criterion, “the same order relative to other page content” can be thought of as how the content is ordered when the page is serialized. The visual position of a help mechanism is likely to be consistent across pages for the same page variation (e.g., CSS break-point). The user can initiate a change, such as changing the page’s zoom or orientation, which may trigger a different page variation. This criterion is concerned with relative order across pages displayed in the same page variation (e.g., same zoom level and orientation)."
+                                "content": "Para este Critério de Sucesso, \"a mesma ordem relativa em relação a outro conteúdo da página\" pode ser entendida como a forma como o conteúdo está ordenado quando a página é serializada. A posição visual de um mecanismo de ajuda será provavelmente consistente entre páginas para a mesma variação de página (por exemplo, ponto de quebra de CSS). O utilizador pode iniciar uma mudança, tal como alterar o zoom ou a orientação da página, o que pode desencadear uma variação diferente da página. Este critério diz respeito à ordem relativa entre páginas apresentadas na mesma variação de página (por exemplo, mesmo nível de zoom e orientação)."
                             }
                         ],
                         "references": [
@@ -2105,8 +2105,8 @@
             },
             {
                 "ref_id": "3.3",
-                "title": "Input Assistance",
-                "description": "Help users avoid and correct mistakes.",
+                "title": "Assistência à Introdução de Dados",
+                "description": "Ajude os utilizadores a evitar e corrigir erros.",
                 "url": "https://www.w3.org/TR/WCAG22/#input-assistance",
                 "references": [
                     {
@@ -2117,8 +2117,8 @@
                 "success_criteria": [
                     {
                         "ref_id": "3.3.1",
-                        "title": "Error Identification",
-                        "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+                        "title": "Identificação de Erros",
+                        "description": "Se um erro de introdução de dados for detetado automaticamente, o item em erro é identificado e o erro é descrito ao utilizador em texto.",
                         "url": "https://www.w3.org/TR/WCAG22/#error-identification",
                         "level": "A",
                         "special_cases": null,
@@ -2136,8 +2136,8 @@
                     },
                     {
                         "ref_id": "3.3.2",
-                        "title": "Labels or Instructions",
-                        "description": "Labels or instructions are provided when content requires user input.",
+                        "title": "Etiquetas ou Instruções",
+                        "description": "São fornecidas etiquetas ou instruções quando o conteúdo requer introdução de dados por parte do utilizador.",
                         "url": "https://www.w3.org/TR/WCAG22/#labels-or-instructions",
                         "level": "A",
                         "special_cases": null,
@@ -2155,8 +2155,8 @@
                     },
                     {
                         "ref_id": "3.3.3",
-                        "title": "Error Suggestion",
-                        "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
+                        "title": "Sugestão de Erros",
+                        "description": "Se um erro de introdução de dados for detetado automaticamente e forem conhecidas sugestões para correção, então essas sugestões são fornecidas ao utilizador, a menos que isso comprometa a segurança ou o propósito do conteúdo.",
                         "url": "https://www.w3.org/TR/WCAG22/#error-suggestion",
                         "level": "AA",
                         "special_cases": null,
@@ -2174,25 +2174,25 @@
                     },
                     {
                         "ref_id": "3.3.4",
-                        "title": "Error Prevention (Legal, Financial, Data)",
-                        "description": " For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:",
+                        "title": "Prevenção de Erros (Jurídico, Financeiro, Dados)",
+                        "description": " Para páginas Web que impliquem compromissos legais ou transações financeiras para o utilizador, que modifiquem ou eliminem dados controláveis pelo utilizador em sistemas de armazenamento de dados, ou que submetam respostas do utilizador a testes, pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "Reversible",
-                                "description": "Submissions are reversible."
+                                "title": "Reversível",
+                                "description": "As submissões são reversíveis."
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Checked",
-                                "description": "Data entered by the user is checked for input errors and the user is provided an opportunity to correct them."
+                                "title": "Verificado",
+                                "description": "Os dados introduzidos pelo utilizador são verificados quanto a erros de introdução e é dada ao utilizador a oportunidade de os corrigir."
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Confirmed",
-                                "description": "A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission."
+                                "title": "Confirmado",
+                                "description": "Está disponível um mecanismo para rever, confirmar e corrigir informação antes de finalizar a submissão."
                             }
                         ],
                         "notes": null,
@@ -2209,8 +2209,8 @@
                     },
                     {
                         "ref_id": "3.3.5",
-                        "title": "Help",
-                        "description": "Context-sensitive help is available.",
+                        "title": "Ajuda",
+                        "description": "Está disponível ajuda sensível ao contexto.",
                         "url": "https://www.w3.org/TR/WCAG22/#help",
                         "level": "AAA",
                         "special_cases": null,
@@ -2228,25 +2228,25 @@
                     },
                     {
                         "ref_id": "3.3.6",
-                        "title": "Error Prevention (All)",
-                        "description": "For Web pages that require the user to submit information, at least one of the following is true:",
+                        "title": "Prevenção de Erros (Todos)",
+                        "description": "Para páginas Web que exijam que o utilizador submeta informação, pelo menos uma das seguintes condições é verdadeira:",
                         "url": "https://www.w3.org/TR/WCAG22/#error-prevention-all",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "Reversible",
-                                "description": "Submissions are reversible."
+                                "title": "Reversível",
+                                "description": "As submissões são reversíveis."
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Checked",
-                                "description": "Data entered by the user is checked for input errors and the user is provided an opportunity to correct them."
+                                "title": "Verificado",
+                                "description": "Os dados introduzidos pelo utilizador são verificados quanto a erros de introdução e é dada ao utilizador a oportunidade de os corrigir."
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "Confirmed",
-                                "description": "A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission."
+                                "title": "Confirmado",
+                                "description": "Está disponível um mecanismo para rever, confirmar e corrigir informação antes de finalizar a submissão."
                             }
                         ],
                         "notes": null,
@@ -2263,30 +2263,30 @@
                     },
                     {
                         "ref_id": "3.3.7",
-                        "title": "Redundant Entry",
-                        "description": "Information previously entered by or provided to the user that is required to be entered again in the same process is either:",
+                        "title": "Introdução Redundante",
+                        "description": "A informação introduzida anteriormente pelo utilizador ou fornecida ao utilizador, que é necessária voltar a introduzir no mesmo processo, é:",
                         "url": "https://www.w3.org/TR/WCAG22/#redundant-entry",
                         "level": "A",
                         "special_cases": [
                             {
                                 "type": "at_least_one",
-                                "title": "auto-populated, or"
+                                "title": "preenchida automaticamente; ou"
                             },
                             {
                                 "type": "at_least_one",
-                                "title": "available for the user to select."
+                                "title": "disponível para o utilizador selecionar."
                             },
                             {
                                 "type": "exception",
-                                "title": "re-entering the information is essential,"
+                                "title": "voltar a introduzir a informação é essencial,"
                             },
                             {
                                 "type": "exception",
-                                "title": "the information is required to ensure the security of the content, or"
+                                "title": "a informação é necessária para garantir a segurança do conteúdo, ou"
                             },
                             {
                                 "type": "exception",
-                                "title": "previously entered information is no longer valid."
+                                "title": "a informação introduzida anteriormente já não é válida."
                             }
                         ],
                         "notes": null,
@@ -2303,38 +2303,38 @@
                     },
                     {
                         "ref_id": "3.3.8",
-                        "title": "Accessible Authentication (Minimum)",
-                        "description": "A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process unless that step provides at least one of the following:",
+                        "title": "Autenticação Acessível (Mínimo)",
+                        "description": "Um teste de função cognitiva (tal como recordar uma palavra-passe ou resolver um puzzle) não é exigido em nenhum passo de um processo de autenticação, a menos que esse passo forneça pelo menos um dos seguintes:",
                         "url": "https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum",
                         "level": "AA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Alternative",
-                                "description": "Another authentication method that does not rely on a cognitive function test."
+                                "title": "Alternativa",
+                                "description": "Outro método de autenticação que não dependa de um teste de função cognitiva."
                             },
                             {
                                 "type": "exception",
-                                "title": "Mechanism",
-                                "description": "A mechanism is available to assist the user in completing the cognitive function test."
+                                "title": "Mecanismo",
+                                "description": "Está disponível um mecanismo para ajudar o utilizador a completar o teste de função cognitiva."
                             },
                             {
                                 "type": "exception",
-                                "title": "Object Recognition",
-                                "description": "The cognitive function test is to recognize objects."
+                                "title": "Reconhecimento de Objetos",
+                                "description": "O teste de função cognitiva consiste em reconhecer objetos."
                             },
                             {
                                 "type": "exception",
-                                "title": "Personal Content",
-                                "description": "The cognitive function test is to identify non-text content the user provided to the Web site."
+                                "title": "Conteúdo Pessoal",
+                                "description": "O teste de função cognitiva consiste em identificar conteúdo não texto fornecido pelo utilizador ao sítio Web."
                             }
                         ],
                         "notes": [
                             {
-                                "content": "”Object recognition” and ”Personal content” may be represented by images, video, or audio."
+                                "content": "\"Reconhecimento de objetos\" e \"conteúdo pessoal\" podem ser representados por imagens, vídeo ou áudio."
                             },
                             {
-                                "content": "Examples of mechanisms that satisfy this criterion include: <ol><li>support for password entry by password managers to reduce memory need, and</li><li>copy and paste to reduce the cognitive burden of re-typing.</li></ol>"
+                                "content": "Exemplos de mecanismos que satisfazem este critério incluem: <ol><li>suporte para introdução de palavras-passe através de gestores de palavras-passe para reduzir a necessidade de memória; e</li><li>copiar e colar para reduzir o esforço cognitivo de voltar a escrever.</li></ol>"
                             }
                         ],
                         "references": [
@@ -2350,20 +2350,20 @@
                     },
                     {
                         "ref_id": "3.3.9",
-                        "title": "Accessible Authentication (Enhanced)",
-                        "description": "A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process unless that step provides at least one of the following:",
+                        "title": "Autenticação Acessível (Melhorado)",
+                        "description": "Um teste de função cognitiva (tal como recordar uma palavra-passe ou resolver um puzzle) não é exigido em nenhum passo de um processo de autenticação, a menos que esse passo forneça pelo menos um dos seguintes:",
                         "url": "https://www.w3.org/TR/WCAG22/#accessible-authentication-enhanced",
                         "level": "AAA",
                         "special_cases": [
                             {
                                 "type": "exception",
-                                "title": "Alternative",
-                                "description": "Another authentication method that does not rely on a cognitive function test."
+                                "title": "Alternativa",
+                                "description": "Outro método de autenticação que não dependa de um teste de função cognitiva."
                             },
                             {
                                 "type": "exception",
-                                "title": "Mechanism",
-                                "description": "A mechanism is available to assist the user in completing the cognitive function test."
+                                "title": "Mecanismo",
+                                "description": "Está disponível um mecanismo para ajudar o utilizador a completar o teste de função cognitiva."
                             }
                         ],
                         "notes": null,
@@ -2385,13 +2385,13 @@
     {
         "ref_id": "4",
         "title": "Robusto",
-        "description": "Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
+        "description": "O conteúdo deve ser suficientemente robusto para poder ser interpretado de forma fiável por uma grande variedade de agentes do utilizador, incluindo tecnologias de apoio.",
         "url": "https://www.w3.org/TR/WCAG22/#robust",
         "guidelines": [
             {
                 "ref_id": "4.1",
-                "title": "Compatible",
-                "description": "Maximize compatibility with current and future user agents, including assistive technologies.",
+                "title": "Compatível",
+                "description": "Maximize a compatibilidade com agentes do utilizador atuais e futuros, incluindo tecnologias de apoio.",
                 "url": "https://www.w3.org/TR/WCAG22/#compatible",
                 "references": [
                     {
@@ -2402,14 +2402,14 @@
                 "success_criteria": [
                     {
                         "ref_id": "4.1.1",
-                        "title": "Parsing",
-                        "description": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
+                        "title": "Processamento",
+                        "description": "Em conteúdo implementado utilizando linguagens de marcação, os elementos têm etiquetas completas de início e de fim, os elementos estão aninhados de acordo com as suas especificações, os elementos não contêm atributos duplicados e quaisquer IDs são únicos, exceto quando as especificações permitem estas características.",
                         "url": "https://www.w3.org/TR/WCAG22/#parsing",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete."
+                                "content": "As etiquetas de início e de fim a que falte um carácter crítico na sua formação, como um sinal de maior de fecho ou uma aspas de valor de atributo não correspondente, não são completas."
                             }
                         ],
                         "references": [
@@ -2425,14 +2425,14 @@
                     },
                     {
                         "ref_id": "4.1.2",
-                        "title": "Name, Role, Value",
-                        "description": "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
+                        "title": "Nome, Papel, Valor",
+                        "description": "Para todos os componentes da interface do utilizador (incluindo, mas não limitados a: elementos de formulário, links e componentes gerados por scripts), o nome e o papel podem ser determinados programaticamente; os estados, propriedades e valores que podem ser definidos pelo utilizador podem ser definidos programaticamente; e a notificação de alterações a estes itens está disponível para agentes do utilizador, incluindo tecnologias de apoio.",
                         "url": "https://www.w3.org/TR/WCAG22/#name-role-value",
                         "level": "A",
                         "special_cases": null,
                         "notes": [
                             {
-                                "content": "This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification."
+                                "content": "Este critério de sucesso destina-se principalmente a autores Web que desenvolvem ou programam os seus próprios componentes da interface do utilizador. Por exemplo, os controlos HTML padrão já satisfazem este critério de sucesso quando usados de acordo com a especificação."
                             }
                         ],
                         "references": [
@@ -2448,8 +2448,8 @@
                     },
                     {
                         "ref_id": "4.1.3",
-                        "title": "Status Messages",
-                        "description": "In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
+                        "title": "Mensagens de Estado",
+                        "description": "Em conteúdo implementado utilizando linguagens de marcação, as mensagens de estado podem ser determinadas programaticamente através de papel ou propriedades, de forma a poderem ser apresentadas ao utilizador por tecnologias de apoio sem receberem foco.",
                         "url": "https://www.w3.org/TR/WCAG22/#status-messages",
                         "level": "AA",
                         "special_cases": null,
