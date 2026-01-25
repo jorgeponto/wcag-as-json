@@ -1,7 +1,6 @@
-
-		{
+{
   "principles": [
-    {
+  {
       "id": "WCAG2:perceivable",
       "num": "1",
       "versions": ["2.0", "2.1", "2.2"],
@@ -291,66 +290,62 @@
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "advisory": []
-                },
-                {
-                  "failure": [
-                    {
-                      "id": "TECH:F3",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de CSS para incluir imagens que transmitem informação importante"
-                    },
-                    {
-                      "id": "TECH:F13",
-                      "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem"
-                    },
-                    {
-                      "id": "TECH:F20",
-                      "title": "Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
-                    },
-                    {
-                      "id": "TECH:F30",
-                      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
-                    },
-                    {
-                      "id": "TECH:F38",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido a não marcar imagens decorativas em HTML de forma a permitir que as tecnologias de apoio as ignorem"
-                    },
-                    {
-                      "id": "TECH:F39",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido a fornecer uma alternativa textual que não é vazia (por exemplo, alt=\"spacer\" ou alt=\"image\") para imagens que devem ser ignoradas por tecnologias de apoio"
-                    },
-                    {
-                      "id": "TECH:F65",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido à omissão do atributo alt ou de alternativa textual em elementos img, elementos area e elementos input do tipo \"image\""
-                    },
-                    {
-                      "id": "TECH:F67",
-                      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação"
-                    },
-                    {
-                      "id": "TECH:F71",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de texto semelhante a texto real para representar texto sem fornecer uma alternativa textual"
-                    },
-                    {
-                      "id": "TECH:F72",
-                      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de arte ASCII sem fornecer uma alternativa textual"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "techniques": []
-        }
-      ]
-    }
-  ]
+}
+]
 },
 {
+  "advisory": []
+},
+{
+  "failure": [
+    {
+      "id": "TECH:F3",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de CSS para incluir imagens que transmitem informação importante"
+    },
+    {
+      "id": "TECH:F13",
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem"
+    },
+    {
+      "id": "TECH:F20",
+      "title": "Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
+    },
+    {
+      "id": "TECH:F30",
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
+    },
+    {
+      "id": "TECH:F38",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido a não marcar imagens decorativas em HTML de forma a permitir que as tecnologias de apoio as ignorem"
+    },
+    {
+      "id": "TECH:F39",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido a fornecer uma alternativa textual que não é vazia (por exemplo, alt=\"spacer\" ou alt=\"image\") para imagens que devem ser ignoradas por tecnologias de apoio"
+    },
+    {
+      "id": "TECH:F65",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido à omissão do atributo alt ou de alternativa textual em elementos img, elementos area e elementos input do tipo \"image\""
+    },
+    {
+      "id": "TECH:F67",
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação"
+    },
+    {
+      "id": "TECH:F71",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de texto semelhante a texto real para representar texto sem fornecer uma alternativa textual"
+    },
+    {
+      "id": "TECH:F72",
+      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de arte ASCII sem fornecer uma alternativa textual"
+    }
+  ]
+}
+]
+}
+],
+"techniques": []
+},
+        {
   "id": "WCAG2:time-based-media",
   "alt_id": ["media-equiv"],
   "num": "1.2",
@@ -912,9 +907,9 @@
       ]
     }
   ],
-  "techniques": []
+"techniques": []
 },
-{
+        {
   "id": "WCAG2:adaptable",
   "alt_id": ["content-structure-separation"],
   "num": "1.3",
@@ -1079,338 +1074,338 @@
                           "title": "Agrupar ligações relacionadas usando o elemento nav"
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "title": "Situação B: A tecnologia utilizada NÃO fornece a estrutura semântica para tornar programaticamente determináveis a informação e as relações transmitidas através da apresentação:",
-                  "techniques": [
-                    {
-                      "id": "TECH:G117",
-                      "title": "Usar texto para transmitir informação que é transmitida por variações na apresentação do texto"
-                    },
-                    {
-                      "id": "TECH:future-info-and-relationships-1",
-                      "title": "Tornar programaticamente determináveis ou disponibilizar em texto a informação e as relações transmitidas através da apresentação usando as seguintes técnicas:",
-                      "using": [
-                        {
-                          "id": "TECH:T1",
-                          "title": "Usar convenções padrão de formatação de texto para parágrafos"
-                        },
-                        {
-                          "id": "TECH:T2",
-                          "title": "Usar convenções padrão de formatação de texto para listas"
-                        },
-                        {
-                          "id": "TECH:T3",
-                          "title": "Usar convenções padrão de formatação de texto para cabeçalhos"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:C22",
-              "title": "Usar CSS para controlar a apresentação visual do texto"
-            },
-            {
-              "id": "TECH:G162",
-              "title": "Posicionar rótulos para maximizar a previsibilidade das relações"
-            },
-            {
-              "id": "TECH:ARIA1",
-              "title": "Usar a propriedade aria-describedby para fornecer um rótulo descritivo para controlos da interface do utilizador"
-            },
-            {
-              "id": "TECH:ARIA2",
-              "title": "Identificar um campo obrigatório com a propriedade aria-required"
-            },
-            {
-              "id": "TECH:G141",
-              "title": "Organizar uma página usando cabeçalhos"
-            }
-          ]
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F2",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de alterações na apresentação do texto para transmitir informação sem utilizar a marcação ou o texto apropriado"
-            },
-            {
-              "id": "TECH:F33",
-              "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples"
-            },
-            {
-              "id": "TECH:F34",
-              "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples"
-            },
-            {
-              "id": "TECH:F42",
-              "title": "Falha dos Critérios de Sucesso 1.3.1, 2.1.1, 2.1.3 ou 4.1.2 ao emular ligações"
-            },
-            {
-              "id": "TECH:F43",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de marcação estrutural de uma forma que não representa relações no conteúdo"
-            },
-            {
-              "id": "TECH:F46",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de elementos th em tabelas de disposição"
-            },
-            {
-              "id": "TECH:F48",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso do elemento pre para marcar informação tabular"
-            },
-            {
-              "id": "TECH:F87",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido à inserção de conteúdo não decorativo usando os pseudo-elementos ::before e ::after e a propriedade \"content\" em CSS"
-            },
-            {
-              "id": "TECH:F90",
-              "title": "Falha do Critério de Sucesso 1.3.1 por associar incorretamente cabeçalhos e conteúdo de tabelas através dos atributos headers e id"
-            },
-            {
-              "id": "TECH:F91",
-              "title": "Falha do Critério de Sucesso 1.3.1 por não marcar corretamente os cabeçalhos de tabela"
-            },
-            {
-              "id": "TECH:F92",
-              "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de role=presentation em conteúdo que transmite informação semântica"
-            }
-          ]
-        }
-      ]
+}
+]
+},
+{
+  "title": "Situação B: A tecnologia utilizada NÃO fornece a estrutura semântica para tornar programaticamente determináveis a informação e as relações transmitidas através da apresentação:",
+  "techniques": [
+    {
+      "id": "TECH:G117",
+      "title": "Usar texto para transmitir informação que é transmitida por variações na apresentação do texto"
     },
     {
-      "id": "WCAG2:meaningful-sequence",
-      "alt_id": ["content-structure-separation-sequence"],
-      "num": "1.3.2",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "A",
-      "handle": "Sequência Com Significado",
-      "title": "Quando a sequência na qual o conteúdo é apresentado afeta o seu significado, pode ser determinada programaticamente uma sequência de leitura correta.",
-      "techniques": [
+      "id": "TECH:future-info-and-relationships-1",
+      "title": "Tornar programaticamente determináveis ou disponibilizar em texto a informação e as relações transmitidas através da apresentação usando as seguintes técnicas:",
+      "using": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:G57",
-              "title": "Ordenar o conteúdo numa sequência com significado"
-            },
-            {
-              "id": "TECH:G57",
-              "title": "Ordenar o conteúdo numa sequência com significado",
-              "using": [
-                {
-                  "id": "TECH:H34",
-                  "title": "Usar uma marca Unicode da direita para a esquerda (RLM) ou da esquerda para a direita (LRM) para misturar a direção do texto em linha"
-                },
-                {
-                  "id": "TECH:H56",
-                  "title": "Usar o atributo dir num elemento em linha para resolver problemas com sequências direcionais aninhadas"
-                },
-                {
-                  "id": "TECH:C6",
-                  "title": "Posicionar conteúdo com base na marcação estrutural"
-                },
-                {
-                  "id": "TECH:C8",
-                  "title": "Usar CSS letter-spacing para controlar o espaçamento dentro de uma palavra"
-                }
-              ]
-            },
-            {
-              "id": "TECH:C27",
-              "title": "Garantir que a ordem no DOM corresponde à ordem visual"
-            },
-            {
-              "id": "TECH:PDF3",
-              "title": "Garantir a ordem correta de tabulação e de leitura em documentos PDF"
-            }
-          ]
+          "id": "TECH:T1",
+          "title": "Usar convenções padrão de formatação de texto para parágrafos"
         },
         {
-          "advisory": []
+          "id": "TECH:T2",
+          "title": "Usar convenções padrão de formatação de texto para listas"
         },
         {
-          "failure": [
-            {
-              "id": "TECH:F34",
-              "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples"
-            },
-            {
-              "id": "TECH:F33",
-              "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples"
-            },
-            {
-              "id": "TECH:F32",
-              "title": "Falha do Critério de Sucesso 1.3.2 devido ao uso de caracteres de espaço em branco para controlar o espaçamento dentro de uma palavra"
-            },
-            {
-              "id": "TECH:F49",
-              "title": "Falha do Critério de Sucesso 1.3.2 devido ao uso de uma tabela de disposição HTML que não faz sentido quando linearizada"
-            },
-            {
-              "id": "TECH:F1",
-              "title": "Falha do Critério de Sucesso 1.3.2 devido a alterar o significado do conteúdo ao posicionar informação com CSS"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:sensory-characteristics",
-      "alt_id": ["content-structure-separation-understanding"],
-      "num": "1.3.3",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "A",
-      "handle": "Características Sensoriais",
-      "title": "As instruções fornecidas para compreender e operar o conteúdo não dependem exclusivamente de características sensoriais dos componentes, tais como forma, cor, dimensão, localização visual, orientação ou som.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:G96",
-              "title": "Fornecer identificação textual de itens que, de outra forma, dependem apenas de informação sensorial para serem compreendidos"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F14",
-              "title": "Falha do Critério de Sucesso 1.3.3 devido a identificar conteúdo apenas pela sua forma ou localização"
-            },
-            {
-              "id": "TECH:F26",
-              "title": "Falha do Critério de Sucesso 1.3.3 devido ao uso de um símbolo gráfico isolado para transmitir informação"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:orientation",
-      "alt_id": [],
-      "num": "1.3.4",
-      "versions": ["2.1", "2.2"],
-      "level": "AA",
-      "handle": "Orientação",
-      "title": "O conteúdo não restringe a sua visualização e operação a uma única orientação de ecrã, como retrato ou paisagem, exceto quando uma orientação de ecrã específica for essencial.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:G214",
-              "title": "Usar um controlo para permitir acesso ao conteúdo em diferentes orientações que, de outro modo, estaria restrito"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F97",
-              "title": "Falha devido ao bloqueio da orientação para vista em paisagem ou retrato"
-            },
-            {
-              "id": "TECH:F100",
-              "title": "Falha do Critério de Sucesso 1.3.4 devido a apresentar uma mensagem a pedir para reorientar o dispositivo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:identify-input-purpose",
-      "alt_id": [],
-      "num": "1.3.5",
-      "versions": ["2.1", "2.2"],
-      "level": "AA",
-      "handle": "Identificar o Propósito da Entrada",
-      "title": "O propósito de cada campo de entrada que recolhe informação sobre o utilizador pode ser determinado programaticamente quando:",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:H98",
-              "title": "Usar atributos autocomplete do HTML 5.2"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F107",
-              "title": "Falha do Critério de Sucesso 1.3.5 devido a valores incorretos do atributo autocomplete"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:identify-purpose",
-      "alt_id": [],
-      "num": "1.3.6",
-      "versions": ["2.1", "2.2"],
-      "level": "AAA",
-      "handle": "Identificar o Propósito",
-      "title": "Em conteúdo implementado utilizando linguagens de marcação, o propósito de componentes da interface do utilizador, ícones e regiões pode ser determinado programaticamente.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:future-identify-purpose-1",
-              "title": "Indicar programaticamente o propósito de ícones, regiões e componentes da interface do utilizador"
-            },
-            {
-              "id": "TECH:ARIA11",
-              "title": "Usar marcos ARIA para identificar regiões de uma página"
-            },
-            {
-              "id": "TECH:future-identify-purpose-1",
-              "title": "Usar microdados para marcar componentes da interface do utilizador (ligação futura)"
-            }
-          ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:future-identify-purpose-1",
-              "title": "Permitir que os agentes do utilizador encontrem a versão do conteúdo que melhor se adequa às suas necessidades"
-            },
-            {
-              "id": "TECH:future-identify-purpose-1",
-              "title": "Usar semântica para identificar funcionalidades importantes (por exemplo, coga-simplification=\"simplest\")"
-            },
-            {
-              "id": "TECH:future-identify-purpose-1",
-              "title": "Usar aria-invalid e aria-required"
-            }
-          ]
-        },
-        {
-          "failure": []
+          "id": "TECH:T3",
+          "title": "Usar convenções padrão de formatação de texto para cabeçalhos"
         }
       ]
     }
-  ],
-  "techniques": []
+  ]
+}
+]
+}
+]
 },
 {
+  "advisory": [
+    {
+      "id": "TECH:C22",
+      "title": "Usar CSS para controlar a apresentação visual do texto"
+    },
+    {
+      "id": "TECH:G162",
+      "title": "Posicionar rótulos para maximizar a previsibilidade das relações"
+    },
+    {
+      "id": "TECH:ARIA1",
+      "title": "Usar a propriedade aria-describedby para fornecer um rótulo descritivo para controlos da interface do utilizador"
+    },
+    {
+      "id": "TECH:ARIA2",
+      "title": "Identificar um campo obrigatório com a propriedade aria-required"
+    },
+    {
+      "id": "TECH:G141",
+      "title": "Organizar uma página usando cabeçalhos"
+    }
+  ]
+},
+{
+  "failure": [
+    {
+      "id": "TECH:F2",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de alterações na apresentação do texto para transmitir informação sem utilizar a marcação ou o texto apropriado"
+    },
+    {
+      "id": "TECH:F33",
+      "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples"
+    },
+    {
+      "id": "TECH:F34",
+      "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples"
+    },
+    {
+      "id": "TECH:F42",
+      "title": "Falha dos Critérios de Sucesso 1.3.1, 2.1.1, 2.1.3 ou 4.1.2 ao emular ligações"
+    },
+    {
+      "id": "TECH:F43",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de marcação estrutural de uma forma que não representa relações no conteúdo"
+    },
+    {
+      "id": "TECH:F46",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de elementos th em tabelas de disposição"
+    },
+    {
+      "id": "TECH:F48",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso do elemento pre para marcar informação tabular"
+    },
+    {
+      "id": "TECH:F87",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido à inserção de conteúdo não decorativo usando os pseudo-elementos ::before e ::after e a propriedade \"content\" em CSS"
+    },
+    {
+      "id": "TECH:F90",
+      "title": "Falha do Critério de Sucesso 1.3.1 por associar incorretamente cabeçalhos e conteúdo de tabelas através dos atributos headers e id"
+    },
+    {
+      "id": "TECH:F91",
+      "title": "Falha do Critério de Sucesso 1.3.1 por não marcar corretamente os cabeçalhos de tabela"
+    },
+    {
+      "id": "TECH:F92",
+      "title": "Falha do Critério de Sucesso 1.3.1 devido ao uso de role=presentation em conteúdo que transmite informação semântica"
+    }
+  ]
+}
+]
+},
+{
+  "id": "WCAG2:meaningful-sequence",
+  "alt_id": ["content-structure-separation-sequence"],
+  "num": "1.3.2",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "A",
+  "handle": "Sequência Com Significado",
+  "title": "Quando a sequência na qual o conteúdo é apresentado afeta o seu significado, pode ser determinada programaticamente uma sequência de leitura correta.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G57",
+          "title": "Ordenar o conteúdo numa sequência com significado"
+        },
+        {
+          "id": "TECH:G57",
+          "title": "Ordenar o conteúdo numa sequência com significado",
+          "using": [
+            {
+              "id": "TECH:H34",
+              "title": "Usar uma marca Unicode da direita para a esquerda (RLM) ou da esquerda para a direita (LRM) para misturar a direção do texto em linha"
+            },
+            {
+              "id": "TECH:H56",
+              "title": "Usar o atributo dir num elemento em linha para resolver problemas com sequências direcionais aninhadas"
+            },
+            {
+              "id": "TECH:C6",
+              "title": "Posicionar conteúdo com base na marcação estrutural"
+            },
+            {
+              "id": "TECH:C8",
+              "title": "Usar CSS letter-spacing para controlar o espaçamento dentro de uma palavra"
+            }
+          ]
+        },
+        {
+          "id": "TECH:C27",
+          "title": "Garantir que a ordem no DOM corresponde à ordem visual"
+        },
+        {
+          "id": "TECH:PDF3",
+          "title": "Garantir a ordem correta de tabulação e de leitura em documentos PDF"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F34",
+          "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples"
+        },
+        {
+          "id": "TECH:F33",
+          "title": "Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples"
+        },
+        {
+          "id": "TECH:F32",
+          "title": "Falha do Critério de Sucesso 1.3.2 devido ao uso de caracteres de espaço em branco para controlar o espaçamento dentro de uma palavra"
+        },
+        {
+          "id": "TECH:F49",
+          "title": "Falha do Critério de Sucesso 1.3.2 devido ao uso de uma tabela de disposição HTML que não faz sentido quando linearizada"
+        },
+        {
+          "id": "TECH:F1",
+          "title": "Falha do Critério de Sucesso 1.3.2 devido a alterar o significado do conteúdo ao posicionar informação com CSS"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:sensory-characteristics",
+  "alt_id": ["content-structure-separation-understanding"],
+  "num": "1.3.3",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "A",
+  "handle": "Características Sensoriais",
+  "title": "As instruções fornecidas para compreender e operar o conteúdo não dependem exclusivamente de características sensoriais dos componentes, tais como forma, cor, dimensão, localização visual, orientação ou som.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G96",
+          "title": "Fornecer identificação textual de itens que, de outra forma, dependem apenas de informação sensorial para serem compreendidos"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F14",
+          "title": "Falha do Critério de Sucesso 1.3.3 devido a identificar conteúdo apenas pela sua forma ou localização"
+        },
+        {
+          "id": "TECH:F26",
+          "title": "Falha do Critério de Sucesso 1.3.3 devido ao uso de um símbolo gráfico isolado para transmitir informação"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:orientation",
+  "alt_id": [],
+  "num": "1.3.4",
+  "versions": ["2.1", "2.2"],
+  "level": "AA",
+  "handle": "Orientação",
+  "title": "O conteúdo não restringe a sua visualização e operação a uma única orientação de ecrã, como retrato ou paisagem, exceto quando uma orientação de ecrã específica for essencial.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G214",
+          "title": "Usar um controlo para permitir acesso ao conteúdo em diferentes orientações que, de outro modo, estaria restrito"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F97",
+          "title": "Falha devido ao bloqueio da orientação para vista em paisagem ou retrato"
+        },
+        {
+          "id": "TECH:F100",
+          "title": "Falha do Critério de Sucesso 1.3.4 devido a apresentar uma mensagem a pedir para reorientar o dispositivo"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:identify-input-purpose",
+  "alt_id": [],
+  "num": "1.3.5",
+  "versions": ["2.1", "2.2"],
+  "level": "AA",
+  "handle": "Identificar o Propósito da Entrada",
+  "title": "O propósito de cada campo de entrada que recolhe informação sobre o utilizador pode ser determinado programaticamente quando:",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:H98",
+          "title": "Usar atributos autocomplete do HTML 5.2"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F107",
+          "title": "Falha do Critério de Sucesso 1.3.5 devido a valores incorretos do atributo autocomplete"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:identify-purpose",
+  "alt_id": [],
+  "num": "1.3.6",
+  "versions": ["2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Identificar o Propósito",
+  "title": "Em conteúdo implementado utilizando linguagens de marcação, o propósito de componentes da interface do utilizador, ícones e regiões pode ser determinado programaticamente.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:future-identify-purpose-1",
+          "title": "Indicar programaticamente o propósito de ícones, regiões e componentes da interface do utilizador"
+        },
+        {
+          "id": "TECH:ARIA11",
+          "title": "Usar marcos ARIA para identificar regiões de uma página"
+        },
+        {
+          "id": "TECH:future-identify-purpose-1",
+          "title": "Usar microdados para marcar componentes da interface do utilizador (ligação futura)"
+        }
+      ]
+    },
+    {
+      "advisory": [
+        {
+          "id": "TECH:future-identify-purpose-1",
+          "title": "Permitir que os agentes do utilizador encontrem a versão do conteúdo que melhor se adequa às suas necessidades"
+        },
+        {
+          "id": "TECH:future-identify-purpose-1",
+          "title": "Usar semântica para identificar funcionalidades importantes (por exemplo, coga-simplification=\"simplest\")"
+        },
+        {
+          "id": "TECH:future-identify-purpose-1",
+          "title": "Usar aria-invalid e aria-required"
+        }
+      ]
+    },
+    {
+      "failure": []
+    }
+  ]
+}
+],
+"techniques": []
+},
+        {
   "id": "WCAG2:distinguishable",
   "alt_id": ["visual-audio-contrast"],
   "num": "1.4",
@@ -2264,9 +2259,11 @@
       ]
     }
   ],
-  "techniques": []
-},
-{
+"techniques": []
+}
+       ]
+    },
+  {
   "id": "WCAG2:operable",
   "num": "2",
   "versions": ["2.0", "2.1", "2.2"],
@@ -2464,11 +2461,9 @@
           ]
         }
       ],
-      "techniques": []
-    }
-  ]
+"techniques": []
 },
-{
+    {
   "id": "WCAG2:enough-time",
   "alt_id": ["time-limits"],
   "num": "2.2",
@@ -2834,9 +2829,9 @@
       ]
     }
   ],
-  "techniques": []
+"techniques": []
 },
-{
+    {
   "id": "WCAG2:seizures-and-physical-reactions",
   "alt_id": [],
   "num": "2.3",
@@ -2934,7 +2929,7 @@
   ],
   "techniques": []
 },
-{
+    {
   "id": "WCAG2:navigable",
   "alt_id": ["navigation-mechanisms"],
   "num": "2.4",
@@ -3235,452 +3230,452 @@
               ]
             }
           ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:H2",
-              "title": "Combinar ligações de imagem e texto adjacentes para o mesmo recurso"
-            },
-            {
-              "id": "TECH:H80",
-              "title": "Identificar o objetivo de uma ligação usando o texto da ligação combinado com o elemento de cabeçalho precedente"
-            }
-          ]
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F63",
-              "title": "Falha do Critério de Sucesso 2.4.4 devido a fornecer contexto da ligação apenas em conteúdo que não está relacionado com a ligação"
-            },
-            {
-              "id": "TECH:F89",
-              "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
-            }
-          ]
-        }
-      ]
+},
+{
+  "advisory": [
+    {
+      "id": "TECH:H2",
+      "title": "Combinar ligações de imagem e texto adjacentes para o mesmo recurso"
     },
     {
-      "id": "WCAG2:multiple-ways",
-      "alt_id": ["navigation-mechanisms-mult-loc"],
-      "num": "2.4.5",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AA",
-      "handle": "Várias Formas",
-      "title": "Está disponível mais do que uma forma de localizar uma página Web dentro de um conjunto de páginas Web, exceto quando a página Web é o resultado de, ou um passo num, processo.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:future-multiple-ways-1",
-              "title": "Usar duas ou mais das seguintes técnicas:",
-              "using": [
-                {
-                  "id": "TECH:G125",
-                  "title": "Fornecer ligações para navegar para páginas Web relacionadas"
-                },
-                {
-                  "id": "TECH:G64",
-                  "title": "Fornecer um Índice"
-                },
-                {
-                  "id": "TECH:G63",
-                  "title": "Fornecer um mapa do site"
-                },
-                {
-                  "id": "TECH:G161",
-                  "title": "Fornecer uma função de pesquisa para ajudar os utilizadores a encontrar conteúdo"
-                },
-                {
-                  "id": "TECH:G126",
-                  "title": "Fornecer uma lista de ligações para todas as outras páginas Web"
-                },
-                {
-                  "id": "TECH:G185",
-                  "title": "Ligar a todas as páginas do site a partir da página inicial"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:H59",
-              "title": "Usar o elemento link e ferramentas de navegação"
-            },
-            {
-              "id": "TECH:PDF2",
-              "title": "Criar marcadores em documentos PDF"
-            }
-          ]
-        },
-        {
-          "failure": []
-        }
-      ]
+      "id": "TECH:H80",
+      "title": "Identificar o objetivo de uma ligação usando o texto da ligação combinado com o elemento de cabeçalho precedente"
+    }
+  ]
+},
+{
+  "failure": [
+    {
+      "id": "TECH:F63",
+      "title": "Falha do Critério de Sucesso 2.4.4 devido a fornecer contexto da ligação apenas em conteúdo que não está relacionado com a ligação"
     },
     {
-      "id": "WCAG2:headings-and-labels",
-      "alt_id": ["navigation-mechanisms-descriptive"],
-      "num": "2.4.6",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AA",
-      "handle": "Cabeçalhos e Rótulos",
-      "title": "Os cabeçalhos e rótulos descrevem o tema ou objetivo.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:G130",
-              "title": "Fornecer cabeçalhos descritivos"
-            },
-            {
-              "id": "TECH:G131",
-              "title": "Fornecer rótulos descritivos"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": []
-        }
-      ]
-    },
+      "id": "TECH:F89",
+      "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
+    }
+  ]
+}
+]
+},
+{
+  "id": "WCAG2:multiple-ways",
+  "alt_id": ["navigation-mechanisms-mult-loc"],
+  "num": "2.4.5",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AA",
+  "handle": "Várias Formas",
+  "title": "Está disponível mais do que uma forma de localizar uma página Web dentro de um conjunto de páginas Web, exceto quando a página Web é o resultado de, ou um passo num, processo.",
+  "techniques": [
     {
-      "id": "WCAG2:focus-visible",
-      "alt_id": ["navigation-mechanisms-focus-visible"],
-      "num": "2.4.7",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AA",
-      "handle": "Foco Visível",
-      "title": "Qualquer interface de utilizador operável por teclado tem um modo de operação em que o indicador de foco do teclado é visível.",
-      "techniques": [
+      "sufficient": [
         {
-          "sufficient": [
+          "id": "TECH:future-multiple-ways-1",
+          "title": "Usar duas ou mais das seguintes técnicas:",
+          "using": [
             {
-              "id": "TECH:G149",
-              "title": "Usar componentes da interface do utilizador que são realçados pelo agente do utilizador quando recebem foco"
+              "id": "TECH:G125",
+              "title": "Fornecer ligações para navegar para páginas Web relacionadas"
             },
             {
-              "id": "TECH:C15",
-              "title": "Usar CSS para alterar a apresentação de um componente da interface do utilizador quando este recebe foco"
-            },
-            {
-              "id": "TECH:G165",
-              "title": "Usar o indicador de foco predefinido da plataforma para que indicadores de foco predefinidos com elevada visibilidade sejam mantidos"
-            },
-            {
-              "id": "TECH:G195",
-              "title": "Usar um indicador de foco visível fornecido pelo autor"
-            },
-            {
-              "id": "TECH:C40",
-              "title": "Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes"
-            },
-            {
-              "id": "TECH:SCR31",
-              "title": "Usar script para alterar a cor de fundo ou a borda do elemento com foco"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F55",
-              "title": "Falha dos Critérios de Sucesso 2.1.1, 2.4.7 e 3.2.1 devido ao uso de script para remover o foco quando o foco é recebido"
-            },
-            {
-              "id": "TECH:F78",
-              "title": "Falha do Critério de Sucesso 2.4.7 devido a estilizar contornos e bordas de elementos de forma a remover ou tornar não visível o indicador visual de foco"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:location",
-      "alt_id": ["navigation-mechanisms-location"],
-      "num": "2.4.8",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AAA",
-      "handle": "Localização",
-      "title": "Está disponível informação sobre a localização do utilizador dentro de um conjunto de páginas Web.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:G65",
-              "title": "Fornecer um trilho de migalhas de pão (breadcrumbs)"
+              "id": "TECH:G64",
+              "title": "Fornecer um Índice"
             },
             {
               "id": "TECH:G63",
               "title": "Fornecer um mapa do site"
             },
             {
-              "id": "TECH:G128",
-              "title": "Indicar a localização atual dentro de barras de navegação"
+              "id": "TECH:G161",
+              "title": "Fornecer uma função de pesquisa para ajudar os utilizadores a encontrar conteúdo"
             },
             {
-              "id": "TECH:G127",
-              "title": "Identificar a relação de uma página Web com uma coleção maior de páginas Web",
-              "using": [
-                {
-                  "id": "TECH:H59",
-                  "title": "Usar o elemento link e ferramentas de navegação"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:PDF14",
-              "title": "Fornecer cabeçalhos e rodapés correntes em documentos PDF"
+              "id": "TECH:G126",
+              "title": "Fornecer uma lista de ligações para todas as outras páginas Web"
             },
             {
-              "id": "TECH:PDF17",
-              "title": "Especificar numeração de páginas consistente para documentos PDF"
-            }
-          ]
-        },
-        {
-          "failure": []
-        }
-      ]
-    },
-    {
-      "id": "WCAG2:link-purpose-link-only",
-      "alt_id": ["navigation-mechanisms-link"],
-      "num": "2.4.9",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AAA",
-      "handle": "Objetivo da Ligação (Apenas a Ligação)",
-      "title": "Existe um mecanismo disponível para permitir que o objetivo de cada ligação seja identificado apenas a partir do texto da ligação, exceto quando o objetivo da ligação seria ambíguo para os utilizadores em geral.",
-      "techniques": [
-        {
-          "sufficient": [
-            {
-              "id": "TECH:ARIA8",
-              "title": "Usar aria-label para o objetivo da ligação"
-            },
-            {
-              "id": "TECH:G91",
-              "title": "Fornecer texto de ligação que descreva o objetivo de uma ligação"
-            },
-            {
-              "id": "TECH:H30",
-              "title": "Fornecer texto de ligação que descreva o objetivo de uma ligação para elementos âncora"
-            },
-            {
-              "id": "TECH:H24",
-              "title": "Fornecer alternativas textuais para os elementos area de mapas de imagem"
-            },
-            {
-              "id": "TECH:future-link-purpose-link-only-1",
-              "title": "Permitir ao utilizador escolher texto de ligação curto ou longo usando uma das técnicas abaixo:",
-              "using": [
-                {
-                  "id": "TECH:G189",
-                  "title": "Fornecer um controlo perto do início da página Web que altere o texto das ligações"
-                },
-                {
-                  "id": "TECH:SCR30",
-                  "title": "Usar scripts para alterar o texto das ligações"
-                }
-              ]
-            },
-            {
-              "id": "TECH:future-link-purpose-link-only-1",
-              "title": "Fornecer uma descrição suplementar do objetivo de uma ligação usando uma das seguintes técnicas:",
-              "using": [
-                {
-                  "id": "TECH:C7",
-                  "title": "Usar CSS para ocultar uma parte do texto da ligação"
-                }
-              ]
-            },
-            {
-              "id": "TECH:future-link-purpose-link-only-1",
-              "title": "Indicar semanticamente ligações usando uma das seguintes técnicas:",
-              "using": [
-                {
-                  "id": "TECH:PDF11",
-                  "title": "Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF"
-                },
-                {
-                  "id": "TECH:PDF13",
-                  "title": "Fornecer texto de substituição usando a entrada /Alt para ligações em documentos PDF"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "advisory": [
-            {
-              "id": "TECH:H2",
-              "title": "Combinar ligações de imagem e texto adjacentes para o mesmo recurso"
-            },
-            {
-              "id": "TECH:H33",
-              "title": "Complementar o texto da ligação com o atributo title"
-            }
-          ]
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F84",
-              "title": "Falha do Critério de Sucesso 2.4.9 devido ao uso de uma ligação não específica, como \"clique aqui\" ou \"mais\", sem um mecanismo para alterar o texto da ligação para texto específico."
-            },
-            {
-              "id": "TECH:F89",
-              "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
+              "id": "TECH:G185",
+              "title": "Ligar a todas as páginas do site a partir da página inicial"
             }
           ]
         }
       ]
     },
     {
-      "id": "WCAG2:section-headings",
-      "alt_id": ["navigation-mechanisms-headings"],
-      "num": "2.4.10",
-      "versions": ["2.0", "2.1", "2.2"],
-      "level": "AAA",
-      "handle": "Cabeçalhos de Secção",
-      "title": "São usados cabeçalhos de secção para organizar o conteúdo.",
-      "techniques": [
+      "advisory": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:G141",
-              "title": "Organizar uma página usando cabeçalhos"
-            },
-            {
-              "id": "TECH:H69",
-              "title": "Fornecer elementos de cabeçalho no início de cada secção de conteúdo"
-            }
-          ]
+          "id": "TECH:H59",
+          "title": "Usar o elemento link e ferramentas de navegação"
         },
         {
-          "advisory": []
-        },
-        {
-          "failure": []
+          "id": "TECH:PDF2",
+          "title": "Criar marcadores em documentos PDF"
         }
       ]
     },
     {
-      "id": "WCAG2:focus-not-obscured-minimum",
-      "alt_id": [],
-      "num": "2.4.11",
-      "versions": ["2.2"],
-      "level": "AA",
-      "handle": "Foco Não Oculto (Mínimo)",
-      "title": "Quando um componente da interface do utilizador recebe foco do teclado, o componente não fica totalmente oculto devido a conteúdo criado pelo autor.",
-      "techniques": [
+      "failure": []
+    }
+  ]
+},
+{
+  "id": "WCAG2:headings-and-labels",
+  "alt_id": ["navigation-mechanisms-descriptive"],
+  "num": "2.4.6",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AA",
+  "handle": "Cabeçalhos e Rótulos",
+  "title": "Os cabeçalhos e rótulos descrevem o tema ou objetivo.",
+  "techniques": [
+    {
+      "sufficient": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:C43",
-              "title": "Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto"
-            }
-          ]
+          "id": "TECH:G130",
+          "title": "Fornecer cabeçalhos descritivos"
         },
         {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:F110",
-              "title": "Falha do Critério de Sucesso 2.4.11 devido a rodapés ou cabeçalhos fixos (sticky) ocultarem elementos com foco"
-            }
-          ]
+          "id": "TECH:G131",
+          "title": "Fornecer rótulos descritivos"
         }
       ]
     },
     {
-      "id": "WCAG2:focus-not-obscured-enhanced",
-      "alt_id": [],
-      "num": "2.4.12",
-      "versions": ["2.2"],
-      "level": "AAA",
-      "handle": "Foco Não Oculto (Reforçado)",
-      "title": "Quando um componente da interface do utilizador recebe foco do teclado, nenhuma parte do componente fica oculta por conteúdo criado pelo autor.",
-      "techniques": [
+      "advisory": []
+    },
+    {
+      "failure": []
+    }
+  ]
+},
+{
+  "id": "WCAG2:focus-visible",
+  "alt_id": ["navigation-mechanisms-focus-visible"],
+  "num": "2.4.7",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AA",
+  "handle": "Foco Visível",
+  "title": "Qualquer interface de utilizador operável por teclado tem um modo de operação em que o indicador de foco do teclado é visível.",
+  "techniques": [
+    {
+      "sufficient": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:C43",
-              "title": "Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto"
-            }
-          ]
+          "id": "TECH:G149",
+          "title": "Usar componentes da interface do utilizador que são realçados pelo agente do utilizador quando recebem foco"
         },
         {
-          "advisory": []
+          "id": "TECH:C15",
+          "title": "Usar CSS para alterar a apresentação de um componente da interface do utilizador quando este recebe foco"
         },
         {
-          "failure": [
-            {
-              "id": "TECH:future-focus-not-obscured-enhanced-1",
-              "title": "Uma interação que faz com que conteúdo apareça por cima do componente com foco do teclado, cobrindo visualmente parte do indicador de foco. Este comportamento pode ocorrer com publicidade ou material promocional destinado a fornecer mais informação sobre um produto, à medida que o utilizador navega num catálogo."
-            }
-          ]
+          "id": "TECH:G165",
+          "title": "Usar o indicador de foco predefinido da plataforma para que indicadores de foco predefinidos com elevada visibilidade sejam mantidos"
+        },
+        {
+          "id": "TECH:G195",
+          "title": "Usar um indicador de foco visível fornecido pelo autor"
+        },
+        {
+          "id": "TECH:C40",
+          "title": "Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes"
+        },
+        {
+          "id": "TECH:SCR31",
+          "title": "Usar script para alterar a cor de fundo ou a borda do elemento com foco"
         }
       ]
     },
     {
-      "id": "WCAG2:focus-appearance",
-      "alt_id": [],
-      "num": "2.4.13",
-      "versions": ["2.2"],
-      "level": "AAA",
-      "handle": "Aparência do Foco",
-      "title": "Quando o indicador de foco do teclado está visível, uma área do indicador de foco cumpre todos os seguintes:",
-      "techniques": [
+      "advisory": []
+    },
+    {
+      "failure": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:G195",
-              "title": "Usar um indicador de foco visível fornecido pelo autor"
-            },
-            {
-              "id": "TECH:C40",
-              "title": "Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes"
-            },
-            {
-              "id": "TECH:C41",
-              "title": "Criar um indicador de foco forte dentro do componente"
-            }
-          ]
+          "id": "TECH:F55",
+          "title": "Falha dos Critérios de Sucesso 2.1.1, 2.4.7 e 3.2.1 devido ao uso de script para remover o foco quando o foco é recebido"
         },
         {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:future-focus-appearance-1",
-              "title": "Usar uma borda CSS para texto inline que pode quebrar linha (Técnica potencial futura)"
-            }
-          ]
+          "id": "TECH:F78",
+          "title": "Falha do Critério de Sucesso 2.4.7 devido a estilizar contornos e bordas de elementos de forma a remover ou tornar não visível o indicador visual de foco"
         }
       ]
     }
-  ],
-  "techniques": []
+  ]
 },
 {
+  "id": "WCAG2:location",
+  "alt_id": ["navigation-mechanisms-location"],
+  "num": "2.4.8",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Localização",
+  "title": "Está disponível informação sobre a localização do utilizador dentro de um conjunto de páginas Web.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G65",
+          "title": "Fornecer um trilho de migalhas de pão (breadcrumbs)"
+        },
+        {
+          "id": "TECH:G63",
+          "title": "Fornecer um mapa do site"
+        },
+        {
+          "id": "TECH:G128",
+          "title": "Indicar a localização atual dentro de barras de navegação"
+        },
+        {
+          "id": "TECH:G127",
+          "title": "Identificar a relação de uma página Web com uma coleção maior de páginas Web",
+          "using": [
+            {
+              "id": "TECH:H59",
+              "title": "Usar o elemento link e ferramentas de navegação"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "advisory": [
+        {
+          "id": "TECH:PDF14",
+          "title": "Fornecer cabeçalhos e rodapés correntes em documentos PDF"
+        },
+        {
+          "id": "TECH:PDF17",
+          "title": "Especificar numeração de páginas consistente para documentos PDF"
+        }
+      ]
+    },
+    {
+      "failure": []
+    }
+  ]
+},
+{
+  "id": "WCAG2:link-purpose-link-only",
+  "alt_id": ["navigation-mechanisms-link"],
+  "num": "2.4.9",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Objetivo da Ligação (Apenas a Ligação)",
+  "title": "Existe um mecanismo disponível para permitir que o objetivo de cada ligação seja identificado apenas a partir do texto da ligação, exceto quando o objetivo da ligação seria ambíguo para os utilizadores em geral.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:ARIA8",
+          "title": "Usar aria-label para o objetivo da ligação"
+        },
+        {
+          "id": "TECH:G91",
+          "title": "Fornecer texto de ligação que descreva o objetivo de uma ligação"
+        },
+        {
+          "id": "TECH:H30",
+          "title": "Fornecer texto de ligação que descreva o objetivo de uma ligação para elementos âncora"
+        },
+        {
+          "id": "TECH:H24",
+          "title": "Fornecer alternativas textuais para os elementos area de mapas de imagem"
+        },
+        {
+          "id": "TECH:future-link-purpose-link-only-1",
+          "title": "Permitir ao utilizador escolher texto de ligação curto ou longo usando uma das técnicas abaixo:",
+          "using": [
+            {
+              "id": "TECH:G189",
+              "title": "Fornecer um controlo perto do início da página Web que altere o texto das ligações"
+            },
+            {
+              "id": "TECH:SCR30",
+              "title": "Usar scripts para alterar o texto das ligações"
+            }
+          ]
+        },
+        {
+          "id": "TECH:future-link-purpose-link-only-1",
+          "title": "Fornecer uma descrição suplementar do objetivo de uma ligação usando uma das seguintes técnicas:",
+          "using": [
+            {
+              "id": "TECH:C7",
+              "title": "Usar CSS para ocultar uma parte do texto da ligação"
+            }
+          ]
+        },
+        {
+          "id": "TECH:future-link-purpose-link-only-1",
+          "title": "Indicar semanticamente ligações usando uma das seguintes técnicas:",
+          "using": [
+            {
+              "id": "TECH:PDF11",
+              "title": "Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF"
+            },
+            {
+              "id": "TECH:PDF13",
+              "title": "Fornecer texto de substituição usando a entrada /Alt para ligações em documentos PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "advisory": [
+        {
+          "id": "TECH:H2",
+          "title": "Combinar ligações de imagem e texto adjacentes para o mesmo recurso"
+        },
+        {
+          "id": "TECH:H33",
+          "title": "Complementar o texto da ligação com o atributo title"
+        }
+      ]
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F84",
+          "title": "Falha do Critério de Sucesso 2.4.9 devido ao uso de uma ligação não específica, como \"clique aqui\" ou \"mais\", sem um mecanismo para alterar o texto da ligação para texto específico."
+        },
+        {
+          "id": "TECH:F89",
+          "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:section-headings",
+  "alt_id": ["navigation-mechanisms-headings"],
+  "num": "2.4.10",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Cabeçalhos de Secção",
+  "title": "São usados cabeçalhos de secção para organizar o conteúdo.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G141",
+          "title": "Organizar uma página usando cabeçalhos"
+        },
+        {
+          "id": "TECH:H69",
+          "title": "Fornecer elementos de cabeçalho no início de cada secção de conteúdo"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": []
+    }
+  ]
+},
+{
+  "id": "WCAG2:focus-not-obscured-minimum",
+  "alt_id": [],
+  "num": "2.4.11",
+  "versions": ["2.2"],
+  "level": "AA",
+  "handle": "Foco Não Oculto (Mínimo)",
+  "title": "Quando um componente da interface do utilizador recebe foco do teclado, o componente não fica totalmente oculto devido a conteúdo criado pelo autor.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:C43",
+          "title": "Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F110",
+          "title": "Falha do Critério de Sucesso 2.4.11 devido a rodapés ou cabeçalhos fixos (sticky) ocultarem elementos com foco"
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:focus-not-obscured-enhanced",
+  "alt_id": [],
+  "num": "2.4.12",
+  "versions": ["2.2"],
+  "level": "AAA",
+  "handle": "Foco Não Oculto (Reforçado)",
+  "title": "Quando um componente da interface do utilizador recebe foco do teclado, nenhuma parte do componente fica oculta por conteúdo criado pelo autor.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:C43",
+          "title": "Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:future-focus-not-obscured-enhanced-1",
+          "title": "Uma interação que faz com que conteúdo apareça por cima do componente com foco do teclado, cobrindo visualmente parte do indicador de foco. Este comportamento pode ocorrer com publicidade ou material promocional destinado a fornecer mais informação sobre um produto, à medida que o utilizador navega num catálogo."
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "WCAG2:focus-appearance",
+  "alt_id": [],
+  "num": "2.4.13",
+  "versions": ["2.2"],
+  "level": "AAA",
+  "handle": "Aparência do Foco",
+  "title": "Quando o indicador de foco do teclado está visível, uma área do indicador de foco cumpre todos os seguintes:",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G195",
+          "title": "Usar um indicador de foco visível fornecido pelo autor"
+        },
+        {
+          "id": "TECH:C40",
+          "title": "Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes"
+        },
+        {
+          "id": "TECH:C41",
+          "title": "Criar um indicador de foco forte dentro do componente"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:future-focus-appearance-1",
+          "title": "Usar uma borda CSS para texto inline que pode quebrar linha (Técnica potencial futura)"
+        }
+      ]
+    }
+  ]
+}
+],
+"techniques": []
+},
+    {
   "id": "WCAG2:input-modalities",
   "alt_id": [],
   "num": "2.5",
@@ -4040,9 +4035,11 @@
       ]
     }
   ],
-  "techniques": []
-},
-{
+"techniques": []
+}
+   ]
+ },
+  {
   "id": "WCAG2:understandable",
   "num": "3",
   "versions": ["2.0", "2.1", "2.2"],
@@ -4224,206 +4221,204 @@
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "advisory": []
-            },
-            {
-              "failure": []
-            }
-          ]
-        },
+}
+]
+},
+{
+  "advisory": []
+},
+{
+  "failure": []
+}
+]
+},
+{
+  "id": "WCAG2:abbreviations",
+  "alt_id": ["meaning-located"],
+  "num": "3.1.4",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Abreviaturas",
+  "title": "Está disponível um mecanismo para identificar a forma expandida ou o significado de abreviaturas.",
+  "techniques": [
+    {
+      "sufficient": [
         {
-          "id": "WCAG2:abbreviations",
-          "alt_id": ["meaning-located"],
-          "num": "3.1.4",
-          "versions": ["2.0", "2.1", "2.2"],
-          "level": "AAA",
-          "handle": "Abreviaturas",
-          "title": "Está disponível um mecanismo para identificar a forma expandida ou o significado de abreviaturas.",
-          "techniques": [
+          "situations": [
             {
-              "sufficient": [
+              "title": "Situação A: Se a abreviatura tiver apenas um significado na página Web:",
+              "techniques": [
                 {
-                  "situations": [
+                  "id": "TECH:G102",
+                  "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
+                  "using": [
                     {
-                      "title": "Situação A: Se a abreviatura tiver apenas um significado na página Web:",
-                      "techniques": [
-                        {
-                          "id": "TECH:G102",
-                          "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
-                          "using": [
-                            {
-                              "id": "TECH:G97",
-                              "title": "Fornecer a primeira utilização de uma abreviatura imediatamente antes ou depois da forma expandida"
-                            },
-                            {
-                              "id": "TECH:G55",
-                              "title": "Criar ligações para definições"
-                            },
-                            {
-                              "id": "TECH:H28",
-                              "title": "Fornecer definições para abreviaturas usando o elemento abbr"
-                            },
-                            {
-                              "id": "TECH:PDF8",
-                              "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "TECH:G102",
-                          "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
-                          "using": [
-                            {
-                              "id": "TECH:G55",
-                              "title": "Criar ligações para definições"
-                            },
-                            {
-                              "id": "TECH:G62",
-                              "title": "Fornecer um glossário"
-                            },
-                            {
-                              "id": "TECH:G70",
-                              "title": "Fornecer uma funcionalidade para pesquisar num dicionário online"
-                            },
-                            {
-                              "id": "TECH:H28",
-                              "title": "Fornecer definições para abreviaturas usando o elemento abbr"
-                            },
-                            {
-                              "id": "TECH:PDF8",
-                              "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
-                            }
-                          ]
-                        }
-                      ]
+                      "id": "TECH:G97",
+                      "title": "Fornecer a primeira utilização de uma abreviatura imediatamente antes ou depois da forma expandida"
                     },
                     {
-                      "title": "Situação B: Se a abreviatura tiver significados diferentes na mesma página Web:",
-                      "techniques": [
-                        {
-                          "id": "TECH:G102",
-                          "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
-                          "using": [
-                            {
-                              "id": "TECH:G55",
-                              "title": "Criar ligações para definições"
-                            },
-                            {
-                              "id": "TECH:H28",
-                              "title": "Fornecer definições para abreviaturas usando o elemento abbr"
-                            },
-                            {
-                              "id": "TECH:PDF8",
-                              "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
-                            }
-                          ]
-                        }
-                      ]
+                      "id": "TECH:G55",
+                      "title": "Criar ligações para definições"
+                    },
+                    {
+                      "id": "TECH:H28",
+                      "title": "Fornecer definições para abreviaturas usando o elemento abbr"
+                    },
+                    {
+                      "id": "TECH:PDF8",
+                      "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
+                    }
+                  ]
+                },
+                {
+                  "id": "TECH:G102",
+                  "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
+                  "using": [
+                    {
+                      "id": "TECH:G55",
+                      "title": "Criar ligações para definições"
+                    },
+                    {
+                      "id": "TECH:G62",
+                      "title": "Fornecer um glossário"
+                    },
+                    {
+                      "id": "TECH:G70",
+                      "title": "Fornecer uma funcionalidade para pesquisar num dicionário online"
+                    },
+                    {
+                      "id": "TECH:H28",
+                      "title": "Fornecer definições para abreviaturas usando o elemento abbr"
+                    },
+                    {
+                      "id": "TECH:PDF8",
+                      "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
                     }
                   ]
                 }
               ]
             },
             {
-              "advisory": []
-            },
-            {
-              "failure": []
-            }
-          ]
-        },
-        {
-          "id": "WCAG2:reading-level",
-          "alt_id": ["meaning-supplements"],
-          "num": "3.1.5",
-          "versions": ["2.0", "2.1", "2.2"],
-          "level": "AAA",
-          "handle": "Nível de Leitura",
-          "title": "Quando o texto exige capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo, após a remoção de nomes próprios e títulos, está disponível conteúdo suplementar ou uma versão que não exija capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo.",
-          "techniques": [
-            {
-              "sufficient": [
+              "title": "Situação B: Se a abreviatura tiver significados diferentes na mesma página Web:",
+              "techniques": [
                 {
-                  "id": "TECH:G86",
-                  "title": "Fornecer um resumo do texto que possa ser compreendido por pessoas com capacidade de leitura ao nível do ensino básico 3.º ciclo"
-                },
-                {
-                  "id": "TECH:G103",
-                  "title": "Fornecer ilustrações visuais, imagens e símbolos para ajudar a explicar ideias, eventos e processos"
-                },
-                {
-                  "id": "TECH:G79",
-                  "title": "Fornecer uma versão falada do texto"
-                },
-                {
-                  "id": "TECH:G153",
-                  "title": "Tornar o texto mais fácil de ler"
-                },
-                {
-                  "id": "TECH:G160",
-                  "title": "Fornecer versões em língua gestual de informação, ideias e processos que têm de ser compreendidos para usar o conteúdo"
+                  "id": "TECH:G102",
+                  "title": "Fornecer a forma expandida ou a explicação de uma abreviatura",
+                  "using": [
+                    {
+                      "id": "TECH:G55",
+                      "title": "Criar ligações para definições"
+                    },
+                    {
+                      "id": "TECH:H28",
+                      "title": "Fornecer definições para abreviaturas usando o elemento abbr"
+                    },
+                    {
+                      "id": "TECH:PDF8",
+                      "title": "Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura"
+                    }
+                  ]
                 }
               ]
-            },
-            {
-              "advisory": []
-            },
-            {
-              "failure": []
-            }
-          ]
-        },
-        {
-          "id": "WCAG2:pronunciation",
-          "alt_id": ["meaning-pronunciation"],
-          "num": "3.1.6",
-          "versions": ["2.0", "2.1", "2.2"],
-          "level": "AAA",
-          "handle": "Pronúncia",
-          "title": "Está disponível um mecanismo para identificar a pronúncia específica de palavras em que o significado das palavras, no contexto, seja ambíguo sem conhecer a pronúncia.",
-          "techniques": [
-            {
-              "sufficient": [
-                {
-                  "id": "TECH:G120",
-                  "title": "Fornecer a pronúncia imediatamente a seguir à palavra"
-                },
-                {
-                  "id": "TECH:G121",
-                  "title": "Criar ligações para pronúncias"
-                },
-                {
-                  "id": "TECH:G62",
-                  "title": "Fornecer um glossário"
-                },
-                {
-                  "id": "TECH:G163",
-                  "title": "Usar marcas diacríticas padrão que possam ser desativadas"
-                },
-                {
-                  "id": "TECH:H62",
-                  "title": "Usar o elemento ruby"
-                }
-              ]
-            },
-            {
-              "advisory": []
-            },
-            {
-              "failure": []
             }
           ]
         }
-      ],
-      "techniques": []
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": []
     }
   ]
 },
 {
+  "id": "WCAG2:reading-level",
+  "alt_id": ["meaning-supplements"],
+  "num": "3.1.5",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Nível de Leitura",
+  "title": "Quando o texto exige capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo, após a remoção de nomes próprios e títulos, está disponível conteúdo suplementar ou uma versão que não exija capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G86",
+          "title": "Fornecer um resumo do texto que possa ser compreendido por pessoas com capacidade de leitura ao nível do ensino básico 3.º ciclo"
+        },
+        {
+          "id": "TECH:G103",
+          "title": "Fornecer ilustrações visuais, imagens e símbolos para ajudar a explicar ideias, eventos e processos"
+        },
+        {
+          "id": "TECH:G79",
+          "title": "Fornecer uma versão falada do texto"
+        },
+        {
+          "id": "TECH:G153",
+          "title": "Tornar o texto mais fácil de ler"
+        },
+        {
+          "id": "TECH:G160",
+          "title": "Fornecer versões em língua gestual de informação, ideias e processos que têm de ser compreendidos para usar o conteúdo"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": []
+    }
+  ]
+},
+{
+  "id": "WCAG2:pronunciation",
+  "alt_id": ["meaning-pronunciation"],
+  "num": "3.1.6",
+  "versions": ["2.0", "2.1", "2.2"],
+  "level": "AAA",
+  "handle": "Pronúncia",
+  "title": "Está disponível um mecanismo para identificar a pronúncia específica de palavras em que o significado das palavras, no contexto, seja ambíguo sem conhecer a pronúncia.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G120",
+          "title": "Fornecer a pronúncia imediatamente a seguir à palavra"
+        },
+        {
+          "id": "TECH:G121",
+          "title": "Criar ligações para pronúncias"
+        },
+        {
+          "id": "TECH:G62",
+          "title": "Fornecer um glossário"
+        },
+        {
+          "id": "TECH:G163",
+          "title": "Usar marcas diacríticas padrão que possam ser desativadas"
+        },
+        {
+          "id": "TECH:H62",
+          "title": "Usar o elemento ruby"
+        }
+      ]
+    },
+    {
+      "advisory": []
+    },
+    {
+      "failure": []
+    }
+  ]
+}
+],
+"techniques": []
+},
+    {
   "id": "WCAG2:predictable",
   "alt_id": ["consistent-behavior"],
   "num": "3.2",
@@ -4718,41 +4713,41 @@
           ]
         }
       ]
+},
+{
+  "id": "WCAG2:consistent-help",
+  "alt_id": [],
+  "num": "3.2.6",
+  "versions": ["2.2"],
+  "level": "A",
+  "handle": "Ajuda Consistente",
+  "title": "Se uma página Web contiver algum dos seguintes mecanismos de ajuda, e esses mecanismos se repetirem em várias páginas Web dentro de um conjunto de páginas Web, surgem na mesma ordem relativa em relação a outro conteúdo da página, exceto se uma alteração for iniciada pelo utilizador:",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "id": "TECH:G220",
+          "title": "Fornecer uma ligação para \"contacte-nos\" numa localização consistente"
+        }
+      ]
     },
     {
-      "id": "WCAG2:consistent-help",
-      "alt_id": [],
-      "num": "3.2.6",
-      "versions": ["2.2"],
-      "level": "A",
-      "handle": "Ajuda Consistente",
-      "title": "Se uma página Web contiver algum dos seguintes mecanismos de ajuda, e esses mecanismos se repetirem em várias páginas Web dentro de um conjunto de páginas Web, surgem na mesma ordem relativa em relação a outro conteúdo da página, exceto se uma alteração for iniciada pelo utilizador:",
-      "techniques": [
+      "advisory": []
+    },
+    {
+      "failure": [
         {
-          "sufficient": [
-            {
-              "id": "TECH:G220",
-              "title": "Fornecer uma ligação para \"contacte-nos\" numa localização consistente"
-            }
-          ]
-        },
-        {
-          "advisory": []
-        },
-        {
-          "failure": [
-            {
-              "id": "TECH:future-consistent-help-1",
-              "title": "Localização de ajuda inconsistente"
-            }
-          ]
+          "id": "TECH:future-consistent-help-1",
+          "title": "Localização de ajuda inconsistente"
         }
       ]
     }
-  ],
-  "techniques": []
+  ]
+}
+],
+"techniques": []
 },
-{
+    {
   "id": "WCAG2:input-assistance",
   "alt_id": ["minimize-error"],
   "num": "3.3",
@@ -5380,9 +5375,11 @@
       ]
     }
   ],
-  "techniques": []
+"techniques": []
 },
-{
+   ]
+  },
+  {
   "id": "WCAG2:robust",
   "num": "4",
   "versions": ["2.0", "2.1", "2.2"],
@@ -5575,177 +5572,176 @@
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "advisory": []
-            },
-            {
-              "failure": [
-                {
-                  "id": "TECH:F59",
-                  "title": "Falha do Critério de Sucesso 4.1.2 devido ao uso de script para tornar uma div ou span num controlo de interface do utilizador em HTML sem fornecer um papel para o controlo"
-                },
-                {
-                  "id": "TECH:F15",
-                  "title": "Falha do Critério de Sucesso 4.1.2 devido à implementação de controlos personalizados que não usam uma API de acessibilidade para a tecnologia, ou que a usam de forma incompleta"
-                },
-                {
-                  "id": "TECH:F20",
-                  "title": "Falha dos Critérios de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
-                },
-                {
-                  "id": "TECH:F68",
-                  "title": "Falha do Critério de Sucesso 4.1.2 devido a um controlo da interface do utilizador não ter um nome determinável programaticamente"
-                },
-                {
-                  "id": "TECH:F79",
-                  "title": "Falha do Critério de Sucesso 4.1.2 devido ao estado de foco de um componente da interface do utilizador não ser determinável programaticamente ou não existir notificação de alteração do estado de foco disponível"
-                },
-                {
-                  "id": "TECH:F86",
-                  "title": "Falha do Critério de Sucesso 4.1.2 devido a não fornecer nomes para cada parte de um campo de formulário com várias partes, como um número de telefone dos EUA"
-                },
-                {
-                  "id": "TECH:F89",
-                  "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
-                }
-              ]
-            }
-          ]
-        },
+}
+]
+},
+{
+  "advisory": []
+},
+{
+  "failure": [
+    {
+      "id": "TECH:F59",
+      "title": "Falha do Critério de Sucesso 4.1.2 devido ao uso de script para tornar uma div ou span num controlo de interface do utilizador em HTML sem fornecer um papel para o controlo"
+    },
+    {
+      "id": "TECH:F15",
+      "title": "Falha do Critério de Sucesso 4.1.2 devido à implementação de controlos personalizados que não usam uma API de acessibilidade para a tecnologia, ou que a usam de forma incompleta"
+    },
+    {
+      "id": "TECH:F20",
+      "title": "Falha dos Critérios de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
+    },
+    {
+      "id": "TECH:F68",
+      "title": "Falha do Critério de Sucesso 4.1.2 devido a um controlo da interface do utilizador não ter um nome determinável programaticamente"
+    },
+    {
+      "id": "TECH:F79",
+      "title": "Falha do Critério de Sucesso 4.1.2 devido ao estado de foco de um componente da interface do utilizador não ser determinável programaticamente ou não existir notificação de alteração do estado de foco disponível"
+    },
+    {
+      "id": "TECH:F86",
+      "title": "Falha do Critério de Sucesso 4.1.2 devido a não fornecer nomes para cada parte de um campo de formulário com várias partes, como um número de telefone dos EUA"
+    },
+    {
+      "id": "TECH:F89",
+      "title": "Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação"
+    }
+  ]
+}
+]
+},
         {
-          "id": "WCAG2:status-messages",
-          "alt_id": [],
-          "num": "4.1.3",
-          "versions": ["2.1", "2.2"],
-          "level": "AA",
-          "handle": "Mensagens de Estado",
-          "title": "Em conteúdo implementado utilizando linguagens de marcação, as mensagens de estado podem ser determinadas programaticamente através de papel ou propriedades, de forma a poderem ser apresentadas ao utilizador por tecnologias de apoio sem receberem foco.",
-          "techniques": [
+  "id": "WCAG2:status-messages",
+  "alt_id": [],
+  "num": "4.1.3",
+  "versions": ["2.1", "2.2"],
+  "level": "AA",
+  "handle": "Mensagens de Estado",
+  "title": "Em conteúdo implementado utilizando linguagens de marcação, as mensagens de estado podem ser determinadas programaticamente através de papel ou propriedades, de forma a poderem ser apresentadas ao utilizador por tecnologias de apoio sem receberem foco.",
+  "techniques": [
+    {
+      "sufficient": [
+        {
+          "situations": [
             {
-              "sufficient": [
+              "title": "Situação A: Se uma mensagem de estado aconselha sobre o sucesso ou resultados de uma ação, ou o estado de uma aplicação:",
+              "techniques": [
                 {
-                  "situations": [
+                  "id": "TECH:ARIA22",
+                  "title": "Usar role=status para apresentar mensagens de estado",
+                  "using": [
                     {
-                      "title": "Situação A: Se uma mensagem de estado aconselha sobre o sucesso ou resultados de uma ação, ou o estado de uma aplicação:",
-                      "techniques": [
-                        {
-                          "id": "TECH:ARIA22",
-                          "title": "Usar role=status para apresentar mensagens de estado",
-                          "using": [
-                            {
-                              "id": "TECH:G199",
-                              "title": "Fornecer feedback de sucesso quando os dados são submetidos com êxito"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Situação B: Se uma mensagem de estado transmite uma sugestão, ou um aviso sobre a existência de um erro:",
-                      "techniques": [
-                        {
-                          "id": "TECH:ARIA19",
-                          "title": "Usar o papel ARIA role=alert ou Live Regions para identificar erros",
-                          "using": [
-                            {
-                              "id": "TECH:G83",
-                              "title": "Fornecer descrições de texto para identificar campos obrigatórios que não foram preenchidos"
-                            },
-                            {
-                              "id": "TECH:G84",
-                              "title": "Fornecer uma descrição de texto quando o utilizador fornece informação que não está na lista de valores permitidos"
-                            },
-                            {
-                              "id": "TECH:G85",
-                              "title": "Fornecer uma descrição de texto quando a entrada do utilizador está fora do formato exigido ou dos valores exigidos"
-                            },
-                            {
-                              "id": "TECH:G177",
-                              "title": "Fornecer texto com correções sugeridas"
-                            },
-                            {
-                              "id": "TECH:G194",
-                              "title": "Fornecer verificação ortográfica e sugestões para entrada de texto"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Situação C: Se uma mensagem de estado transmite informação sobre o progresso de um processo:",
-                      "techniques": [
-                        {
-                          "id": "TECH:ARIA23",
-                          "title": "Usar role=log para identificar atualizações sequenciais de informação"
-                        },
-                        {
-                          "id": "TECH:future-status-messages-1",
-                          "title": "Usar role=\"progressbar\" (ligação futura)"
-                        },
-                        {
-                          "and": [
-                            {
-                              "id": "TECH:ARIA22",
-                              "title": "Usar role=status para apresentar mensagens de estado"
-                            },
-                            {
-                              "id": "TECH:G193",
-                              "title": "Fornecer ajuda por um assistente na página Web"
-                            }
-                          ]
-                        }
-                      ]
+                      "id": "TECH:G199",
+                      "title": "Fornecer feedback de sucesso quando os dados são submetidos com êxito"
                     }
                   ]
                 }
               ]
             },
             {
-              "advisory": [
+              "title": "Situação B: Se uma mensagem de estado transmite uma sugestão, ou um aviso sobre a existência de um erro:",
+              "techniques": [
                 {
-                  "id": "TECH:future-status-messages-1",
-                  "title": "Usar regiões aria-live com clientes de chat (ligação futura)"
-                },
-                {
-                  "id": "TECH:future-status-messages-1",
-                  "title": "Usar role=\"marquee\" (ligação futura)"
-                },
-                {
-                  "id": "TECH:future-status-messages-1",
-                  "title": "Usar role=\"timer\" (ligação futura)"
-                },
-                {
-                  "id": "TECH:ARIA18",
-                  "title": "Usar aria-alertdialog para identificar erros"
-                },
-                {
-                  "id": "TECH:SCR14",
-                  "title": "Usar scripts para tornar alertas não essenciais opcionais"
+                  "id": "TECH:ARIA19",
+                  "title": "Usar o papel ARIA role=alert ou Live Regions para identificar erros",
+                  "using": [
+                    {
+                      "id": "TECH:G83",
+                      "title": "Fornecer descrições de texto para identificar campos obrigatórios que não foram preenchidos"
+                    },
+                    {
+                      "id": "TECH:G84",
+                      "title": "Fornecer uma descrição de texto quando o utilizador fornece informação que não está na lista de valores permitidos"
+                    },
+                    {
+                      "id": "TECH:G85",
+                      "title": "Fornecer uma descrição de texto quando a entrada do utilizador está fora do formato exigido ou dos valores exigidos"
+                    },
+                    {
+                      "id": "TECH:G177",
+                      "title": "Fornecer texto com correções sugeridas"
+                    },
+                    {
+                      "id": "TECH:G194",
+                      "title": "Fornecer verificação ortográfica e sugestões para entrada de texto"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "failure": [
+              "title": "Situação C: Se uma mensagem de estado transmite informação sobre o progresso de um processo:",
+              "techniques": [
                 {
-                  "id": "TECH:F103",
-                  "title": "Falha do Critério de Sucesso 4.1.3 devido a fornecer mensagens de estado que não podem ser determinadas programaticamente através de papel ou propriedades"
+                  "id": "TECH:ARIA23",
+                  "title": "Usar role=log para identificar atualizações sequenciais de informação"
                 },
                 {
                   "id": "TECH:future-status-messages-1",
-                  "title": "Usar role=\"alert\" ou aria-live=\"assertive\" em conteúdo que não é importante e é sensível ao tempo (ligação futura)"
+                  "title": "Usar role=\"progressbar\" (ligação futura)"
+                },
+                {
+                  "and": [
+                    {
+                      "id": "TECH:ARIA22",
+                      "title": "Usar role=status para apresentar mensagens de estado"
+                    },
+                    {
+                      "id": "TECH:G193",
+                      "title": "Fornecer ajuda por um assistente na página Web"
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
+      ]
+    },
+    {
+      "advisory": [
+        {
+          "id": "TECH:future-status-messages-1",
+          "title": "Usar regiões aria-live com clientes de chat (ligação futura)"
+        },
+        {
+          "id": "TECH:future-status-messages-1",
+          "title": "Usar role=\"marquee\" (ligação futura)"
+        },
+        {
+          "id": "TECH:future-status-messages-1",
+          "title": "Usar role=\"timer\" (ligação futura)"
+        },
+        {
+          "id": "TECH:ARIA18",
+          "title": "Usar aria-alertdialog para identificar erros"
+        },
+        {
+          "id": "TECH:SCR14",
+          "title": "Usar scripts para tornar alertas não essenciais opcionais"
+        }
+      ]
+    },
+    {
+      "failure": [
+        {
+          "id": "TECH:F103",
+          "title": "Falha do Critério de Sucesso 4.1.3 devido a fornecer mensagens de estado que não podem ser determinadas programaticamente através de papel ou propriedades"
+        },
+        {
+          "id": "TECH:future-status-messages-1",
+          "title": "Usar role=\"alert\" ou aria-live=\"assertive\" em conteúdo que não é importante e é sensível ao tempo (ligação futura)"
+        }
+      ]
+    }
+  ]
+}
       ],
       "techniques": []
     }
   ]
 }
- ]
+]
 }
-	
