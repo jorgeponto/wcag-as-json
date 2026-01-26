@@ -5,7 +5,9 @@ import datetime
 
 ROOT = Path(__file__).resolve().parent.parent
 
-INPUT_JSON = ROOT / "wcag_pt-PT.json"
+# ✅ Novo ficheiro de input (W3C)
+INPUT_JSON = ROOT / "data" / "wcag_w3c.json"
+
 OUTPUT_DIR = ROOT / "docs"
 OUTPUT_HTML = OUTPUT_DIR / "index.html"
 
@@ -40,6 +42,9 @@ def render_value(v):
 
 
 def main():
+    if not INPUT_JSON.exists():
+        raise FileNotFoundError(f"Não existe o ficheiro: {INPUT_JSON}")
+
     data = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
 
     generated_at = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%SZ")
@@ -58,11 +63,13 @@ def main():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    input_filename_label = "data/wcag_w3c.json"
+
     # Renderização de fallback (se não encontrarmos uma lista principal)
     if items is None:
         body = f"""
-        <h1>WCAG pt-PT — Revisão</h1>
-        <p class="meta">Gerado em {safe(generated_at)} a partir de <code>wcag_pt-PT.json</code>.</p>
+        <h1>WCAG — Revisão</h1>
+        <p class="meta">Gerado em {safe(generated_at)} a partir de <code>{safe(input_filename_label)}</code>.</p>
         <p class="warn">Não foi possível inferir uma lista principal de itens. A mostrar o JSON completo.</p>
         <details open>
           <summary>JSON completo</summary>
@@ -112,8 +119,8 @@ def main():
             )
 
         body = f"""
-        <h1>WCAG pt-PT — Revisão</h1>
-        <p class="meta">Gerado em {safe(generated_at)} a partir de <code>wcag_pt-PT.json</code>.</p>
+        <h1>WCAG — Revisão</h1>
+        <p class="meta">Gerado em {safe(generated_at)} a partir de <code>{safe(input_filename_label)}</code>.</p>
 
         <div class="toolbar">
           <label for="q">Pesquisar</label>
@@ -131,143 +138,4 @@ def main():
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WCAG pt-PT — Revisão</title>
-  <style>
-    :root {{
-      --bg: #ffffff;
-      --fg: #111;
-      --muted: #666;
-      --border: #ddd;
-      --card: #fafafa;
-      --focus: #005fcc;
-      --warn: #8a2a00;
-      --max: 1100px;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }}
-    body {{
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.5;
-    }}
-    header, main, .toolbar {{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 16px;
-    }}
-    h1 {{
-      font-size: 1.8rem;
-      margin: 0 0 8px 0;
-    }}
-    .meta {{
-      margin: 0 0 16px 0;
-      color: var(--muted);
-    }}
-    .toolbar {{
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      display: grid;
-      gap: 8px;
-    }}
-    label {{
-      font-weight: 600;
-    }}
-    input[type="search"] {{
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      font-size: 1rem;
-    }}
-    input[type="search"]:focus {{
-      outline: 3px solid rgba(0, 95, 204, .35);
-      border-color: var(--focus);
-    }}
-    .hint {{
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }}
-    .warn {{
-      color: var(--warn);
-      font-weight: 600;
-    }}
-    .card {{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px;
-      margin: 12px 0;
-    }}
-    .card-header h2 {{
-      font-size: 1.25rem;
-      margin: 0;
-    }}
-    .subtitle {{
-      margin: 6px 0 0 0;
-      color: var(--muted);
-    }}
-    table.kv {{
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }}
-    table.kv th {{
-      text-align: left;
-      vertical-align: top;
-      width: 220px;
-      padding: 8px 10px;
-      border-top: 1px solid var(--border);
-      color: #222;
-      font-weight: 700;
-    }}
-    table.kv td {{
-      padding: 8px 10px;
-      border-top: 1px solid var(--border);
-    }}
-    .muted {{
-      color: var(--muted);
-    }}
-    ul.inline-list {{
-      margin: 0;
-      padding-left: 18px;
-    }}
-    pre {{
-      white-space: pre-wrap;
-      word-break: break-word;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px;
-      overflow: auto;
-    }}
-  </style>
-</head>
-<body>
-  {body}
-
-  <script>
-    (function() {{
-      const q = document.getElementById('q');
-      const cards = document.getElementById('cards');
-      if (!q || !cards) return;
-
-      const items = Array.from(cards.querySelectorAll('.card'));
-      q.addEventListener('input', () => {{
-        const term = (q.value || '').trim().toLowerCase();
-        for (const el of items) {{
-          const text = el.innerText.toLowerCase();
-          el.style.display = term === '' || text.includes(term) ? '' : 'none';
-        }}
-      }});
-    }})();
-  </script>
-</body>
-</html>
-"""
-
-    OUTPUT_HTML.write_text(html_doc, encoding="utf-8")
-    print(f"OK: gerado {OUTPUT_HTML}")
-
-
-if __name__ == "__main__":
-    main()
+  <titl
