@@ -4,210 +4,152 @@ import html
 import datetime
 
 ROOT = Path(__file__).resolve().parent.parent
-
 INPUT_JSON = ROOT / "data" / "wcag_w3c.json"
 OUTPUT_DIR = ROOT / "docs"
 OUTPUT_HTML = OUTPUT_DIR / "index.html"
 
 
-# -------------------------
-# Helpers
-# -------------------------
-
-def safe(value):
-    if value is None:
+def esc(s):
+    if s is None:
         return ""
-    return html.escape(str(value), quote=True)
+    return html.escape(str(s), quote=True)
 
 
-def render_text_block(text):
-    if not text:
+def render_details(details):
+    if not details:
         return ""
-    return f"<p>{safe(text)}</p>"
+    out = []
+    for block in details:
+        if block.get("type") == "ulist":
+            items = "".join(
+                f"<li><strong>{esc(i.get('handle'))}:</strong> {esc(i.get('text'))}</li>"
+                for i in block.get("items", [])
+            )
+            out.append(f"<ul>{items}</ul>")
+    return "".join(out)
 
 
-def render_list(items):
-    if not items:
-        return "<p class='muted'>—</p>"
-    lis = "".join(f"<li>{safe(i)}</li>" for i in items)
-    return f"<ul>{lis}</ul>"
+def render_technique_item(t):
+    if "and" in t:
+        return "<ul>" + "".join(render_technique_item(x) for x in t["and"]) + "</ul>"
 
+    title = esc(t.get("title", ""))
+    tid = esc(t.get("id", ""))
+    using = t.get("using")
 
-# -------------------------
-# Renderização de técnicas
-# -------------------------
-
-def render_technique(t):
-    title = safe(t.get("title", ""))
-    tid = safe(t.get("id", ""))
-
-    body = ""
-    if "using" in t:
-        body = "<div class='using'>" + render_techniques(t["using"]) + "</div>"
-
-    return f"""
-    <li>
-      <strong>{tid}</strong> — {title}
-      {body}
-    </li>
-    """
+    html_out = f"<li><code>{tid}</code> — {title}"
+    if using:
+        html_out += "<ul>" + "".join(render_technique_item(u) for u in using) + "</ul>"
+    html_out += "</li>"
+    return html_out
 
 
 def render_techniques(techniques):
     if not techniques:
-        return "<p class='muted'>—</p>"
-
-    out = "<ul>"
-    for t in techniques:
-        if "and" in t:
-            out += "<li><em>Todos:</em><ul>"
-            for sub in t["and"]:
-                out += render_technique(sub)
-            out += "</ul></li>"
-        elif "situations" in t:
-            for s in t["situations"]:
-                out += f"<li><strong>{safe(s.get('title'))}</strong>"
-                out += render_techniques(s.get("techniques", []))
-                out += "</li>"
-        else:
-            out += render_technique(t)
-    out += "</ul>"
-    return out
-
-
-def render_techniques_block(techniques):
-    if not techniques:
         return ""
 
     sections = []
-    for block in techniques:
-        if "sufficient" in block:
+
+    for group in techniques:
+        for kind in ("sufficient", "advisory", "failure"):
+            items = group.get(kind)
+            if not items:
+                continue
+
+            blocks = []
+            for item in items:
+                if "situations" in item:
+                    for s in item["situations"]:
+                        blocks.append(f"<h5>{esc(s.get('title'))}</h5>")
+                        blocks.append(
+                            "<ul>" +
+                            "".join(render_technique_item(t) for t in s.get("techniques", [])) +
+                            "</ul>"
+                        )
+                else:
+                    blocks.append("<ul>" + render_technique_item(item) + "</ul>")
+
             sections.append(
-                "<section><h5>Técnicas suficientes</h5>"
-                + render_techniques(block["sufficient"])
-                + "</section>"
-            )
-        if "advisory" in block:
-            sections.append(
-                "<section><h5>Técnicas aconselhadas</h5>"
-                + render_techniques(block["advisory"])
-                + "</section>"
-            )
-        if "failure" in block:
-            sections.append(
-                "<section><h5>Falhas comuns</h5>"
-                + render_techniques(block["failure"])
-                + "</section>"
+                f"""
+                <details>
+                  <summary>{kind.capitalize()}</summary>
+                  {''.join(blocks)}
+                </details>
+                """
             )
 
     return "".join(sections)
 
 
-# -------------------------
-# Critérios de Sucesso
-# -------------------------
-
-def render_success_criterion(sc):
-    details_html = ""
-    if "details" in sc:
-        for d in sc["details"]:
-            if d.get("type") == "ulist":
-                details_html += render_list(
-                    [i.get("text", "") for i in d.get("items", [])]
-                )
-
+def render_criterion(c):
     return f"""
-    <article class="criterion" id="{safe(sc.get('num'))}">
-      <h4>{safe(sc.get('num'))} — {safe(sc.get('handle'))}</h4>
-      <p class="level">Nível {safe(sc.get('level', ''))}</p>
-      {render_text_block(sc.get('title'))}
-      {details_html}
-      {render_techniques_block(sc.get('techniques', []))}
+    <article class="criterion" id="{esc(c.get('num'))}">
+      <h4>{esc(c.get('num'))} — {esc(c.get('handle'))} <span class="level">{esc(c.get('level'))}</span></h4>
+      <p>{esc(c.get('title'))}</p>
+
+      {render_details(c.get("details"))}
+      {render_techniques(c.get("techniques"))}
     </article>
     """
 
 
-# -------------------------
-# Diretrizes
-# -------------------------
-
 def render_guideline(g):
-    criteria = "".join(
-        render_success_criterion(sc)
-        for sc in g.get("successcriteria", [])
-    )
-
+    criteria = "".join(render_criterion(c) for c in g.get("successcriteria", []))
     return f"""
-    <section class="guideline" id="{safe(g.get('num'))}">
-      <h3>{safe(g.get('num'))} — {safe(g.get('handle'))}</h3>
-      {render_text_block(g.get('title'))}
+    <section class="guideline" id="{esc(g.get('num'))}">
+      <h3>{esc(g.get('num'))} — {esc(g.get('handle'))}</h3>
+      <p>{esc(g.get('title'))}</p>
       {criteria}
     </section>
     """
 
 
-# -------------------------
-# Princípio
-# -------------------------
-
 def render_principle(p):
-    guidelines_html = "".join(
-        render_guideline(g) for g in p.get("guidelines", [])
-    )
-
+    guidelines = "".join(render_guideline(g) for g in p.get("guidelines", []))
     return f"""
-    <section class="principle" id="{safe(p.get('num'))}">
-      <h2>{safe(p.get('num'))} — {safe(p.get('handle'))}</h2>
-      {render_text_block(p.get('title'))}
-      {guidelines_html}
+    <section class="principle" id="{esc(p.get('num'))}">
+      <h2>{esc(p.get('num'))} — {esc(p.get('handle'))}</h2>
+      <p>{esc(p.get('title'))}</p>
+      {guidelines}
     </section>
     """
 
 
-# -------------------------
-# Main
-# -------------------------
-
 def main():
-    if not INPUT_JSON.exists():
-        raise FileNotFoundError(INPUT_JSON)
-
     data = json.loads(INPUT_JSON.read_text(encoding="utf-8"))
+    principles = data.get("principles", [])
 
     generated_at = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%SZ")
 
+    content = "".join(render_principle(p) for p in principles)
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    content = render_principle(data)
-
-    html_doc = f"""<!doctype html>
+    OUTPUT_HTML.write_text(f"""<!doctype html>
 <html lang="pt-PT">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>WCAG — Revisão</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {{ font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem; }}
     h1, h2, h3, h4 {{ line-height: 1.25; }}
-    .muted {{ color: #666; }}
-    .level {{ font-weight: bold; }}
-    section {{ margin-bottom: 2rem; }}
-    article {{ border-left: 4px solid #ddd; padding-left: 1rem; margin-bottom: 1.5rem; }}
-    ul {{ margin-left: 1.5rem; }}
+    .level {{ font-weight: bold; margin-left: .5rem; }}
+    section {{ margin-bottom: 2.5rem; }}
+    article {{ border-left: 4px solid #ddd; padding-left: 1rem; margin: 1.5rem 0; }}
+    details {{ margin: 1rem 0; }}
   </style>
 </head>
 <body>
 
 <h1>WCAG — Revisão</h1>
-<p class="muted">Gerado em {safe(generated_at)} a partir de <code>data/wcag_w3c.json</code></p>
+<p><small>Gerado em {esc(generated_at)} a partir de <code>data/wcag_w3c.json</code></small></p>
 
 {content}
 
 </body>
 </html>
-"""
-
-    OUTPUT_HTML.write_text(html_doc, encoding="utf-8")
+""", encoding="utf-8")
 
 
 if __name__ == "__main__":
