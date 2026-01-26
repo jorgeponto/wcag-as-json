@@ -1,29 +1,1670 @@
 <!doctype html>
 <html lang="pt-PT">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>WCAG — Revisão</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { font-family: system-ui, sans-serif; line-height: 1.6; margin: 2rem; }
     h1, h2, h3, h4 { line-height: 1.25; }
-    .muted { color: #666; }
-    .level { font-weight: bold; }
-    section { margin-bottom: 2rem; }
-    article { border-left: 4px solid #ddd; padding-left: 1rem; margin-bottom: 1.5rem; }
-    ul { margin-left: 1.5rem; }
+    .level { font-weight: bold; margin-left: .5rem; }
+    section { margin-bottom: 2.5rem; }
+    article { border-left: 4px solid #ddd; padding-left: 1rem; margin: 1.5rem 0; }
+    details { margin: 1rem 0; }
   </style>
 </head>
 <body>
 
 <h1>WCAG — Revisão</h1>
-<p class="muted">Gerado em 2026-01-26 23:05:36Z a partir de <code>data/wcag_w3c.json</code></p>
+<p><small>Gerado em 2026-01-26 23:18:01Z a partir de <code>data/wcag_w3c.json</code></small></p>
 
 
-    <section class="principle" id="">
-      <h2> — </h2>
+    <section class="principle" id="1">
+      <h2>1 — Perceptível</h2>
+      <p>A informação e os componentes da interface do utilizador devem ser apresentáveis aos utilizadores de formas que eles possam percecionar.</p>
+      
+    <section class="guideline" id="1.1">
+      <h3>1.1 — Alternativas Textuais</h3>
+      <p>Fornecer alternativas textuais para qualquer conteúdo não textual, de modo a que possa ser convertido noutras formas de que as pessoas necessitem, tais como caracteres de grande dimensão, braille, voz, símbolos ou linguagem mais simples.</p>
+      
+    <article class="criterion" id="1.1.1">
+      <h4>1.1.1 — Conteúdo Não Textual <span class="level">A</span></h4>
+      <p>Todo o conteúdo não textual apresentado ao utilizador tem uma alternativa textual que serve o mesmo propósito equivalente, exceto nas situações listadas abaixo.</p>
+
+      <ul><li><strong>Controlos, Entrada:</strong> Se o conteúdo não textual for um controlo ou aceitar entrada do utilizador, então tem um nome que descreve o seu propósito. (Consultar o Critério de Sucesso 4.1.2 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada do utilizador.)</li><li><strong>Multimédia Baseada no Tempo:</strong> Se o conteúdo não textual for multimédia baseada no tempo, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual. (Consultar a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)</li><li><strong>Teste:</strong> Se o conteúdo não textual for um teste ou exercício que seria inválido se apresentado em texto, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual.</li><li><strong>Sensorial:</strong> Se o conteúdo não textual se destinar principalmente a criar uma experiência sensorial específica, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual.</li><li><strong>CAPTCHA:</strong> Se o propósito do conteúdo não textual for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas textuais que identificam e descrevem o propósito do conteúdo não textual, bem como formas alternativas de CAPTCHA, usando modos de saída para diferentes tipos de perceção sensorial, para acomodar diferentes deficiências.</li><li><strong>Decoração, Formatação, Invisível:</strong> Se o conteúdo não textual for puramente decorativo, for usado apenas para formatação visual ou não for apresentado aos utilizadores, então é implementado de forma a poder ser ignorado por tecnologias de apoio.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se uma descrição curta puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não textual:</h5><ul><li><code>TECH:G94</code> — Fornecer uma alternativa textual curta para conteúdo não textual que sirva o mesmo propósito e apresente a mesma informação que o conteúdo não textual</li><li><code>TECH:ARIA6</code> — Usar aria-label para fornecer rótulos para objetos</li><li><code>TECH:ARIA10</code> — Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual</li><li><code>TECH:G196</code> — Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo</li><li><code>TECH:H2</code> — Combinar ligações adjacentes de imagem e texto para o mesmo recurso</li><li><code>TECH:H37</code> — Usar atributos alt em elementos img</li><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li><li><code>TECH:H86</code> — Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak</li><li><code>TECH:PDF1</code> — Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF</li></ul><h5>Situação B: Se uma descrição curta não puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não textual (por exemplo, um gráfico ou diagrama):</h5><ul><li><code>TECH:G95</code> — Fornecer alternativas textuais curtas que forneçam uma breve descrição do conteúdo não textual</li><li><code>TECH:ARIA6</code> — Usar aria-label para fornecer rótulos para objetos</li><li><code>TECH:ARIA10</code> — Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual</li><li><code>TECH:G196</code> — Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo</li><li><code>TECH:H2</code> — Combinar ligações adjacentes de imagem e texto para o mesmo recurso</li><li><code>TECH:H35</code> — </li><li><code>TECH:H37</code> — Usar atributos alt em elementos img</li><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li><li><code>TECH:H86</code> — Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak</li><li><code>TECH:PDF1</code> — Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF</li><li><code>TECH:ARIA15</code> — Usar aria-describedby para fornecer descrições de imagens</li><li><code>TECH:G73</code> — Fornecer uma descrição longa noutro local, com uma ligação para essa descrição imediatamente adjacente ao conteúdo não textual</li><li><code>TECH:G74</code> — Fornecer uma descrição longa em texto perto do conteúdo não textual, com uma referência à localização da descrição longa na descrição curta</li><li><code>TECH:G92</code> — Fornecer uma descrição longa para conteúdo não textual que sirva o mesmo propósito e apresente a mesma informação</li><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li></ul><h5>Situação C: Se o conteúdo não textual for um controlo ou aceitar entrada do utilizador:</h5><ul><li><code>TECH:G82</code> — Fornecer uma alternativa textual que identifique o propósito do conteúdo não textual</li><li><code>TECH:ARIA6</code> — Usar aria-label para fornecer rótulos para objetos</li><li><code>TECH:ARIA9</code> — Usar aria-labelledby para concatenar um rótulo a partir de vários nós de texto</li><li><code>TECH:H24</code> — Fornecer alternativas textuais para elementos area de mapas de imagem</li><li><code>TECH:H30</code> — Fornecer texto de ligação que descreva o propósito de uma ligação para elementos anchor</li><li><code>TECH:H36</code> — Usar atributos alt em imagens usadas como botões de submissão</li><li><code>TECH:H44</code> — Usar o elemento label para associar rótulos de texto a controlos de formulário</li><li><code>TECH:H65</code> — Usar o atributo title para identificar controlos de formulário quando não é possível usar o elemento label</li></ul><h5>Situação D: Se o conteúdo não textual for multimédia baseada no tempo (incluindo vídeo apenas ao vivo e áudio apenas ao vivo); um teste ou exercício que seria inválido se apresentado em texto; ou se se destinar principalmente a criar uma experiência sensorial específica:</h5><ul><li><code>TECH:future-non-text-content-1</code> — Fornecer um rótulo descritivo usando um dos seguintes:</li><li><code>TECH:G68</code> — Fornecer uma alternativa textual curta que descreva o propósito de conteúdo apenas áudio ao vivo e apenas vídeo ao vivo</li><li><code>TECH:G100</code> — Fornecer uma alternativa textual curta que seja o nome aceite ou um nome descritivo do conteúdo não textual</li><li><code>TECH:ARIA6</code> — Usar aria-label para fornecer rótulos para objetos</li><li><code>TECH:ARIA10</code> — Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual</li><li><code>TECH:G196</code> — Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo</li><li><code>TECH:H2</code> — Combinar ligações adjacentes de imagem e texto para o mesmo recurso</li><li><code>TECH:H37</code> — Usar atributos alt em elementos img</li><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li><li><code>TECH:H86</code> — Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak</li><li><code>TECH:PDF1</code> — Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF</li></ul><h5>Situação E: Se o conteúdo não textual for um CAPTCHA:</h5><ul><ul><li><code>TECH:G143</code> — Fornecer uma alternativa textual que descreva o propósito do CAPTCHA</li><li><code>TECH:G144</code> — Garantir que a página Web contém outro CAPTCHA com o mesmo propósito, usando uma modalidade diferente</li></ul></ul><h5>Situação F: Se o conteúdo não textual dever ser ignorado por tecnologias de apoio:</h5><ul><li><code>TECH:future-non-text-content-1</code> — Implementar ou marcar o conteúdo não textual de forma a que seja ignorado por tecnologias de apoio usando um dos seguintes:</li><li><code>TECH:C9</code> — Usar CSS para incluir imagens decorativas</li><li><code>TECH:H67</code> — Usar texto alt vazio e nenhum atributo title em elementos img para imagens que as tecnologias de apoio devem ignorar</li><li><code>TECH:PDF4</code> — Ocultar imagens decorativas com a etiqueta Artifact em documentos PDF</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F3</code> — Falha do Critério de Sucesso 1.1.1 devido ao uso de CSS para incluir imagens que transmitem informação importante</li></ul><ul><li><code>TECH:F13</code> — Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem</li></ul><ul><li><code>TECH:F20</code> — Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual</li></ul><ul><li><code>TECH:F30</code> — Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)</li></ul><ul><li><code>TECH:F38</code> — Falha do Critério de Sucesso 1.1.1 devido a não marcar imagens decorativas em HTML de forma a permitir que as tecnologias de apoio as ignorem</li></ul><ul><li><code>TECH:F39</code> — Falha do Critério de Sucesso 1.1.1 devido a fornecer uma alternativa textual que não é vazia (por exemplo, alt=&quot;spacer&quot; ou alt=&quot;image&quot;) para imagens que devem ser ignoradas por tecnologias de apoio</li></ul><ul><li><code>TECH:F65</code> — Falha do Critério de Sucesso 1.1.1 devido à omissão do atributo alt ou de alternativa textual em elementos img, elementos area e elementos input do tipo &quot;image&quot;</li></ul><ul><li><code>TECH:F67</code> — Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação</li></ul><ul><li><code>TECH:F71</code> — Falha do Critério de Sucesso 1.1.1 devido ao uso de texto semelhante a texto real para representar texto sem fornecer uma alternativa textual</li></ul><ul><li><code>TECH:F72</code> — Falha do Critério de Sucesso 1.1.1 devido ao uso de arte ASCII sem fornecer uma alternativa textual</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="1.2">
+      <h3>1.2 — Multimédia Baseada no Tempo</h3>
+      <p>Fornecer alternativas para multimédia baseada no tempo.</p>
+      
+    <article class="criterion" id="1.2.1">
+      <h4>1.2.1 — Apenas Áudio e Apenas Vídeo (Pré-gravado) <span class="level">A</span></h4>
+      <p>Para multimédia apenas áudio pré-gravado e apenas vídeo pré-gravado, verifica-se o seguinte, exceto quando o áudio ou o vídeo for uma alternativa multimédia ao texto e estiver claramente identificado como tal:</p>
+
+      <ul><li><strong>Apenas Áudio Pré-gravado:</strong> É fornecida uma alternativa para multimédia baseada no tempo que apresenta informação equivalente para conteúdo apenas áudio pré-gravado.</li><li><strong>Apenas Vídeo Pré-gravado:</strong> É fornecida uma alternativa para multimédia baseada no tempo ou uma faixa de áudio que apresenta informação equivalente para conteúdo apenas vídeo pré-gravado.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se o conteúdo for apenas áudio pré-gravado:</h5><ul><li><code>TECH:G158</code> — Fornecer uma alternativa para multimédia baseada no tempo para conteúdo apenas áudio</li></ul><h5>Situação B: Se o conteúdo for apenas vídeo pré-gravado:</h5><ul><li><code>TECH:G159</code> — Fornecer uma alternativa para multimédia baseada no tempo para conteúdo apenas vídeo</li><li><code>TECH:G166</code> — Fornecer áudio que descreva o conteúdo importante do vídeo e identificá-lo como tal</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H96</code> — Usar o elemento track para fornecer audiodescrições</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F30</code> — Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)</li></ul><ul><li><code>TECH:F67</code> — Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.2">
+      <h4>1.2.2 — Legendas (Pré-gravado) <span class="level">A</span></h4>
+      <p>São fornecidas legendas para todo o conteúdo áudio pré-gravado em multimédia sincronizada, exceto quando a multimédia for uma alternativa multimédia ao texto e estiver claramente identificada como tal.</p>
+
       
       
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G93</code> — Fornecer legendas abertas (sempre visíveis)</li></ul><ul><li><code>TECH:G87</code> — Fornecer legendas fechadas</li></ul><ul><li><code>TECH:G87</code> — Fornecer legendas fechadas<ul><li><code>TECH:SM11</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 1.0</li><li><code>TECH:SM12</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 2.0</li><li><code>TECH:H95</code> — Usar o elemento track para fornecer legendas</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F8</code> — Falha do Critério de Sucesso 1.2.2 devido a as legendas omitirem algum diálogo ou efeitos sonoros importantes</li></ul><ul><li><code>TECH:F75</code> — Falha do Critério de Sucesso 1.2.2 por fornecer multimédia sincronizada sem legendas quando a multimédia sincronizada apresenta mais informação do que a que é apresentada na página</li></ul><ul><li><code>TECH:F74</code> — Falha do Critério de Sucesso 1.2.2 e 1.2.8 devido a não identificar uma alternativa de multimédia sincronizada ao texto como sendo uma alternativa</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.3">
+      <h4>1.2.3 — Audiodescrição ou Alternativa Multimédia (Pré-gravado) <span class="level">A</span></h4>
+      <p>É fornecida uma alternativa para multimédia baseada no tempo ou audiodescrição do conteúdo de vídeo pré-gravado para multimédia sincronizada, exceto quando a multimédia for uma alternativa multimédia ao texto e estiver claramente identificada como tal.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G69</code> — Fornecer uma alternativa para multimédia baseada no tempo<ul><li><code>TECH:G58</code> — Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não textual</li></ul></li></ul><ul><li><code>TECH:future-audio-description-or-media-alternative-prerecorded-1</code> — Criar uma ligação para a alternativa para multimédia baseada no tempo usando uma das seguintes técnicas<ul><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li></ul></li></ul><ul><li><code>TECH:G78</code> — Fornecer uma segunda faixa de áudio selecionável pelo utilizador que inclua audiodescrições</li></ul><ul><li><code>TECH:G173</code> — Fornecer uma versão de um filme com audiodescrições<ul><li><code>TECH:SM6</code> — Fornecer audiodescrição em SMIL 1.0</li><li><code>TECH:SM7</code> — Fornecer audiodescrição em SMIL 2.0</li><li><code>TECH:future-audio-description-or-media-alternative-prerecorded-1</code> — Usar qualquer leitor que suporte áudio e vídeo</li></ul></li></ul><ul><li><code>TECH:G8</code> — Fornecer um filme com audiodescrições alargadas<ul><li><code>TECH:SM1</code> — Adicionar audiodescrição alargada em SMIL 1.0</li><li><code>TECH:SM2</code> — Adicionar audiodescrição alargada em SMIL 2.0</li><li><code>TECH:future-audio-description-or-media-alternative-prerecorded-1</code> — Usar qualquer leitor que suporte áudio e vídeo</li></ul></li></ul><ul><li><code>TECH:G203</code> — Usar uma alternativa textual estática para descrever um vídeo de uma pessoa a falar (talking head)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H96</code> — Usar o elemento track para fornecer audiodescrições</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.4">
+      <h4>1.2.4 — Legendas (Ao Vivo) <span class="level">AA</span></h4>
+      <p>São fornecidas legendas para todo o conteúdo áudio ao vivo em multimédia sincronizada.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><ul><li><code>TECH:G9</code> — Criar legendas para multimédia sincronizada ao vivo</li><li><code>TECH:G93</code> — Fornecer legendas abertas (sempre visíveis)</li></ul></ul><ul><ul><li><code>TECH:G9</code> — Criar legendas para multimédia sincronizada ao vivo</li><li><code>TECH:G87</code> — Fornecer legendas fechadas</li></ul></ul><ul><ul><li><code>TECH:G9</code> — Criar legendas para multimédia sincronizada ao vivo<ul><li><code>TECH:SM11</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 1.0</li><li><code>TECH:SM12</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 2.0</li></ul></li><li><code>TECH:G87</code> — Fornecer legendas fechadas<ul><li><code>TECH:SM11</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 1.0</li><li><code>TECH:SM12</code> — Fornecer legendas através de fluxos de texto sincronizado em SMIL 2.0</li></ul></li></ul></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.5">
+      <h4>1.2.5 — Audiodescrição (Pré-gravado) <span class="level">AA</span></h4>
+      <p>É fornecida audiodescrição para todo o conteúdo de vídeo pré-gravado em multimédia sincronizada.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G78</code> — Fornecer uma segunda faixa de áudio selecionável pelo utilizador que inclua audiodescrições</li></ul><ul><li><code>TECH:G173</code> — Fornecer uma versão de um filme com audiodescrições<ul><li><code>TECH:SM6</code> — Fornecer audiodescrição em SMIL 1.0</li><li><code>TECH:SM7</code> — Fornecer audiodescrição em SMIL 2.0</li><li><code>TECH:future-audio-description-prerecorded-1</code> — Usar qualquer leitor que suporte áudio e vídeo</li></ul></li></ul><ul><li><code>TECH:G8</code> — Fornecer um filme com audiodescrições alargadas<ul><li><code>TECH:SM1</code> — Adicionar audiodescrição alargada em SMIL 1.0</li><li><code>TECH:SM2</code> — Adicionar audiodescrição alargada em SMIL 2.0</li><li><code>TECH:future-audio-description-prerecorded-1</code> — Usar qualquer leitor que suporte áudio e vídeo</li></ul></li></ul><ul><li><code>TECH:G203</code> — Usar uma alternativa textual estática para descrever um vídeo de uma pessoa a falar (talking head)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H96</code> — Usar o elemento track para fornecer audiodescrições</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.6">
+      <h4>1.2.6 — Língua Gestual (Pré-gravado) <span class="level">AAA</span></h4>
+      <p>É fornecida interpretação em língua gestual para todo o conteúdo áudio pré-gravado em multimédia sincronizada.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G54</code> — Incluir um intérprete de língua gestual na transmissão de vídeo</li></ul><ul><li><code>TECH:G81</code> — Fornecer um vídeo sincronizado do intérprete de língua gestual que possa ser apresentado numa janela de visualização diferente ou sobreposto à imagem pelo leitor<ul><li><code>TECH:SM13</code> — Fornecer interpretação em língua gestual através de fluxos de vídeo sincronizados em SMIL 1.0</li><li><code>TECH:SM14</code> — Fornecer interpretação em língua gestual através de fluxos de vídeo sincronizados em SMIL 2.0</li></ul></li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.7">
+      <h4>1.2.7 — Audiodescrição Alargada (Pré-gravado) <span class="level">AAA</span></h4>
+      <p>Quando as pausas no áudio em primeiro plano são insuficientes para permitir que as audiodescrições transmitam o sentido do vídeo, é fornecida audiodescrição alargada para todo o conteúdo de vídeo pré-gravado em multimédia sincronizada.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G8</code> — Fornecer um filme com audiodescrições alargadas<ul><li><code>TECH:SM1</code> — Adicionar audiodescrição alargada em SMIL 1.0</li><li><code>TECH:SM2</code> — Adicionar audiodescrição alargada em SMIL 2.0</li><li><code>TECH:future-extended-audio-description-prerecorded-1</code> — Usar qualquer leitor que suporte áudio e vídeo</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H96</code> — Usar o elemento track para fornecer audiodescrições</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.8">
+      <h4>1.2.8 — Alternativa Multimédia (Pré-gravado) <span class="level">AAA</span></h4>
+      <p>É fornecida uma alternativa para multimédia baseada no tempo para toda a multimédia sincronizada pré-gravada e para toda a multimédia apenas vídeo pré-gravada.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se o conteúdo for multimédia sincronizada pré-gravada:</h5><ul><li><code>TECH:G69</code> — Fornecer uma alternativa para multimédia baseada no tempo<ul><li><code>TECH:G58</code> — Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não textual</li></ul></li><li><code>TECH:future-media-alternative-prerecorded-1</code> — Criar uma ligação para a alternativa para multimédia baseada no tempo usando uma das seguintes técnicas<ul><li><code>TECH:H53</code> — Usar o conteúdo do elemento object</li></ul></li></ul><h5>Situação B: Se o conteúdo for apenas vídeo pré-gravado:</h5><ul><li><code>TECH:G159</code> — Fornecer uma alternativa para multimédia baseada no tempo para conteúdo apenas vídeo</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F74</code> — Falha do Critério de Sucesso 1.2.2 e 1.2.8 devido a não identificar uma alternativa de multimédia sincronizada ao texto como sendo uma alternativa</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.2.9">
+      <h4>1.2.9 — Apenas Áudio (Ao Vivo) <span class="level">AAA</span></h4>
+      <p>É fornecida uma alternativa para multimédia baseada no tempo que apresenta informação equivalente para conteúdo apenas áudio ao vivo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G151</code> — Fornecer uma ligação para uma transcrição em texto de uma declaração preparada ou guião, se o guião for seguido</li></ul><ul><li><code>TECH:G150</code> — Fornecer alternativas baseadas em texto para conteúdo apenas áudio ao vivo</li></ul><ul><li><code>TECH:G157</code> — Incorporar um serviço de legendagem ao vivo numa página Web</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="1.3">
+      <h3>1.3 — Adaptável</h3>
+      <p>Criar conteúdo que possa ser apresentado de diferentes formas (por exemplo, com uma disposição mais simples) sem perder informação ou estrutura.</p>
+      
+    <article class="criterion" id="1.3.1">
+      <h4>1.3.1 — Informação e Relações <span class="level">A</span></h4>
+      <p>A informação, a estrutura e as relações transmitidas através da apresentação podem ser determinadas programaticamente ou estão disponíveis em texto.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: A tecnologia fornece estrutura semântica para tornar programaticamente determináveis a informação e as relações transmitidas através da apresentação:</h5><ul><li><code>TECH:ARIA11</code> — Usar marcos ARIA para identificar regiões de uma página</li><li><code>TECH:H101</code> — Usar elementos HTML semânticos para identificar regiões de uma página</li><li><code>TECH:ARIA12</code> — Usar role=heading para identificar cabeçalhos</li><li><code>TECH:ARIA13</code> — Usar aria-labelledby para nomear regiões e marcos</li><li><code>TECH:ARIA16</code> — Usar aria-labelledby para fornecer um nome a controlos da interface do utilizador</li><li><code>TECH:ARIA17</code> — Usar papéis de agrupamento para identificar controlos de formulário relacionados</li><li><code>TECH:ARIA20</code> — Usar o papel region para identificar uma região da página</li><ul><li><code>TECH:G115</code> — Usar elementos semânticos para marcar a estrutura</li><li><code>TECH:H49</code> — Usar marcação semântica para marcar texto enfatizado ou especial</li></ul><li><code>TECH:G117</code> — Usar texto para transmitir informação que é transmitida por variações na apresentação do texto</li><li><code>TECH:G140</code> — Separar a informação e a estrutura da apresentação para permitir diferentes apresentações</li><li><code>TECH:ARIA24</code> — Identificar semanticamente um ícone de fonte com role=&quot;img&quot;</li><li><code>TECH:future-info-and-relationships-1</code> — Tornar programaticamente determináveis a informação e as relações transmitidas através da apresentação usando as seguintes técnicas:<ul><li><code>TECH:G138</code> — Usar marcação semântica sempre que forem usadas pistas de cor</li><li><code>TECH:H51</code> — Usar marcação de tabela para apresentar informação tabular</li><li><code>TECH:PDF6</code> — Usar elementos de tabela para marcação de tabelas em documentos PDF</li><li><code>TECH:PDF20</code> — Usar o Editor de Tabelas do Adobe Acrobat Pro para corrigir tabelas com etiquetagem incorreta</li><li><code>TECH:H39</code> — Usar elementos caption para associar legendas de tabelas de dados a tabelas de dados</li><li><code>TECH:H63</code> — Usar o atributo scope para associar células de cabeçalho e células de dados em tabelas de dados</li><li><code>TECH:H43</code> — Usar os atributos id e headers para associar células de dados a células de cabeçalho em tabelas de dados</li><li><code>TECH:H44</code> — Usar o elemento label para associar rótulos de texto a controlos de formulário</li><li><code>TECH:H65</code> — Usar o atributo title para identificar controlos de formulário quando não é possível usar o elemento label</li><li><code>TECH:PDF10</code> — Fornecer rótulos para controlos de formulário interativos em documentos PDF</li><li><code>TECH:PDF12</code> — Fornecer informação de nome, papel e valor para campos de formulário em documentos PDF</li><li><code>TECH:H71</code> — Fornecer uma descrição para grupos de controlos de formulário usando os elementos fieldset e legend</li><li><code>TECH:H85</code> — Usar optgroup para agrupar elementos option dentro de um select</li><li><code>TECH:H48</code> — Usar ol, ul e dl para listas ou grupos de ligações</li><li><code>TECH:H42</code> — Usar h1-h6 para identificar cabeçalhos</li><li><code>TECH:PDF9</code> — Fornecer cabeçalhos marcando o conteúdo com etiquetas de cabeçalho em documentos PDF</li><li><code>TECH:SCR21</code> — Usar funções do Document Object Model (DOM) para adicionar conteúdo a uma página</li><li><code>TECH:PDF11</code> — Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF</li><li><code>TECH:PDF17</code> — Especificar numeração de páginas consistente para documentos PDF</li><li><code>TECH:PDF21</code> — Usar etiquetas List para listas em documentos PDF</li><li><code>TECH:H97</code> — Agrupar ligações relacionadas usando o elemento nav</li></ul></li></ul><h5>Situação B: A tecnologia utilizada NÃO fornece a estrutura semântica para tornar programaticamente determináveis a informação e as relações transmitidas através da apresentação:</h5><ul><li><code>TECH:G117</code> — Usar texto para transmitir informação que é transmitida por variações na apresentação do texto</li><li><code>TECH:future-info-and-relationships-1</code> — Tornar programaticamente determináveis ou disponibilizar em texto a informação e as relações transmitidas através da apresentação usando as seguintes técnicas:<ul><li><code>TECH:T1</code> — Usar convenções padrão de formatação de texto para parágrafos</li><li><code>TECH:T2</code> — Usar convenções padrão de formatação de texto para listas</li><li><code>TECH:T3</code> — Usar convenções padrão de formatação de texto para cabeçalhos</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C22</code> — Usar CSS para controlar a apresentação visual do texto</li></ul><ul><li><code>TECH:G162</code> — Posicionar rótulos para maximizar a previsibilidade das relações</li></ul><ul><li><code>TECH:ARIA1</code> — Usar a propriedade aria-describedby para fornecer um rótulo descritivo para controlos da interface do utilizador</li></ul><ul><li><code>TECH:ARIA2</code> — Identificar um campo obrigatório com a propriedade aria-required</li></ul><ul><li><code>TECH:G141</code> — Organizar uma página usando cabeçalhos</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F2</code> — Falha do Critério de Sucesso 1.3.1 devido ao uso de alterações na apresentação do texto para transmitir informação sem utilizar a marcação ou o texto apropriado</li></ul><ul><li><code>TECH:F33</code> — Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples</li></ul><ul><li><code>TECH:F34</code> — Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples</li></ul><ul><li><code>TECH:F42</code> — Falha dos Critérios de Sucesso 1.3.1, 2.1.1, 2.1.3 ou 4.1.2 ao emular ligações</li></ul><ul><li><code>TECH:F43</code> — Falha do Critério de Sucesso 1.3.1 devido ao uso de marcação estrutural de uma forma que não representa relações no conteúdo</li></ul><ul><li><code>TECH:F46</code> — Falha do Critério de Sucesso 1.3.1 devido ao uso de elementos th em tabelas de disposição</li></ul><ul><li><code>TECH:F48</code> — Falha do Critério de Sucesso 1.3.1 devido ao uso do elemento pre para marcar informação tabular</li></ul><ul><li><code>TECH:F87</code> — Falha do Critério de Sucesso 1.3.1 devido à inserção de conteúdo não decorativo usando os pseudo-elementos ::before e ::after e a propriedade &quot;content&quot; em CSS</li></ul><ul><li><code>TECH:F90</code> — Falha do Critério de Sucesso 1.3.1 por associar incorretamente cabeçalhos e conteúdo de tabelas através dos atributos headers e id</li></ul><ul><li><code>TECH:F91</code> — Falha do Critério de Sucesso 1.3.1 por não marcar corretamente os cabeçalhos de tabela</li></ul><ul><li><code>TECH:F92</code> — Falha do Critério de Sucesso 1.3.1 devido ao uso de role=presentation em conteúdo que transmite informação semântica</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.3.2">
+      <h4>1.3.2 — Sequência Com Significado <span class="level">A</span></h4>
+      <p>Quando a sequência na qual o conteúdo é apresentado afeta o seu significado, pode ser determinada programaticamente uma sequência de leitura correta.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G57</code> — Ordenar o conteúdo numa sequência com significado</li></ul><ul><li><code>TECH:G57</code> — Ordenar o conteúdo numa sequência com significado<ul><li><code>TECH:H34</code> — Usar uma marca Unicode da direita para a esquerda (RLM) ou da esquerda para a direita (LRM) para misturar a direção do texto em linha</li><li><code>TECH:H56</code> — Usar o atributo dir num elemento em linha para resolver problemas com sequências direcionais aninhadas</li><li><code>TECH:C6</code> — Posicionar conteúdo com base na marcação estrutural</li><li><code>TECH:C8</code> — Usar CSS letter-spacing para controlar o espaçamento dentro de uma palavra</li></ul></li></ul><ul><li><code>TECH:C27</code> — Garantir que a ordem no DOM corresponde à ordem visual</li></ul><ul><li><code>TECH:PDF3</code> — Garantir a ordem correta de tabulação e de leitura em documentos PDF</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F34</code> — Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para formatar tabelas em conteúdo de texto simples</li></ul><ul><li><code>TECH:F33</code> — Falha do Critério de Sucesso 1.3.1 e 1.3.2 devido ao uso de caracteres de espaço em branco para criar múltiplas colunas em conteúdo de texto simples</li></ul><ul><li><code>TECH:F32</code> — Falha do Critério de Sucesso 1.3.2 devido ao uso de caracteres de espaço em branco para controlar o espaçamento dentro de uma palavra</li></ul><ul><li><code>TECH:F49</code> — Falha do Critério de Sucesso 1.3.2 devido ao uso de uma tabela de disposição HTML que não faz sentido quando linearizada</li></ul><ul><li><code>TECH:F1</code> — Falha do Critério de Sucesso 1.3.2 devido a alterar o significado do conteúdo ao posicionar informação com CSS</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.3.3">
+      <h4>1.3.3 — Características Sensoriais <span class="level">A</span></h4>
+      <p>As instruções fornecidas para compreender e operar o conteúdo não dependem exclusivamente de características sensoriais dos componentes, tais como forma, cor, dimensão, localização visual, orientação ou som.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G96</code> — Fornecer identificação textual de itens que, de outra forma, dependem apenas de informação sensorial para serem compreendidos</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F14</code> — Falha do Critério de Sucesso 1.3.3 devido a identificar conteúdo apenas pela sua forma ou localização</li></ul><ul><li><code>TECH:F26</code> — Falha do Critério de Sucesso 1.3.3 devido ao uso de um símbolo gráfico isolado para transmitir informação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.3.4">
+      <h4>1.3.4 — Orientação <span class="level">AA</span></h4>
+      <p>O conteúdo não restringe a sua visualização e operação a uma única orientação de ecrã, como retrato ou paisagem, exceto quando uma orientação de ecrã específica for essencial.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G214</code> — Usar um controlo para permitir acesso ao conteúdo em diferentes orientações que, de outro modo, estaria restrito</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F97</code> — Falha devido ao bloqueio da orientação para vista em paisagem ou retrato</li></ul><ul><li><code>TECH:F100</code> — Falha do Critério de Sucesso 1.3.4 devido a apresentar uma mensagem a pedir para reorientar o dispositivo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.3.5">
+      <h4>1.3.5 — Identificar o Propósito da Entrada <span class="level">AA</span></h4>
+      <p>O propósito de cada campo de entrada que recolhe informação sobre o utilizador pode ser determinado programaticamente quando:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:H98</code> — Usar atributos autocomplete do HTML 5.2</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F107</code> — Falha do Critério de Sucesso 1.3.5 devido a valores incorretos do atributo autocomplete</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.3.6">
+      <h4>1.3.6 — Identificar o Propósito <span class="level">AAA</span></h4>
+      <p>Em conteúdo implementado utilizando linguagens de marcação, o propósito de componentes da interface do utilizador, ícones e regiões pode ser determinado programaticamente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-identify-purpose-1</code> — Indicar programaticamente o propósito de ícones, regiões e componentes da interface do utilizador</li></ul><ul><li><code>TECH:ARIA11</code> — Usar marcos ARIA para identificar regiões de uma página</li></ul><ul><li><code>TECH:future-identify-purpose-1</code> — Usar microdados para marcar componentes da interface do utilizador (ligação futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:future-identify-purpose-1</code> — Permitir que os agentes do utilizador encontrem a versão do conteúdo que melhor se adequa às suas necessidades</li></ul><ul><li><code>TECH:future-identify-purpose-1</code> — Usar semântica para identificar funcionalidades importantes (por exemplo, coga-simplification=&quot;simplest&quot;)</li></ul><ul><li><code>TECH:future-identify-purpose-1</code> — Usar aria-invalid e aria-required</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="1.4">
+      <h3>1.4 — Distinguível</h3>
+      <p>Facilitar aos utilizadores ver e ouvir o conteúdo, incluindo separar o primeiro plano do fundo.</p>
+      
+    <article class="criterion" id="1.4.1">
+      <h4>1.4.1 — Uso da Cor <span class="level">A</span></h4>
+      <p>A cor não é utilizada como o único meio visual para transmitir informação, indicar uma ação, solicitar uma resposta ou distinguir um elemento visual.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se a cor de palavras específicas, fundos ou outro conteúdo for usada para indicar informação:</h5><ul><li><code>TECH:G14</code> — Garantir que a informação transmitida por diferenças de cor também está disponível em texto</li><li><code>TECH:G205</code> — Incluir uma pista textual para rótulos coloridos de controlos de formulário</li><li><code>TECH:G182</code> — Garantir que existem pistas visuais adicionais quando diferenças na cor do texto são usadas para transmitir informação</li><li><code>TECH:G183</code> — Usar uma relação de contraste de 3:1 com o texto circundante e fornecer pistas visuais adicionais ao passar o cursor para ligações ou controlos em que apenas a cor é usada para os identificar</li></ul><h5>Situação B: Se a cor for utilizada dentro de uma imagem para transmitir informação:</h5><ul><li><code>TECH:G111</code> — Usar cor e padrão</li><li><code>TECH:G14</code> — Garantir que a informação transmitida por diferenças de cor também está disponível em texto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C15</code> — Usar CSS para alterar a apresentação de um componente da interface do utilizador quando este recebe foco</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F13</code> — Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem</li></ul><ul><li><code>TECH:F73</code> — Falha do Critério de Sucesso 1.4.1 devido à criação de ligações que não são visualmente evidentes sem visão das cores</li></ul><ul><li><code>TECH:F81</code> — Falha do Critério de Sucesso 1.4.1 devido a identificar campos obrigatórios ou com erro utilizando apenas diferenças de cor</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.2">
+      <h4>1.4.2 — Controlo de Áudio <span class="level">A</span></h4>
+      <p>Se algum áudio numa página Web reproduzir automaticamente durante mais de 3 segundos, então está disponível um mecanismo para pausar ou parar o áudio, ou está disponível um mecanismo para controlar o volume do áudio de forma independente do nível de volume global do sistema.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G60</code> — Reproduzir um som que se desliga automaticamente dentro de três segundos</li></ul><ul><li><code>TECH:G170</code> — Fornecer um controlo perto do início da página Web que desliga sons que são reproduzidos automaticamente</li></ul><ul><li><code>TECH:G171</code> — Reproduzir sons apenas a pedido do utilizador</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F23</code> — Falha do Critério de Sucesso 1.4.2 devido à reprodução de um som durante mais de 3 segundos sem existir um mecanismo para o desligar</li></ul><ul><li><code>TECH:F93</code> — Falha do Critério de Sucesso 1.4.2 devido à ausência de uma forma de pausar ou parar um elemento multimédia HTML5 que é reproduzido automaticamente</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.3">
+      <h4>1.4.3 — Contraste (Mínimo) <span class="level">AA</span></h4>
+      <p>A apresentação visual de texto e imagens de texto tem uma relação de contraste de, pelo menos, 4,5:1, exceto nos seguintes casos:</p>
+
+      <ul><li><strong>Texto Grande:</strong> Texto em grande escala e imagens de texto em grande escala têm uma relação de contraste de, pelo menos, 3:1;</li><li><strong>Incidental:</strong> Texto ou imagens de texto que fazem parte de um componente da interface do utilizador inativo, que são puramente decorativos, que não são visíveis para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisitos de contraste.</li><li><strong>Logótipos:</strong> Texto que faz parte de um logótipo ou nome de marca não tem requisitos de contraste.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: o texto tem menos de 18 pontos se não estiver a negrito e menos de 14 pontos se estiver a negrito</h5><ul><li><code>TECH:G18</code> — Garantir que existe uma relação de contraste de, pelo menos, 4,5:1 entre o texto (e imagens de texto) e o fundo por trás do texto</li><li><code>TECH:G148</code> — Não especificar a cor de fundo, não especificar a cor do texto e não usar funcionalidades tecnológicas que alterem esses valores predefinidos</li><li><code>TECH:G174</code> — Fornecer um controlo com uma relação de contraste suficiente que permita aos utilizadores mudar para uma apresentação que use contraste suficiente</li></ul><h5>Situação B: o texto tem pelo menos 18 pontos se não estiver a negrito e pelo menos 14 pontos se estiver a negrito</h5><ul><li><code>TECH:G145</code> — Garantir que existe uma relação de contraste de, pelo menos, 3:1 entre o texto (e imagens de texto) e o fundo por trás do texto</li><li><code>TECH:G148</code> — Não especificar a cor de fundo, não especificar a cor do texto e não usar funcionalidades tecnológicas que alterem esses valores predefinidos</li><li><code>TECH:G174</code> — Fornecer um controlo com uma relação de contraste suficiente que permita aos utilizadores mudar para uma apresentação que use contraste suficiente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G156</code> — Usar uma tecnologia cujos agentes do utilizador, normalmente disponíveis, conseguem alterar o primeiro plano e o fundo de blocos de texto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F24</code> — Falha do Critério de Sucesso 1.4.3, 1.4.6 e 1.4.8 devido a especificar cores de primeiro plano sem especificar cores de fundo, ou vice-versa</li></ul><ul><li><code>TECH:F83</code> — Falha do Critério de Sucesso 1.4.3 e 1.4.6 devido ao uso de imagens de fundo que não fornecem contraste suficiente com o texto em primeiro plano (ou imagens de texto)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.4">
+      <h4>1.4.4 — Redimensionar Texto <span class="level">AA</span></h4>
+      <p>Exceto para legendas e imagens de texto, o texto pode ser redimensionado até 200 por cento sem tecnologias de apoio, sem perda de conteúdo ou funcionalidade.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G142</code> — Usar uma tecnologia cujos agentes do utilizador, normalmente disponíveis, suportam zoom</li></ul><ul><li><code>TECH:future-resize-text-1</code> — Garantir que os contentores de texto redimensionam quando o texto redimensiona E usar medidas relativas a outras medidas do conteúdo, aplicando uma ou mais das seguintes técnicas:<ul><li><code>TECH:C28</code> — Especificar o tamanho de contentores de texto usando unidades em</li><li><code>TECH:future-resize-text-1</code> — Técnicas para medidas relativas<ul><li><code>TECH:C12</code> — Usar percentagens para tamanhos de letra</li><li><code>TECH:C13</code> — Usar tamanhos de letra nomeados</li><li><code>TECH:C14</code> — Usar unidades em para tamanhos de letra</li></ul></li><li><code>TECH:future-resize-text-1</code> — Técnicas para redimensionamento de contentores de texto<ul><li><code>TECH:SCR34</code> — Calcular tamanho e posição de forma a escalar com o tamanho do texto</li><li><code>TECH:G146</code> — Usar uma disposição fluida</li></ul></li></ul></li></ul><ul><li><code>TECH:G178</code> — Fornecer controlos na página Web que permitam aos utilizadores alterar incrementalmente o tamanho de todo o texto na página até 200 por cento</li></ul><ul><li><code>TECH:G179</code> — Garantir que não há perda de conteúdo ou funcionalidade quando o texto é redimensionado e os contentores de texto não alteram a sua largura</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C17</code> — Dimensionar elementos de formulário que contêm texto</li></ul><ul><li><code>TECH:C20</code> — Usar medidas relativas para definir larguras de coluna de forma a que as linhas possam ter, em média, 80 caracteres ou menos quando o navegador é redimensionado</li></ul><ul><li><code>TECH:C22</code> — Usar CSS para controlar a apresentação visual do texto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F69</code> — Falha do Critério de Sucesso 1.4.4 quando o redimensionamento de texto renderizado visualmente até 200 por cento faz com que o texto, a imagem ou os controlos sejam cortados, truncados ou ocultados</li></ul><ul><li><code>TECH:F80</code> — Falha do Critério de Sucesso 1.4.4 quando controlos de formulário baseados em texto não redimensionam quando o texto renderizado visualmente é redimensionado até 200%</li></ul><ul><li><code>TECH:F94</code> — Falha do Critério de Sucesso 1.4.4 devido ao uso incorreto de unidades viewport para redimensionar texto</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.5">
+      <h4>1.4.5 — Imagens de Texto <span class="level">AA</span></h4>
+      <p>Se as tecnologias utilizadas conseguirem alcançar a apresentação visual, o texto é usado para transmitir informação em vez de imagens de texto, exceto nos seguintes casos:</p>
+
+      <ul><li><strong>Personalizável:</strong> A imagem de texto pode ser personalizada visualmente de acordo com os requisitos do utilizador;</li><li><strong>Essencial:</strong> Uma determinada apresentação de texto é essencial para a informação transmitida.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C22</code> — Usar CSS para controlar a apresentação visual do texto</li></ul><ul><li><code>TECH:C30</code> — Usar CSS para substituir texto por imagens de texto e fornecer controlos da interface do utilizador para alternar</li></ul><ul><li><code>TECH:G140</code> — Separar a informação e a estrutura da apresentação para permitir diferentes apresentações</li></ul><ul><li><code>TECH:PDF7</code> — Executar OCR num documento PDF digitalizado para disponibilizar texto real</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.6">
+      <h4>1.4.6 — Contraste (Melhorado) <span class="level">AAA</span></h4>
+      <p>A apresentação visual de texto e imagens de texto tem uma relação de contraste de, pelo menos, 7:1, exceto nos seguintes casos:</p>
+
+      <ul><li><strong>Texto Grande:</strong> Texto em grande escala e imagens de texto em grande escala têm uma relação de contraste de, pelo menos, 4,5:1;</li><li><strong>Incidental:</strong> Texto ou imagens de texto que fazem parte de um componente da interface do utilizador inativo, que são puramente decorativos, que não são visíveis para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisitos de contraste.</li><li><strong>Logótipos:</strong> Texto que faz parte de um logótipo ou nome de marca não tem requisitos de contraste.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: o texto tem menos de 18 pontos se não estiver a negrito e menos de 14 pontos se estiver a negrito</h5><ul><li><code>TECH:G17</code> — Garantir que existe uma relação de contraste de, pelo menos, 7:1 entre o texto (e imagens de texto) e o fundo por trás do texto</li><li><code>TECH:G148</code> — Não especificar a cor de fundo, não especificar a cor do texto e não usar funcionalidades tecnológicas que alterem esses valores predefinidos</li><li><code>TECH:G174</code> — Fornecer um controlo com uma relação de contraste suficiente que permita aos utilizadores mudar para uma apresentação que use contraste suficiente</li></ul><h5>Situação B: o texto tem pelo menos 18 pontos se não estiver a negrito e pelo menos 14 pontos se estiver a negrito</h5><ul><li><code>TECH:G18</code> — Garantir que existe uma relação de contraste de, pelo menos, 4,5:1 entre o texto (e imagens de texto) e o fundo por trás do texto</li><li><code>TECH:G148</code> — Não especificar a cor de fundo, não especificar a cor do texto e não usar funcionalidades tecnológicas que alterem esses valores predefinidos</li><li><code>TECH:G174</code> — Fornecer um controlo com uma relação de contraste suficiente que permita aos utilizadores mudar para uma apresentação que use contraste suficiente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G156</code> — Usar uma tecnologia cujos agentes do utilizador, normalmente disponíveis, conseguem alterar o primeiro plano e o fundo de blocos de texto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F24</code> — Falha do Critério de Sucesso 1.4.3, 1.4.6 e 1.4.8 devido a especificar cores de primeiro plano sem especificar cores de fundo, ou vice-versa</li></ul><ul><li><code>TECH:F83</code> — Falha do Critério de Sucesso 1.4.3 e 1.4.6 devido ao uso de imagens de fundo que não fornecem contraste suficiente com o texto em primeiro plano (ou imagens de texto)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.7">
+      <h4>1.4.7 — Baixo ou Sem Áudio de Fundo <span class="level">AAA</span></h4>
+      <p>Para conteúdo apenas áudio pré-gravado que (1) contém principalmente fala em primeiro plano, (2) não é um CAPTCHA áudio nem um logótipo áudio, e (3) não é vocalização destinada principalmente à expressão musical, como cantar ou rap, verifica-se pelo menos um dos seguintes:</p>
+
+      <ul><li><strong>Sem Fundo:</strong> O áudio não contém sons de fundo.</li><li><strong>Desligar:</strong> Os sons de fundo podem ser desligados.</li><li><strong>20 dB:</strong> Os sons de fundo são, pelo menos, 20 decibéis mais baixos do que o conteúdo de fala em primeiro plano, com exceção de sons ocasionais que duram apenas um ou dois segundos. De acordo com a definição de &quot;decibel&quot;, o som de fundo que cumpre este requisito será aproximadamente quatro vezes mais silencioso do que o conteúdo de fala em primeiro plano.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G56</code> — Misturar ficheiros de áudio de forma a que sons que não sejam fala fiquem, pelo menos, 20 decibéis abaixo do conteúdo de áudio da fala</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.8">
+      <h4>1.4.8 — Apresentação Visual <span class="level">AAA</span></h4>
+      <p>Para a apresentação visual de blocos de texto, está disponível um mecanismo para alcançar o seguinte:</p>
+
+      
+      
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F24</code> — Falha do Critério de Sucesso 1.4.3, 1.4.6 e 1.4.8 devido a especificar cores de primeiro plano sem especificar cores de fundo, ou vice-versa</li></ul><ul><li><code>TECH:F88</code> — Falha do Critério de Sucesso 1.4.8 devido ao uso de texto justificado (alinhado tanto à margem esquerda como à margem direita)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.9">
+      <h4>1.4.9 — Imagens de Texto (Sem Exceção) <span class="level">AAA</span></h4>
+      <p>As imagens de texto são usadas apenas para pura decoração ou quando uma determinada apresentação de texto é essencial para a informação transmitida.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C22</code> — Usar CSS para controlar a apresentação visual do texto</li></ul><ul><li><code>TECH:C30</code> — Usar CSS para substituir texto por imagens de texto e fornecer controlos da interface do utilizador para alternar</li></ul><ul><li><code>TECH:G140</code> — Separar a informação e a estrutura da apresentação para permitir diferentes apresentações</li></ul><ul><li><code>TECH:PDF7</code> — Executar OCR num documento PDF digitalizado para disponibilizar texto real</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C12</code> — Usar percentagens para tamanhos de letra</li></ul><ul><li><code>TECH:C13</code> — Usar tamanhos de letra nomeados</li></ul><ul><li><code>TECH:C14</code> — Usar unidades em para tamanhos de letra</li></ul><ul><li><code>TECH:C8</code> — Usar CSS letter-spacing para controlar o espaçamento dentro de uma palavra</li></ul><ul><li><code>TECH:C6</code> — Posicionar conteúdo com base na marcação estrutural</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.10">
+      <h4>1.4.10 — Refluxo <span class="level">AA</span></h4>
+      <p>O conteúdo pode ser apresentado sem perda de informação ou funcionalidade, e sem exigir deslocamento em duas dimensões, para:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C32</code> — Usar media queries e CSS grid para ajustar colunas</li></ul><ul><li><code>TECH:C31</code> — Usar CSS Flexbox para reajustar o conteúdo</li></ul><ul><li><code>TECH:C33</code> — Permitir Refluxo com URLs longos e sequências de texto</li></ul><ul><li><code>TECH:C38</code> — Usar CSS width, max-width e flexbox para ajustar rótulos e campos de entrada</li></ul><ul><li><code>TECH:SCR34</code> — Calcular tamanho e posição de forma a escalar com o tamanho do texto</li></ul><ul><li><code>TECH:G206</code> — Fornecer opções dentro do conteúdo para mudar para uma disposição que não exija que o utilizador se desloque horizontalmente para ler uma linha de texto</li></ul><ul><li><code>TECH:future-reflow-1</code> — Usar PDF/UA ao criar PDFs (técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C34</code> — Usar media queries para deixar de fixar cabeçalhos/rodapés fixos (sticky)</li></ul><ul><li><code>TECH:C37</code> — Usar CSS max-width e height para ajustar imagens</li></ul><ul><li><code>TECH:future-reflow-1</code> — CSS: Refluxo de tabelas de dados simples (técnica potencial futura)</li></ul><ul><li><code>TECH:future-reflow-1</code> — CSS: Ajustar células de dados dentro da largura do viewport (técnica potencial futura)</li></ul><ul><li><code>TECH:future-reflow-1</code> — Mecanismo para permitir vista móvel a qualquer momento (técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F102</code> — Falha do Critério de Sucesso 1.4.10 devido a o conteúdo desaparecer e não estar disponível quando o conteúdo foi reajustado</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.11">
+      <h4>1.4.11 — Contraste Não Textual <span class="level">AA</span></h4>
+      <p>A apresentação visual do seguinte tem uma relação de contraste de, pelo menos, 3:1 em relação à(s) cor(es) adjacente(s):</p>
+
+      <ul><li><strong>Componentes da Interface do Utilizador:</strong> Informação visual necessária para identificar componentes e estados da interface do utilizador, exceto para componentes inativos ou quando a aparência do componente é determinada pelo agente do utilizador e não modificada pelo autor;</li><li><strong>Objetos Gráficos:</strong> Partes de gráficos necessárias para compreender o conteúdo, exceto quando uma determinada apresentação dos gráficos for essencial para a informação transmitida.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: A cor é usada para identificar componentes da interface do utilizador ou para identificar estados de componentes da interface do utilizador</h5><ul><li><code>TECH:G195</code> — Usar um indicador de foco visível fornecido pelo autor</li><li><code>TECH:G174</code> — Fornecer um controlo com uma relação de contraste suficiente que permita aos utilizadores mudar para uma apresentação que use contraste suficiente</li></ul><h5>Situação B: A cor é necessária para compreender conteúdo gráfico</h5><ul><li><code>TECH:G207</code> — Garantir que é fornecida uma relação de contraste de 3:1 para ícones</li><li><code>TECH:G209</code> — Fornecer contraste suficiente nos limites entre cores adjacentes</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F78</code> — Falha do Critério de Sucesso 2.4.7 devido a estilizar contornos e bordas de elementos de forma a remover ou tornar não visível o indicador visual de foco</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.12">
+      <h4>1.4.12 — Espaçamento do Texto <span class="level">AA</span></h4>
+      <p>Em conteúdo implementado utilizando linguagens de marcação que suportam as seguintes propriedades de estilo de texto, não ocorre perda de conteúdo ou funcionalidade ao definir todos os seguintes valores e ao não alterar qualquer outra propriedade de estilo:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C36</code> — Permitir a substituição do espaçamento do texto</li></ul><ul><li><code>TECH:C35</code> — Permitir espaçamento do texto sem quebra de linha</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C8</code> — Usar CSS letter-spacing para controlar o espaçamento dentro de uma palavra</li></ul><ul><li><code>TECH:C21</code> — Especificar espaçamento entre linhas em CSS</li></ul><ul><li><code>TECH:C28</code> — Especificar o tamanho de contentores de texto usando unidades em</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F104</code> — Falha do Critério de Sucesso 1.4.12 devido a conteúdo cortado ou sobreposto quando o espaçamento do texto é ajustado</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="1.4.13">
+      <h4>1.4.13 — Conteúdo ao Passar o Cursor ou no Foco <span class="level">AA</span></h4>
+      <p>Quando receber e depois remover o hover do ponteiro ou o foco do teclado desencadeia conteúdo adicional que se torna visível e depois oculto, verifica-se o seguinte:</p>
+
+      <ul><li><strong>Dispensável:</strong> Está disponível um mecanismo para dispensar o conteúdo adicional sem mover o hover do ponteiro ou o foco do teclado, a menos que o conteúdo adicional comunique um erro de entrada ou não oculte nem substitua outro conteúdo;</li><li><strong>Passível de Hover:</strong> Se o hover do ponteiro puder desencadear o conteúdo adicional, então o ponteiro pode ser movido sobre o conteúdo adicional sem que o conteúdo adicional desapareça;</li><li><strong>Persistente:</strong> O conteúdo adicional permanece visível até que o acionador de hover ou foco seja removido, o utilizador o dispense, ou a sua informação deixe de ser válida.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:SCR39</code> — Tornar o conteúdo em foco ou em hover passível de hover, dispensável e persistente</li></ul><ul><li><code>TECH:future-content-on-hover-or-focus-1</code> — ARIA: Usar role=&quot;tooltip&quot; (técnica potencial futura)</li></ul><ul><li><code>TECH:future-content-on-hover-or-focus-1</code> — CSS: Usar pseudo-classes hover e focus (técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F95</code> — Falha do Critério de Sucesso 1.4.13 devido a o conteúdo mostrado ao passar o cursor não ser passível de hover</li></ul><ul><li><code>TECH:future-content-on-hover-or-focus-1</code> — Falha em tornar o conteúdo dispensável sem mover o hover do ponteiro ou o foco do teclado (técnica potencial futura)</li></ul><ul><li><code>TECH:future-content-on-hover-or-focus-1</code> — Falha em cumprir devido a o conteúdo em hover ou em foco não permanecer visível até ser dispensado ou até ficar inválido (técnica potencial futura)</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    </section>
+    
+    <section class="principle" id="2">
+      <h2>2 — Operável</h2>
+      <p>Os componentes da interface do utilizador e a navegação devem ser operáveis.</p>
+      
+    <section class="guideline" id="2.1">
+      <h3>2.1 — Acessível por Teclado</h3>
+      <p>Disponibilizar toda a funcionalidade a partir de um teclado.</p>
+      
+    <article class="criterion" id="2.1.1">
+      <h4>2.1.1 — Teclado <span class="level">A</span></h4>
+      <p>Toda a funcionalidade do conteúdo é operável através de uma interface de teclado, sem exigir temporizações específicas para teclas individuais, exceto quando a função subjacente requer uma entrada que dependa do percurso do movimento do utilizador e não apenas dos pontos finais.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G202</code> — Garantir controlo por teclado para toda a funcionalidade</li></ul><ul><li><code>TECH:future-keyboard-1</code> — Garantir controlo por teclado usando uma das seguintes técnicas.<ul><li><code>TECH:H91</code> — Usar controlos de formulário HTML e ligações</li><li><code>TECH:PDF3</code> — Garantir a ordem correta de tabulação e de leitura em documentos PDF</li><li><code>TECH:PDF11</code> — Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF</li><li><code>TECH:PDF23</code> — Fornecer controlos de formulário interativos em documentos PDF</li></ul></li></ul><ul><li><code>TECH:G90</code> — Fornecer manipuladores de eventos acionados por teclado<ul><li><code>TECH:SCR20</code> — Usar funções tanto de teclado como de outros dispositivos específicos</li><li><code>TECH:SCR35</code> — Tornar ações acessíveis por teclado usando o evento onclick de âncoras e botões</li><li><code>TECH:SCR2</code> — Usar manipuladores de eventos redundantes para teclado e rato</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:SCR29</code> — Adicionar ações acessíveis por teclado a elementos HTML estáticos</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F54</code> — Falha do Critério de Sucesso 2.1.1 devido ao uso exclusivo de manipuladores de eventos específicos de dispositivos apontadores (incluindo gestos) para uma função</li></ul><ul><li><code>TECH:F55</code> — Falha dos Critérios de Sucesso 2.1.1, 2.4.7 e 3.2.1 devido ao uso de script para remover o foco quando o foco é recebido</li></ul><ul><li><code>TECH:F42</code> — Falha dos Critérios de Sucesso 1.3.1, 2.1.1, 2.1.3 ou 4.1.2 ao emular ligações</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.1.2">
+      <h4>2.1.2 — Sem Armadilha de Teclado <span class="level">A</span></h4>
+      <p>Se o foco do teclado puder ser movido para um componente da página usando uma interface de teclado, então o foco pode ser movido para longe desse componente usando apenas uma interface de teclado e, se forem necessários mais do que as teclas de setas ou Tab sem modificadores, ou outros métodos padrão de saída, o utilizador é informado sobre o método para mover o foco para longe.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G21</code> — Garantir que os utilizadores não ficam presos no conteúdo</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F10</code> — Falha do Critério de Sucesso 2.1.2 e do Requisito de Conformidade 5 devido à combinação de múltiplos formatos de conteúdo de uma forma que prende os utilizadores dentro de um tipo de formato</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.1.3">
+      <h4>2.1.3 — Teclado (Sem Exceção) <span class="level">AAA</span></h4>
+      <p>Toda a funcionalidade do conteúdo é operável através de uma interface de teclado, sem exigir temporizações específicas para teclas individuais.</p>
+
+      
+      
+    </article>
+    
+    <article class="criterion" id="2.1.4">
+      <h4>2.1.4 — Atalhos de Teclas com Caracteres <span class="level">A</span></h4>
+      <p>Se for implementado no conteúdo um atalho de teclado usando apenas letras (incluindo letras maiúsculas e minúsculas), pontuação, números ou símbolos, então verifica-se pelo menos um dos seguintes:</p>
+
+      <ul><li><strong>Desativar:</strong> Está disponível um mecanismo para desativar o atalho;</li><li><strong>Remapear:</strong> Está disponível um mecanismo para remapear o atalho de forma a incluir uma ou mais teclas de teclado não imprimíveis (por exemplo, Ctrl, Alt);</li><li><strong>Ativo apenas com foco:</strong> O atalho de teclado para um componente da interface do utilizador só está ativo quando esse componente tem foco.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G217</code> — Fornecer um mecanismo que permita aos utilizadores remapear ou desativar atalhos de teclas com caracteres</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F99</code> — Falha do Critério de Sucesso 2.1.4 devido à implementação de atalhos de teclas com caracteres que não podem ser desativados nem remapeados</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="2.2">
+      <h3>2.2 — Tempo Suficiente</h3>
+      <p>Fornecer aos utilizadores tempo suficiente para ler e utilizar o conteúdo.</p>
+      
+    <article class="criterion" id="2.2.1">
+      <h4>2.2.1 — Temporização Ajustável <span class="level">A</span></h4>
+      <p>Para cada limite de tempo que é definido pelo conteúdo, verifica-se pelo menos um dos seguintes:</p>
+
+      <ul><li><strong>Desativar:</strong> É permitido ao utilizador desativar o limite de tempo antes de o encontrar; ou</li><li><strong>Ajustar:</strong> É permitido ao utilizador ajustar o limite de tempo antes de o encontrar, num intervalo alargado que seja pelo menos dez vezes a duração da definição predefinida; ou</li><li><strong>Prolongar:</strong> O utilizador é avisado antes de o tempo expirar e é-lhe dado pelo menos 20 segundos para prolongar o limite de tempo com uma ação simples (por exemplo, &quot;pressionar a barra de espaço&quot;), e é permitido ao utilizador prolongar o limite de tempo pelo menos dez vezes; ou</li><li><strong>Exceção em Tempo Real:</strong> O limite de tempo é uma parte obrigatória de um evento em tempo real (por exemplo, um leilão) e não é possível qualquer alternativa ao limite de tempo; ou</li><li><strong>Exceção Essencial:</strong> O limite de tempo é essencial e prolongá-lo invalidaria a atividade; ou</li><li><strong>Exceção de 20 Horas:</strong> O limite de tempo é superior a 20 horas.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se existirem limites de tempo de sessão:</h5><ul><li><code>TECH:G133</code> — Fornecer uma caixa de verificação na primeira página de um formulário com várias partes que permita aos utilizadores pedir um limite de tempo de sessão mais longo ou nenhum limite de tempo de sessão</li><li><code>TECH:G198</code> — Fornecer uma forma de o utilizador desativar o limite de tempo</li></ul><h5>Situação B: Se um limite de tempo for controlado por um script na página:</h5><ul><li><code>TECH:G198</code> — Fornecer uma forma de o utilizador desativar o limite de tempo</li><li><code>TECH:G180</code> — Fornecer ao utilizador um meio de definir o limite de tempo para 10 vezes o limite de tempo predefinido</li><ul><li><code>TECH:SCR16</code> — Fornecer um script que avisa o utilizador de que um limite de tempo está prestes a expirar</li><li><code>TECH:SCR1</code> — Permitir ao utilizador prolongar o limite de tempo predefinido</li></ul></ul><h5>Situação C: Se existirem limites de tempo para leitura:</h5><ul><li><code>TECH:G4</code> — Permitir que o conteúdo seja pausado e reiniciado a partir do ponto onde foi pausado</li><li><code>TECH:G198</code> — Fornecer uma forma de o utilizador desativar o limite de tempo</li><li><code>TECH:SCR33</code> — Usar script para deslocar conteúdo e fornecer um mecanismo para o pausar</li><li><code>TECH:SCR36</code> — Fornecer um mecanismo que permita aos utilizadores apresentar texto em movimento, em deslocamento ou com atualização automática numa janela ou área estática</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F40</code> — Falha devido ao uso de redirecionamento meta com um limite de tempo</li></ul><ul><li><code>TECH:F41</code> — Falha do Critério de Sucesso 2.2.1, 2.2.4 e 3.2.5 devido ao uso de meta refresh para recarregar a página</li></ul><ul><li><code>TECH:F58</code> — Falha do Critério de Sucesso 2.2.1 devido ao uso de técnicas do lado do servidor para redirecionar automaticamente páginas após um tempo limite</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.2.2">
+      <h4>2.2.2 — Pausar, Parar, Ocultar <span class="level">A</span></h4>
+      <p>Para informação em movimento, intermitente, em deslocamento ou com atualização automática, verifica-se o seguinte:</p>
+
+      <ul><li><strong>Em movimento, intermitente, em deslocamento:</strong> Para qualquer informação em movimento, intermitente ou em deslocamento que (1) se inicie automaticamente, (2) dure mais de cinco segundos e (3) seja apresentada em paralelo com outro conteúdo, existe um mecanismo para o utilizador a pausar, parar ou ocultar, a menos que o movimento, a intermitência ou o deslocamento façam parte de uma atividade em que sejam essenciais; e</li><li><strong>Atualização automática:</strong> Para qualquer informação com atualização automática que (1) se inicie automaticamente e (2) seja apresentada em paralelo com outro conteúdo, existe um mecanismo para o utilizador a pausar, parar ou ocultar, ou para controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que seja essencial.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G4</code> — Permitir que o conteúdo seja pausado e reiniciado a partir do ponto onde foi pausado</li></ul><ul><li><code>TECH:SCR33</code> — Usar script para deslocar conteúdo e fornecer um mecanismo para o pausar</li></ul><ul><li><code>TECH:G11</code> — Criar conteúdo que pisca durante menos de 5 segundos</li></ul><ul><li><code>TECH:G187</code> — Usar uma tecnologia para incluir conteúdo intermitente que possa ser desligado através do agente do utilizador</li></ul><ul><li><code>TECH:G152</code> — Configurar imagens GIF animadas para parar de piscar após n ciclos (dentro de 5 segundos)</li></ul><ul><li><code>TECH:SCR22</code> — Usar scripts para controlar o piscar e pará-lo em cinco segundos ou menos</li></ul><ul><li><code>TECH:G186</code> — Usar um controlo na página Web que pare conteúdo em movimento, intermitente ou com atualização automática</li></ul><ul><li><code>TECH:G191</code> — Fornecer uma ligação, botão ou outro mecanismo que recarregue a página sem qualquer conteúdo intermitente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F16</code> — Falha do Critério de Sucesso 2.2.2 devido à inclusão de conteúdo em deslocamento quando o movimento não é essencial para a atividade, sem incluir também um mecanismo para pausar e reiniciar o conteúdo</li></ul><ul><li><code>TECH:F47</code> — Falha do Critério de Sucesso 2.2.2 devido ao uso do elemento blink</li></ul><ul><li><code>TECH:F4</code> — Falha do Critério de Sucesso 2.2.2 devido ao uso de text-decoration:blink sem um mecanismo para o parar em menos de cinco segundos</li></ul><ul><li><code>TECH:F50</code> — Falha do Critério de Sucesso 2.2.2 devido a um script que causa um efeito de intermitência sem um mecanismo para parar a intermitência em 5 segundos ou menos</li></ul><ul><li><code>TECH:F7</code> — Falha do Critério de Sucesso 2.2.2 devido a um objeto ou applet durante mais de cinco segundos</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.2.3">
+      <h4>2.2.3 — Sem Temporização <span class="level">AAA</span></h4>
+      <p>A temporização não é uma parte essencial do evento ou atividade apresentada pelo conteúdo, exceto para multimédia sincronizada não interativa e eventos em tempo real.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G5</code> — Permitir que os utilizadores completem uma atividade sem qualquer limite de tempo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.2.4">
+      <h4>2.2.4 — Interrupções <span class="level">AAA</span></h4>
+      <p>As interrupções podem ser adiadas ou suprimidas pelo utilizador, exceto interrupções que envolvam uma emergência.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G75</code> — Fornecer um mecanismo para adiar qualquer atualização de conteúdo</li></ul><ul><li><code>TECH:G76</code> — Fornecer um mecanismo para solicitar uma atualização do conteúdo em vez de atualizar automaticamente</li></ul><ul><li><code>TECH:SCR14</code> — Usar scripts para tornar opcionais alertas não essenciais</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F40</code> — Falha devido ao uso de redirecionamento meta com um limite de tempo</li></ul><ul><li><code>TECH:F41</code> — Falha do Critério de Sucesso 2.2.1, 2.2.4 e 3.2.5 devido ao uso de meta refresh para recarregar a página</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.2.5">
+      <h4>2.2.5 — Reautenticar <span class="level">AAA</span></h4>
+      <p>Quando uma sessão autenticada expira, o utilizador pode continuar a atividade sem perda de dados após reautenticar.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-re-authenticating-1</code> — Fornecer opções para continuar sem perda de dados usando uma das seguintes técnicas:<ul><li><code>TECH:G105</code> — Guardar dados para que possam ser usados após o utilizador reautenticar</li><li><code>TECH:G181</code> — Codificar os dados do utilizador como dados ocultos ou encriptados numa página de reautorização</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F12</code> — Falha do Critério de Sucesso 2.2.5 devido a existir um limite de tempo de sessão sem um mecanismo de reautenticação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.2.6">
+      <h4>2.2.6 — Tempos Limite <span class="level">AAA</span></h4>
+      <p>Os utilizadores são avisados sobre a duração de qualquer inatividade do utilizador que possa causar perda de dados, a menos que os dados sejam preservados por mais de 20 horas quando o utilizador não realiza qualquer ação.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-timeouts-1</code> — Definir um tempo limite de sessão para ocorrer após, pelo menos, 20 horas de inatividade.</li></ul><ul><li><code>TECH:future-timeouts-1</code> — Armazenar os dados do utilizador por mais de 20 horas.</li></ul><ul><li><code>TECH:future-timeouts-1</code> — Fornecer um aviso sobre a duração da inatividade do utilizador no início de um processo.</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="2.3">
+      <h3>2.3 — Convulsões e Reações Físicas</h3>
+      <p>Não conceber conteúdo de forma que seja conhecida por causar convulsões ou reações físicas.</p>
+      
+    <article class="criterion" id="2.3.1">
+      <h4>2.3.1 — Três Intermitências ou Abaixo do Limite <span class="level">A</span></h4>
+      <p>As páginas Web não contêm nada que pisque mais de três vezes em qualquer período de um segundo, ou a intermitência está abaixo dos limites gerais de intermitência e de intermitência vermelha.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G19</code> — Garantir que nenhum componente do conteúdo pisca mais de três vezes em qualquer período de 1 segundo</li></ul><ul><li><code>TECH:G176</code> — Manter a área de intermitência suficientemente pequena</li></ul><ul><li><code>TECH:G15</code> — Usar uma ferramenta para garantir que o conteúdo não viola o limite geral de intermitência nem o limite de intermitência vermelha</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.3.2">
+      <h4>2.3.2 — Três Intermitências <span class="level">AAA</span></h4>
+      <p>As páginas Web não contêm nada que pisque mais de três vezes em qualquer período de um segundo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G19</code> — Garantir que nenhum componente do conteúdo pisca mais de três vezes em qualquer período de 1 segundo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.3.3">
+      <h4>2.3.3 — Animação por Interações <span class="level">AAA</span></h4>
+      <p>A animação de movimento acionada por interação pode ser desativada, a menos que a animação seja essencial para a funcionalidade ou para a informação transmitida.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C39</code> — Usar a media query CSS reduce-motion para evitar movimento</li></ul><ul><li><code>TECH:future-animation-from-interactions-1</code> — Gx: Permitir que os utilizadores definam uma preferência que impeça animação.</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="2.4">
+      <h3>2.4 — Navegável</h3>
+      <p>Fornecer formas de ajudar os utilizadores a navegar, encontrar conteúdo e determinar onde se encontram.</p>
+      
+    <article class="criterion" id="2.4.1">
+      <h4>2.4.1 — Ignorar Blocos <span class="level">A</span></h4>
+      <p>Existe um mecanismo disponível para ignorar blocos de conteúdo que são repetidos em múltiplas páginas Web.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-bypass-blocks-1</code> — Criar ligações para ignorar blocos de material repetido usando uma das seguintes técnicas:<ul><li><code>TECH:G1</code> — Adicionar uma ligação no topo de cada página que vá diretamente para a área de conteúdo principal</li><li><code>TECH:G123</code> — Adicionar uma ligação no início de um bloco de conteúdo repetido para ir para o fim do bloco</li><li><code>TECH:G124</code> — Adicionar ligações no topo da página para cada área do conteúdo</li></ul></li></ul><ul><li><code>TECH:future-bypass-blocks-1</code> — Agrupar blocos de material repetido de forma que possam ser ignorados, usando uma das seguintes técnicas:<ul><li><code>TECH:ARIA11</code> — Usar marcos ARIA para identificar regiões de uma página</li><li><code>TECH:H69</code> — Fornecer elementos de cabeçalho no início de cada secção de conteúdo</li><li><code>TECH:PDF9</code> — Fornecer cabeçalhos marcando o conteúdo com tags de cabeçalho em documentos PDF</li><ul><li><code>TECH:H70</code> — Usar elementos frame para agrupar blocos de material repetido</li><li><code>TECH:H64</code> — Usar o atributo title do elemento iframe</li></ul><li><code>TECH:SCR28</code> — Usar um menu expansível e recolhível para ignorar um bloco de conteúdo</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:C6</code> — Posicionar conteúdo com base em marcação estrutural</li></ul><ul><li><code>TECH:H97</code> — Agrupar ligações relacionadas usando o elemento nav</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.2">
+      <h4>2.4.2 — Página com Título <span class="level">A</span></h4>
+      <p>As páginas Web têm títulos que descrevem o tema ou objetivo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G88</code> — Fornecer títulos descritivos para páginas Web<ul><li><code>TECH:H25</code> — Fornecer um título usando o elemento title</li><li><code>TECH:PDF18</code> — Especificar o título do documento usando a entrada Title no dicionário de informação do documento de um documento PDF</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G127</code> — Identificar a relação de uma página Web com uma coleção maior de páginas Web</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F25</code> — Falha do Critério de Sucesso 2.4.2 devido ao título de uma página Web não identificar o conteúdo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.3">
+      <h4>2.4.3 — Ordem de Foco <span class="level">A</span></h4>
+      <p>Se uma página Web puder ser navegada sequencialmente e as sequências de navegação afetarem o significado ou a operação, os componentes focáveis recebem foco numa ordem que preserva o significado e a operabilidade.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G59</code> — Colocar os elementos interativos numa ordem que siga as sequências e relações existentes no conteúdo</li></ul><ul><li><code>TECH:future-focus-order-1</code> — Dar foco aos elementos numa ordem que siga as sequências e relações existentes no conteúdo usando uma das seguintes técnicas:<ul><li><code>TECH:C27</code> — Fazer com que a ordem do DOM corresponda à ordem visual</li><li><code>TECH:PDF3</code> — Garantir a ordem correta de tabulação e de leitura em documentos PDF</li></ul></li></ul><ul><li><code>TECH:future-focus-order-1</code> — Alterar uma página Web dinamicamente usando uma das seguintes técnicas:<ul><li><code>TECH:SCR26</code> — Inserir conteúdo dinâmico no Document Object Model imediatamente a seguir ao seu elemento acionador</li><li><code>TECH:SCR37</code> — Criar diálogos personalizados de forma independente do dispositivo</li><li><code>TECH:SCR27</code> — Reordenar secções da página usando o Document Object Model</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F44</code> — Falha do Critério de Sucesso 2.4.3 devido ao uso de tabindex para criar uma ordem de tabulação que não preserva o significado e a operabilidade</li></ul><ul><li><code>TECH:F85</code> — Falha do Critério de Sucesso 2.4.3 devido ao uso de diálogos ou menus que não são adjacentes ao seu controlo acionador na ordem de navegação sequencial</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.4">
+      <h4>2.4.4 — Objetivo da Ligação (No Contexto) <span class="level">A</span></h4>
+      <p>O objetivo de cada ligação pode ser determinado apenas a partir do texto da ligação ou a partir do texto da ligação juntamente com o respetivo contexto da ligação determinado programaticamente, exceto quando o objetivo da ligação seria ambíguo para os utilizadores em geral.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G91</code> — Fornecer texto de ligação que descreva o objetivo de uma ligação</li></ul><ul><li><code>TECH:H30</code> — Fornecer texto de ligação que descreva o objetivo de uma ligação para elementos âncora</li></ul><ul><li><code>TECH:H24</code> — Fornecer alternativas textuais para os elementos area de mapas de imagem</li></ul><ul><li><code>TECH:future-link-purpose-in-context-1</code> — Permitir ao utilizador escolher texto de ligação curto ou longo usando uma das técnicas abaixo:<ul><li><code>TECH:G189</code> — Fornecer um controlo perto do início da página Web que altere o texto das ligações</li><li><code>TECH:SCR30</code> — Usar scripts para alterar o texto das ligações</li></ul></li></ul><ul><li><code>TECH:G53</code> — Identificar o objetivo de uma ligação usando o texto da ligação combinado com o texto da frase envolvente</li></ul><ul><li><code>TECH:future-link-purpose-in-context-1</code> — Fornecer uma descrição suplementar do objetivo de uma ligação usando uma das seguintes técnicas:<ul><li><code>TECH:H33</code> — Complementar o texto da ligação com o atributo title</li><li><code>TECH:C7</code> — Usar CSS para ocultar uma parte do texto da ligação</li></ul></li></ul><ul><li><code>TECH:future-link-purpose-in-context-1</code> — Identificar o objetivo de uma ligação usando o texto da ligação combinado com o contexto da ligação determinado programaticamente usando uma das seguintes técnicas:<ul><li><code>TECH:ARIA7</code> — Usar aria-labelledby para o objetivo da ligação</li><li><code>TECH:ARIA8</code> — Usar aria-label para o objetivo da ligação</li><li><code>TECH:H77</code> — Identificar o objetivo de uma ligação usando o texto da ligação combinado com o respetivo item de lista envolvente</li><li><code>TECH:H78</code> — Identificar o objetivo de uma ligação usando o texto da ligação combinado com o respetivo parágrafo envolvente</li><li><code>TECH:H79</code> — Identificar o objetivo de uma ligação numa tabela de dados usando o texto da ligação combinado com a respetiva célula de tabela envolvente e as células de cabeçalho de tabela associadas</li><li><code>TECH:H81</code> — Identificar o objetivo de uma ligação numa lista aninhada usando o texto da ligação combinado com o item de lista pai sob o qual a lista está aninhada</li></ul></li></ul><ul><li><code>TECH:G91</code> — Fornecer texto de ligação que descreva o objetivo de uma ligação<ul><li><code>TECH:PDF11</code> — Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF</li><li><code>TECH:PDF13</code> — Fornecer texto de substituição usando a entrada /Alt para ligações em documentos PDF</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H2</code> — Combinar ligações de imagem e texto adjacentes para o mesmo recurso</li></ul><ul><li><code>TECH:H80</code> — Identificar o objetivo de uma ligação usando o texto da ligação combinado com o elemento de cabeçalho precedente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F63</code> — Falha do Critério de Sucesso 2.4.4 devido a fornecer contexto da ligação apenas em conteúdo que não está relacionado com a ligação</li></ul><ul><li><code>TECH:F89</code> — Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.5">
+      <h4>2.4.5 — Várias Formas <span class="level">AA</span></h4>
+      <p>Está disponível mais do que uma forma de localizar uma página Web dentro de um conjunto de páginas Web, exceto quando a página Web é o resultado de, ou um passo num, processo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-multiple-ways-1</code> — Usar duas ou mais das seguintes técnicas:<ul><li><code>TECH:G125</code> — Fornecer ligações para navegar para páginas Web relacionadas</li><li><code>TECH:G64</code> — Fornecer um Índice</li><li><code>TECH:G63</code> — Fornecer um mapa do site</li><li><code>TECH:G161</code> — Fornecer uma função de pesquisa para ajudar os utilizadores a encontrar conteúdo</li><li><code>TECH:G126</code> — Fornecer uma lista de ligações para todas as outras páginas Web</li><li><code>TECH:G185</code> — Ligar a todas as páginas do site a partir da página inicial</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H59</code> — Usar o elemento link e ferramentas de navegação</li></ul><ul><li><code>TECH:PDF2</code> — Criar marcadores em documentos PDF</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.6">
+      <h4>2.4.6 — Cabeçalhos e Rótulos <span class="level">AA</span></h4>
+      <p>Os cabeçalhos e rótulos descrevem o tema ou objetivo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G130</code> — Fornecer cabeçalhos descritivos</li></ul><ul><li><code>TECH:G131</code> — Fornecer rótulos descritivos</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.7">
+      <h4>2.4.7 — Foco Visível <span class="level">AA</span></h4>
+      <p>Qualquer interface de utilizador operável por teclado tem um modo de operação em que o indicador de foco do teclado é visível.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G149</code> — Usar componentes da interface do utilizador que são realçados pelo agente do utilizador quando recebem foco</li></ul><ul><li><code>TECH:C15</code> — Usar CSS para alterar a apresentação de um componente da interface do utilizador quando este recebe foco</li></ul><ul><li><code>TECH:G165</code> — Usar o indicador de foco predefinido da plataforma para que indicadores de foco predefinidos com elevada visibilidade sejam mantidos</li></ul><ul><li><code>TECH:G195</code> — Usar um indicador de foco visível fornecido pelo autor</li></ul><ul><li><code>TECH:C40</code> — Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes</li></ul><ul><li><code>TECH:SCR31</code> — Usar script para alterar a cor de fundo ou a borda do elemento com foco</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F55</code> — Falha dos Critérios de Sucesso 2.1.1, 2.4.7 e 3.2.1 devido ao uso de script para remover o foco quando o foco é recebido</li></ul><ul><li><code>TECH:F78</code> — Falha do Critério de Sucesso 2.4.7 devido a estilizar contornos e bordas de elementos de forma a remover ou tornar não visível o indicador visual de foco</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.8">
+      <h4>2.4.8 — Localização <span class="level">AAA</span></h4>
+      <p>Está disponível informação sobre a localização do utilizador dentro de um conjunto de páginas Web.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G65</code> — Fornecer um trilho de migalhas de pão (breadcrumbs)</li></ul><ul><li><code>TECH:G63</code> — Fornecer um mapa do site</li></ul><ul><li><code>TECH:G128</code> — Indicar a localização atual dentro de barras de navegação</li></ul><ul><li><code>TECH:G127</code> — Identificar a relação de uma página Web com uma coleção maior de páginas Web<ul><li><code>TECH:H59</code> — Usar o elemento link e ferramentas de navegação</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:PDF14</code> — Fornecer cabeçalhos e rodapés correntes em documentos PDF</li></ul><ul><li><code>TECH:PDF17</code> — Especificar numeração de páginas consistente para documentos PDF</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.9">
+      <h4>2.4.9 — Objetivo da Ligação (Apenas a Ligação) <span class="level">AAA</span></h4>
+      <p>Existe um mecanismo disponível para permitir que o objetivo de cada ligação seja identificado apenas a partir do texto da ligação, exceto quando o objetivo da ligação seria ambíguo para os utilizadores em geral.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:ARIA8</code> — Usar aria-label para o objetivo da ligação</li></ul><ul><li><code>TECH:G91</code> — Fornecer texto de ligação que descreva o objetivo de uma ligação</li></ul><ul><li><code>TECH:H30</code> — Fornecer texto de ligação que descreva o objetivo de uma ligação para elementos âncora</li></ul><ul><li><code>TECH:H24</code> — Fornecer alternativas textuais para os elementos area de mapas de imagem</li></ul><ul><li><code>TECH:future-link-purpose-link-only-1</code> — Permitir ao utilizador escolher texto de ligação curto ou longo usando uma das técnicas abaixo:<ul><li><code>TECH:G189</code> — Fornecer um controlo perto do início da página Web que altere o texto das ligações</li><li><code>TECH:SCR30</code> — Usar scripts para alterar o texto das ligações</li></ul></li></ul><ul><li><code>TECH:future-link-purpose-link-only-1</code> — Fornecer uma descrição suplementar do objetivo de uma ligação usando uma das seguintes técnicas:<ul><li><code>TECH:C7</code> — Usar CSS para ocultar uma parte do texto da ligação</li></ul></li></ul><ul><li><code>TECH:future-link-purpose-link-only-1</code> — Indicar semanticamente ligações usando uma das seguintes técnicas:<ul><li><code>TECH:PDF11</code> — Fornecer ligações e texto de ligação usando a anotação Link e o elemento de estrutura /Link em documentos PDF</li><li><code>TECH:PDF13</code> — Fornecer texto de substituição usando a entrada /Alt para ligações em documentos PDF</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H2</code> — Combinar ligações de imagem e texto adjacentes para o mesmo recurso</li></ul><ul><li><code>TECH:H33</code> — Complementar o texto da ligação com o atributo title</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F84</code> — Falha do Critério de Sucesso 2.4.9 devido ao uso de uma ligação não específica, como &quot;clique aqui&quot; ou &quot;mais&quot;, sem um mecanismo para alterar o texto da ligação para texto específico.</li></ul><ul><li><code>TECH:F89</code> — Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.10">
+      <h4>2.4.10 — Cabeçalhos de Secção <span class="level">AAA</span></h4>
+      <p>São usados cabeçalhos de secção para organizar o conteúdo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G141</code> — Organizar uma página usando cabeçalhos</li></ul><ul><li><code>TECH:H69</code> — Fornecer elementos de cabeçalho no início de cada secção de conteúdo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.11">
+      <h4>2.4.11 — Foco Não Oculto (Mínimo) <span class="level">AA</span></h4>
+      <p>Quando um componente da interface do utilizador recebe foco do teclado, o componente não fica totalmente oculto devido a conteúdo criado pelo autor.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C43</code> — Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F110</code> — Falha do Critério de Sucesso 2.4.11 devido a rodapés ou cabeçalhos fixos (sticky) ocultarem elementos com foco</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.12">
+      <h4>2.4.12 — Foco Não Oculto (Reforçado) <span class="level">AAA</span></h4>
+      <p>Quando um componente da interface do utilizador recebe foco do teclado, nenhuma parte do componente fica oculta por conteúdo criado pelo autor.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C43</code> — Usar margin e scroll-margin em CSS para evitar que o conteúdo fique oculto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:future-focus-not-obscured-enhanced-1</code> — Uma interação que faz com que conteúdo apareça por cima do componente com foco do teclado, cobrindo visualmente parte do indicador de foco. Este comportamento pode ocorrer com publicidade ou material promocional destinado a fornecer mais informação sobre um produto, à medida que o utilizador navega num catálogo.</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.4.13">
+      <h4>2.4.13 — Aparência do Foco <span class="level">AAA</span></h4>
+      <p>Quando o indicador de foco do teclado está visível, uma área do indicador de foco cumpre todos os seguintes:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G195</code> — Usar um indicador de foco visível fornecido pelo autor</li></ul><ul><li><code>TECH:C40</code> — Criar um indicador de foco com duas cores para garantir contraste suficiente com todos os componentes</li></ul><ul><li><code>TECH:C41</code> — Criar um indicador de foco forte dentro do componente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:future-focus-appearance-1</code> — Usar uma borda CSS para texto inline que pode quebrar linha (Técnica potencial futura)</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="2.5">
+      <h3>2.5 — Modalidades de Entrada</h3>
+      <p>Facilitar aos utilizadores a operação de funcionalidades através de várias formas de entrada, para além do teclado.</p>
+      
+    <article class="criterion" id="2.5.1">
+      <h4>2.5.1 — Gestos de Ponteiro <span class="level">A</span></h4>
+      <p>Toda a funcionalidade que utiliza gestos multiponto ou baseados em percurso para operar pode ser operada com um único ponteiro sem um gesto baseado em percurso, a menos que um gesto multiponto ou baseado em percurso seja essencial.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G215</code> — Fornecer controlos para alcançar o mesmo resultado que gestos multiponto ou baseados em percurso</li></ul><ul><li><code>TECH:G216</code> — Fornecer ativação num único ponto para um controlo deslizante</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F105</code> — Falha do Critério de Sucesso 2.5.1 devido a fornecer funcionalidade através de um gesto baseado em percurso sem alternativa simples de ponteiro</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.2">
+      <h4>2.5.2 — Cancelamento de Ponteiro <span class="level">A</span></h4>
+      <p>Para funcionalidades que podem ser operadas usando um único ponteiro, pelo menos uma das seguintes condições é verdadeira:</p>
+
+      <ul><li><strong>No Down-Event:</strong> O evento de pressionar do ponteiro (down-event) não é usado para executar qualquer parte da função;</li><li><strong>Abort or Undo:</strong> A conclusão da função ocorre no evento de soltar (up-event) e existe um mecanismo disponível para abortar a função antes da conclusão ou para desfazer a função após a conclusão;</li><li><strong>Up Reversal:</strong> O evento de soltar (up-event) reverte qualquer resultado do evento de pressionar (down-event) anterior;</li><li><strong>Essential:</strong> Concluir a função no evento de pressionar (down-event) é essencial.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G210</code> — Garantir que ações de arrastar e largar (drag-and-drop) podem ser canceladas</li></ul><ul><li><code>TECH:G212</code> — Usar controlos nativos para garantir que a funcionalidade é acionada no evento de soltar (up-event).</li></ul><ul><li><code>TECH:future-pointer-cancellation-1</code> — Eventos de toque são acionados apenas quando o toque é removido de um controlo (Técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F101</code> — Falha do Critério de Sucesso 2.5.2 devido a ativar um controlo no evento de pressionar (down-event)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.3">
+      <h4>2.5.3 — Rótulo no Nome <span class="level">A</span></h4>
+      <p>Para componentes da interface do utilizador com rótulos que incluem texto ou imagens de texto, o nome contém o texto que é apresentado visualmente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G208</code> — Incluir o texto do rótulo visível como parte do nome acessível</li></ul><ul><li><code>TECH:G211</code> — Fazer corresponder o nome acessível ao rótulo visível</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:future-label-in-name-1</code> — Se um ícone não tiver texto acompanhante, considerar usar o texto ao passar o ponteiro (hover) como o seu nome acessível (Técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F96</code> — Falha devido ao nome acessível não conter o texto do rótulo visível</li></ul><ul><li><code>TECH:future-label-in-name-1</code> — O nome acessível contém o texto do rótulo visível, mas as palavras do rótulo visível não estão na mesma ordem em que aparecem no texto do rótulo visível (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-label-in-name-1</code> — O nome acessível contém o texto do rótulo visível, mas uma ou mais palavras adicionais são intercaladas no rótulo (Técnica potencial futura)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.4">
+      <h4>2.5.4 — Ativação por Movimento <span class="level">A</span></h4>
+      <p>Funcionalidades que podem ser operadas por movimento do dispositivo ou movimento do utilizador também podem ser operadas através de componentes da interface do utilizador, e a resposta ao movimento pode ser desativada para evitar ativações acidentais, exceto quando:</p>
+
+      <ul><li><strong>Supported Interface:</strong> O movimento é usado para operar a funcionalidade através de uma interface suportada pela acessibilidade;</li><li><strong>Essential:</strong> O movimento é essencial para a função e fazê-lo invalidaria a atividade.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G213</code> — Fornecer controlos convencionais e uma definição na aplicação para entrada ativada por movimento</li></ul><ul><li><code>TECH:future-motion-actuation-1</code> — GXXX: Suportar funcionalidades ao nível do sistema que permitem ao utilizador desativar a ativação por movimento</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F106</code> — Falha devido à impossibilidade de desativar a ativação por movimento</li></ul><ul><li><code>TECH:future-motion-actuation-1</code> — FXXX: Falha do Critério de Sucesso 2.5.4 devido a perturbar ou desativar funcionalidades ao nível do sistema que permitem ao utilizador desativar a ativação por movimento</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.5">
+      <h4>2.5.5 — Tamanho do Alvo (Reforçado) <span class="level">AAA</span></h4>
+      <p>O tamanho do alvo para entradas por ponteiro é, pelo menos, 44 por 44 píxeis CSS, exceto quando:</p>
+
+      <ul><li><strong>Equivalent:</strong> O alvo está disponível através de uma ligação ou controlo equivalente na mesma página que tenha, pelo menos, 44 por 44 píxeis CSS;</li><li><strong>Inline:</strong> O alvo está numa frase ou num bloco de texto;</li><li><strong>User Agent Control:</strong> O tamanho do alvo é determinado pelo agente do utilizador e não é modificado pelo autor;</li><li><strong>Essential:</strong> Uma apresentação específica do alvo é essencial para a informação transmitida.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5></h5><ul><li><code>TECH:future-target-size-enhanced-1</code> — Garantir que os alvos têm, pelo menos, 44 por 44 píxeis CSS.</li><li><code>TECH:future-target-size-enhanced-1</code> — Garantir que ligações inline fornecem um alvo de ativação suficientemente grande.</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:future-target-size-enhanced-1</code> — nenhuma documentada</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:future-target-size-enhanced-1</code> — Falha do Critério de Sucesso 2.5.5 devido ao alvo ter menos de 44 por 44 píxeis CSS.</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.6">
+      <h4>2.5.6 — Mecanismos de Entrada Concorrentes <span class="level">AAA</span></h4>
+      <p>O conteúdo Web não restringe a utilização de modalidades de entrada disponíveis numa plataforma, exceto quando a restrição é essencial, necessária para garantir a segurança do conteúdo, ou necessária para respeitar definições do utilizador.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:future-concurrent-input-mechanisms-1</code> — Usar apenas manipuladores de eventos de alto nível, independentes do tipo de entrada, como focus, blur e click, em JavaScript (Técnica potencial futura).</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F98</code> — Falha devido a interações estarem limitadas apenas ao toque em dispositivos com ecrã tátil</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.7">
+      <h4>2.5.7 — Movimentos de Arrastamento <span class="level">AA</span></h4>
+      <p>Toda a funcionalidade que utiliza um movimento de arrastamento para operar pode ser realizada com um único ponteiro sem arrastar, a menos que arrastar seja essencial ou que a funcionalidade seja determinada pelo agente do utilizador e não seja modificada pelo autor.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G219</code> — Garantir que existe uma alternativa disponível para movimentos de arrastamento que operam sobre o conteúdo</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F108</code> — Falha do Critério de Sucesso 2.5.7 Movimentos de Arrastamento devido a não fornecer um método de ponteiro único para o utilizador operar uma função que não requer um movimento de arrastamento</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="2.5.8">
+      <h4>2.5.8 — Tamanho do Alvo (Mínimo) <span class="level">AA</span></h4>
+      <p>O tamanho do alvo para entradas por ponteiro é, pelo menos, 24 por 24 píxeis CSS, exceto quando:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:C42</code> — Usar min-height e min-width para garantir espaçamento suficiente do alvo</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    </section>
+    
+    <section class="principle" id="3">
+      <h2>3 — Compreensível</h2>
+      <p>A informação e a operação da interface do utilizador têm de ser compreensíveis.</p>
+      
+    <section class="guideline" id="3.1">
+      <h3>3.1 — Legível</h3>
+      <p>Tornar o conteúdo de texto legível e compreensível.</p>
+      
+    <article class="criterion" id="3.1.1">
+      <h4>3.1.1 — Idioma da Página <span class="level">A</span></h4>
+      <p>O idioma humano predefinido de cada página Web pode ser determinado programaticamente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:H57</code> — Usar o atributo language no elemento HTML</li></ul><ul><li><code>TECH:PDF16</code> — Definir o idioma predefinido usando a entrada /Lang no catálogo do documento de um documento PDF</li></ul><ul><li><code>TECH:PDF19</code> — Especificar o idioma de uma passagem ou frase com a entrada Lang em documentos PDF</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:SVR5</code> — Especificar o idioma predefinido no cabeçalho HTTP</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.1.2">
+      <h4>3.1.2 — Idioma de Partes <span class="level">AA</span></h4>
+      <p>O idioma humano de cada passagem ou frase no conteúdo pode ser determinado programaticamente, exceto para nomes próprios, termos técnicos, palavras de idioma indeterminado e palavras ou frases que se tornaram parte do vocabulário do texto imediatamente envolvente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:H58</code> — Usar atributos de idioma para identificar alterações no idioma humano</li></ul><ul><li><code>TECH:PDF19</code> — Especificar o idioma de uma passagem ou frase com a entrada Lang em documentos PDF</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.1.3">
+      <h4>3.1.3 — Palavras Pouco Habituais <span class="level">AAA</span></h4>
+      <p>Está disponível um mecanismo para identificar definições específicas de palavras ou frases usadas de forma pouco habitual ou restrita, incluindo expressões idiomáticas e jargão.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se a palavra ou frase tiver um significado único na página Web:</h5><ul><li><code>TECH:G101</code> — Fornecer a definição de uma palavra ou frase usada de forma pouco habitual ou restrita<ul><li><code>TECH:G55</code> — Criar ligações para definições<ul><li><code>TECH:H40</code> — Usar listas de descrição</li></ul></li><li><code>TECH:G112</code> — Usar definições inline<ul><li><code>TECH:H54</code> — Usar o elemento dfn para identificar a instância definidora de uma palavra</li></ul></li></ul></li><li><code>TECH:G101</code> — Fornecer a definição de uma palavra ou frase usada de forma pouco habitual ou restrita<ul><li><code>TECH:G55</code> — Criar ligações para definições<ul><li><code>TECH:H40</code> — Usar listas de descrição</li></ul></li><li><code>TECH:G62</code> — Fornecer um glossário</li><li><code>TECH:G70</code> — Fornecer uma funcionalidade para pesquisar num dicionário online</li></ul></li></ul><h5>Situação B: Se a palavra ou frase tiver significados diferentes na mesma página Web:</h5><ul><li><code>TECH:G101</code> — Fornecer a definição de uma palavra ou frase usada de forma pouco habitual ou restrita<ul><li><code>TECH:G55</code> — Criar ligações para definições<ul><li><code>TECH:H40</code> — Usar listas de descrição</li></ul></li><li><code>TECH:G112</code> — Usar definições inline<ul><li><code>TECH:H54</code> — Usar o elemento dfn para identificar a instância definidora de uma palavra</li></ul></li></ul></li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.1.4">
+      <h4>3.1.4 — Abreviaturas <span class="level">AAA</span></h4>
+      <p>Está disponível um mecanismo para identificar a forma expandida ou o significado de abreviaturas.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se a abreviatura tiver apenas um significado na página Web:</h5><ul><li><code>TECH:G102</code> — Fornecer a forma expandida ou a explicação de uma abreviatura<ul><li><code>TECH:G97</code> — Fornecer a primeira utilização de uma abreviatura imediatamente antes ou depois da forma expandida</li><li><code>TECH:G55</code> — Criar ligações para definições</li><li><code>TECH:H28</code> — Fornecer definições para abreviaturas usando o elemento abbr</li><li><code>TECH:PDF8</code> — Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura</li></ul></li><li><code>TECH:G102</code> — Fornecer a forma expandida ou a explicação de uma abreviatura<ul><li><code>TECH:G55</code> — Criar ligações para definições</li><li><code>TECH:G62</code> — Fornecer um glossário</li><li><code>TECH:G70</code> — Fornecer uma funcionalidade para pesquisar num dicionário online</li><li><code>TECH:H28</code> — Fornecer definições para abreviaturas usando o elemento abbr</li><li><code>TECH:PDF8</code> — Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura</li></ul></li></ul><h5>Situação B: Se a abreviatura tiver significados diferentes na mesma página Web:</h5><ul><li><code>TECH:G102</code> — Fornecer a forma expandida ou a explicação de uma abreviatura<ul><li><code>TECH:G55</code> — Criar ligações para definições</li><li><code>TECH:H28</code> — Fornecer definições para abreviaturas usando o elemento abbr</li><li><code>TECH:PDF8</code> — Fornecer definições para abreviaturas através de uma entrada E para um elemento de estrutura</li></ul></li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.1.5">
+      <h4>3.1.5 — Nível de Leitura <span class="level">AAA</span></h4>
+      <p>Quando o texto exige capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo, após a remoção de nomes próprios e títulos, está disponível conteúdo suplementar ou uma versão que não exija capacidade de leitura mais avançada do que o nível do ensino básico 3.º ciclo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G86</code> — Fornecer um resumo do texto que possa ser compreendido por pessoas com capacidade de leitura ao nível do ensino básico 3.º ciclo</li></ul><ul><li><code>TECH:G103</code> — Fornecer ilustrações visuais, imagens e símbolos para ajudar a explicar ideias, eventos e processos</li></ul><ul><li><code>TECH:G79</code> — Fornecer uma versão falada do texto</li></ul><ul><li><code>TECH:G153</code> — Tornar o texto mais fácil de ler</li></ul><ul><li><code>TECH:G160</code> — Fornecer versões em língua gestual de informação, ideias e processos que têm de ser compreendidos para usar o conteúdo</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.1.6">
+      <h4>3.1.6 — Pronúncia <span class="level">AAA</span></h4>
+      <p>Está disponível um mecanismo para identificar a pronúncia específica de palavras em que o significado das palavras, no contexto, seja ambíguo sem conhecer a pronúncia.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G120</code> — Fornecer a pronúncia imediatamente a seguir à palavra</li></ul><ul><li><code>TECH:G121</code> — Criar ligações para pronúncias</li></ul><ul><li><code>TECH:G62</code> — Fornecer um glossário</li></ul><ul><li><code>TECH:G163</code> — Usar marcas diacríticas padrão que possam ser desativadas</li></ul><ul><li><code>TECH:H62</code> — Usar o elemento ruby</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="3.2">
+      <h3>3.2 — Previsível</h3>
+      <p>Fazer com que as páginas Web sejam apresentadas e funcionem de forma previsível.</p>
+      
+    <article class="criterion" id="3.2.1">
+      <h4>3.2.1 — Ao Receber Foco <span class="level">A</span></h4>
+      <p>Quando qualquer componente da interface do utilizador recebe foco, não inicia uma alteração de contexto.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G107</code> — Usar &quot;ativar&quot; em vez de &quot;focar&quot; como acionador para alterações de contexto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G200</code> — Abrir novas janelas e separadores a partir de uma ligação apenas quando necessário</li></ul><ul><li><code>TECH:G201</code> — Dar aos utilizadores um aviso antecipado quando se abre uma nova janela</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F55</code> — Falha dos Critérios de Sucesso 2.1.1, 2.4.7 e 3.2.1 devido à utilização de script para remover o foco quando o foco é recebido</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.2.2">
+      <h4>3.2.2 — Ao Introduzir Dados <span class="level">A</span></h4>
+      <p>A alteração da definição de qualquer componente da interface do utilizador não causa automaticamente uma alteração de contexto, exceto se o utilizador tiver sido informado desse comportamento antes de usar o componente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G80</code> — Fornecer um botão de submissão para iniciar uma alteração de contexto<ul><li><code>TECH:H32</code> — Fornecer botões de submissão</li><li><code>TECH:H84</code> — Usar um botão com um elemento select para executar uma ação</li><li><code>TECH:PDF15</code> — Fornecer botões de submissão com a ação submit-form em formulários PDF</li></ul></li></ul><ul><li><code>TECH:G13</code> — Descrever o que irá acontecer antes de ser feita uma alteração a um controlo de formulário que provoque uma alteração de contexto</li></ul><ul><li><code>TECH:SCR19</code> — Usar um evento onchange num elemento select sem causar uma alteração de contexto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G201</code> — Dar aos utilizadores um aviso antecipado quando se abre uma nova janela</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F36</code> — Falha do Critério de Sucesso 3.2.2 devido à submissão automática de um formulário quando é atribuído um valor</li></ul><ul><li><code>TECH:F37</code> — Falha do Critério de Sucesso 3.2.2 devido ao lançamento de uma nova janela sem aviso prévio quando a seleção de um botão de opção, caixa de verificação ou lista de seleção é alterada</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.2.3">
+      <h4>3.2.3 — Navegação Consistente <span class="level">AA</span></h4>
+      <p>Os mecanismos de navegação que se repetem em várias páginas Web dentro de um conjunto de páginas Web surgem sempre na mesma ordem relativa, exceto se uma alteração for iniciada pelo utilizador.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G61</code> — Apresentar componentes repetidos sempre na mesma ordem relativa sempre que surgem</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:PDF14</code> — Fornecer cabeçalhos e rodapés contínuos em documentos PDF</li></ul><ul><li><code>TECH:PDF17</code> — Especificar numeração de páginas consistente para documentos PDF</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F66</code> — Falha do Critério de Sucesso 3.2.3 devido à apresentação de ligações de navegação numa ordem relativa diferente em páginas diferentes</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.2.4">
+      <h4>3.2.4 — Identificação Consistente <span class="level">AA</span></h4>
+      <p>Os componentes que têm a mesma funcionalidade dentro de um conjunto de páginas Web são identificados de forma consistente.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><ul><li><code>TECH:G197</code> — Usar rótulos, nomes e alternativas textuais de forma consistente para conteúdo que tem a mesma funcionalidade</li></ul></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F31</code> — Falha do Critério de Sucesso 3.2.4 devido ao uso de dois rótulos diferentes para a mesma função em diferentes páginas Web dentro de um conjunto de páginas Web</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.2.5">
+      <h4>3.2.5 — Alteração a Pedido <span class="level">AAA</span></h4>
+      <p>As alterações de contexto são iniciadas apenas a pedido do utilizador, ou está disponível um mecanismo para desativar essas alterações.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se a página Web permitir atualizações automáticas:</h5><ul><li><code>TECH:G76</code> — Fornecer um mecanismo para solicitar uma atualização do conteúdo em vez de atualizar automaticamente</li></ul><h5>Situação B: Se forem possíveis redirecionamentos automáticos:</h5><ul><li><code>TECH:SVR1</code> — Implementar redirecionamentos automáticos no lado do servidor em vez de no lado do cliente</li><li><code>TECH:G110</code> — Usar um redirecionamento instantâneo no lado do cliente<ul><li><code>TECH:H76</code> — Usar meta refresh para criar um redirecionamento instantâneo no lado do cliente</li></ul></li></ul><h5>Situação C: Se a página Web usar janelas pop-up:</h5><ul><li><code>TECH:future-change-on-request-1</code> — Incluir janelas pop-up usando uma das seguintes técnicas:<ul><li><code>TECH:H83</code> — Usar o atributo target para abrir uma nova janela a pedido do utilizador e indicar isso no texto da ligação</li><li><code>TECH:SCR24</code> — Usar progressive enhancement para abrir novas janelas a pedido do utilizador</li></ul></li></ul><h5>Situação D: Se for usado um evento onchange num elemento select:</h5><ul><li><code>TECH:SCR19</code> — Usar um evento onchange num elemento select sem causar uma alteração de contexto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G200</code> — Abrir novas janelas e separadores a partir de uma ligação apenas quando necessário</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F60</code> — Falha do Critério de Sucesso 3.2.5 devido ao lançamento de uma nova janela quando o utilizador introduz texto num campo de entrada</li></ul><ul><li><code>TECH:F61</code> — Falha do Critério de Sucesso 3.2.5 devido a uma alteração completa do conteúdo principal através de uma atualização automática que o utilizador não consegue desativar no próprio conteúdo</li></ul><ul><li><code>TECH:F9</code> — Falha do Critério de Sucesso 3.2.5 devido à alteração de contexto quando o utilizador retira o foco de um elemento de formulário</li></ul><ul><li><code>TECH:F22</code> — Falha do Critério de Sucesso 3.2.5 devido à abertura de janelas que não foram solicitadas pelo utilizador</li></ul><ul><li><code>TECH:F52</code> — Falha dos Critérios de Sucesso 3.2.1 e 3.2.5 devido à abertura de uma nova janela assim que uma nova página é carregada</li></ul><ul><li><code>TECH:F40</code> — Falha devido ao uso de meta redirect com um limite de tempo</li></ul><ul><li><code>TECH:F41</code> — Falha do Critério de Sucesso 2.2.1, 2.2.4 e 3.2.5 devido ao uso de meta refresh para recarregar a página</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.2.6">
+      <h4>3.2.6 — Ajuda Consistente <span class="level">A</span></h4>
+      <p>Se uma página Web contiver algum dos seguintes mecanismos de ajuda, e esses mecanismos se repetirem em várias páginas Web dentro de um conjunto de páginas Web, surgem na mesma ordem relativa em relação a outro conteúdo da página, exceto se uma alteração for iniciada pelo utilizador:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G220</code> — Fornecer uma ligação para &quot;contacte-nos&quot; numa localização consistente</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:future-consistent-help-1</code> — Localização de ajuda inconsistente</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    <section class="guideline" id="3.3">
+      <h3>3.3 — Assistência na Introdução de Dados</h3>
+      <p>Ajudar os utilizadores a evitar e corrigir erros.</p>
+      
+    <article class="criterion" id="3.3.1">
+      <h4>3.3.1 — Identificação de Erros <span class="level">A</span></h4>
+      <p>Se um erro de introdução de dados for detetado automaticamente, o item que está em erro é identificado e o erro é descrito ao utilizador em texto.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se um formulário contiver campos para os quais a informação do utilizador é obrigatória.</h5><ul><li><code>TECH:G83</code> — Fornecer descrições em texto para identificar campos obrigatórios que não foram preenchidos</li><li><code>TECH:ARIA21</code> — Usar Aria-Invalid para indicar um campo com erro</li><li><code>TECH:SCR18</code> — Fornecer validação e alerta no lado do cliente</li><li><code>TECH:PDF5</code> — Indicar controlos de formulário obrigatórios em formulários PDF</li></ul><h5>Situação B: Se a informação fornecida pelo utilizador tiver de estar num formato de dados específico ou ter determinados valores.</h5><ul><li><code>TECH:ARIA18</code> — Usar aria-alertdialog para identificar erros</li><li><code>TECH:ARIA19</code> — Usar role=alert do ARIA ou Live Regions para identificar erros</li><li><code>TECH:ARIA21</code> — Usar Aria-Invalid para indicar um campo com erro</li><li><code>TECH:G84</code> — Fornecer uma descrição em texto quando o utilizador fornece informação que não está na lista de valores permitidos</li><li><code>TECH:G85</code> — Fornecer uma descrição em texto quando os dados introduzidos pelo utilizador estão fora do formato ou valores exigidos</li><li><code>TECH:SCR18</code> — Fornecer validação e alerta no lado do cliente</li><li><code>TECH:SCR32</code> — Fornecer validação no lado do cliente e adicionar texto de erro através do DOM</li><li><code>TECH:PDF22</code> — Indicar, em formulários PDF, quando os dados introduzidos pelo utilizador estão fora do formato ou valores exigidos</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G139</code> — Criar um mecanismo que permita aos utilizadores saltar para os erros</li></ul><ul><li><code>TECH:G199</code> — Fornecer feedback de sucesso quando os dados são submetidos com êxito</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.2">
+      <h4>3.3.2 — Rótulos ou Instruções <span class="level">A</span></h4>
+      <p>São fornecidos rótulos ou instruções quando o conteúdo exige introdução de dados pelo utilizador.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G131</code> — Fornecer rótulos descritivos<ul><li><code>TECH:ARIA1</code> — Usar a propriedade aria-describedby para fornecer um rótulo descritivo para controlos da interface do utilizador</li><li><code>TECH:ARIA9</code> — Usar aria-labelledby para concatenar um rótulo a partir de vários nós de texto</li><li><code>TECH:ARIA17</code> — Usar funções (roles) de agrupamento para identificar controlos de formulário relacionados</li><li><code>TECH:G89</code> — Fornecer o formato de dados esperado e um exemplo</li><li><code>TECH:G184</code> — Fornecer instruções em texto no início de um formulário ou conjunto de campos que descrevam a introdução de dados necessária</li><li><code>TECH:G162</code> — Posicionar rótulos para maximizar a previsibilidade das relações</li><li><code>TECH:G83</code> — Fornecer descrições em texto para identificar campos obrigatórios que não foram preenchidos</li><li><code>TECH:H90</code> — Indicar controlos de formulário obrigatórios usando label ou legend</li><li><code>TECH:PDF5</code> — Indicar controlos de formulário obrigatórios em formulários PDF</li></ul></li></ul><ul><li><code>TECH:H44</code> — Usar elementos label para associar rótulos de texto a controlos de formulário</li></ul><ul><li><code>TECH:PDF10</code> — Fornecer rótulos para controlos de formulário interativos em documentos PDF</li></ul><ul><li><code>TECH:H71</code> — Fornecer uma descrição para grupos de controlos de formulário usando os elementos fieldset e legend</li></ul><ul><li><code>TECH:G167</code> — Usar um botão adjacente para identificar o propósito de um campo</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G13</code> — Descrever o que irá acontecer antes de ser feita uma alteração a um controlo de formulário que provoque uma alteração de contexto</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F82</code> — Falha do Critério de Sucesso 3.3.2 por formatar visualmente um conjunto de campos de número de telefone mas não incluir um rótulo em texto</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.3">
+      <h4>3.3.3 — Sugestão de Erros <span class="level">AA</span></h4>
+      <p>Se um erro de introdução de dados for detetado automaticamente e forem conhecidas sugestões de correção, então as sugestões são fornecidas ao utilizador, exceto se isso comprometer a segurança ou o propósito do conteúdo.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se a informação de um campo tiver de estar num formato de dados específico:</h5><ul><li><code>TECH:ARIA18</code> — Usar aria-alertdialog para identificar erros</li><li><code>TECH:G85</code> — Fornecer uma descrição em texto quando os dados introduzidos pelo utilizador estão fora do formato ou valores exigidos</li><li><code>TECH:G177</code> — Fornecer texto com sugestões de correção</li><li><code>TECH:PDF22</code> — Indicar, em formulários PDF, quando os dados introduzidos pelo utilizador estão fora do formato ou valores exigidos</li></ul><h5>Situação B: Se a informação fornecida pelo utilizador tiver de ser um de um conjunto limitado de valores:</h5><ul><li><code>TECH:ARIA18</code> — Usar aria-alertdialog para identificar erros</li><li><code>TECH:G84</code> — Fornecer uma descrição em texto quando o utilizador fornece informação que não está na lista de valores permitidos</li><li><code>TECH:G177</code> — Fornecer texto com sugestões de correção</li><li><code>TECH:PDF22</code> — Indicar, em formulários PDF, quando os dados introduzidos pelo utilizador estão fora do formato ou valores exigidos</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:G139</code> — Criar um mecanismo que permita aos utilizadores saltar para os erros</li></ul><ul><li><code>TECH:G199</code> — Fornecer feedback de sucesso quando os dados são submetidos com êxito</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.4">
+      <h4>3.3.4 — Prevenção de Erros (Jurídico, Financeiro, Dados) <span class="level">AA</span></h4>
+      <p>Para páginas Web que provoquem compromissos legais ou transações financeiras para o utilizador, que modifiquem ou eliminem dados controláveis pelo utilizador em sistemas de armazenamento de dados, ou que submetam respostas de testes do utilizador, pelo menos uma das seguintes condições é verdadeira:</p>
+
+      <ul><li><strong>Reversível:</strong> As submissões são reversíveis.</li><li><strong>Verificado:</strong> Os dados introduzidos pelo utilizador são verificados quanto a erros de introdução e o utilizador tem oportunidade de os corrigir.</li><li><strong>Confirmado:</strong> Está disponível um mecanismo para rever, confirmar e corrigir informação antes de finalizar a submissão.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se uma aplicação provocar a ocorrência de uma transação legal, como efetuar uma compra ou submeter uma declaração de IRS:</h5><ul><li><code>TECH:G164</code> — Fornecer um período indicado durante o qual um pedido (ou transação) online pode ser alterado ou cancelado pelo utilizador após efetuar o pedido</li><li><code>TECH:G98</code> — Fornecer ao utilizador a capacidade de rever e corrigir respostas antes de submeter</li><li><code>TECH:G155</code> — Fornecer uma caixa de verificação além de um botão de submissão</li></ul><h5>Situação B: Se uma ação provocar a eliminação de informação:</h5><ul><li><code>TECH:G99</code> — Fornecer a capacidade de recuperar informação eliminada</li><li><code>TECH:G168</code> — Solicitar confirmação para prosseguir com a ação selecionada</li><li><code>TECH:G155</code> — Fornecer uma caixa de verificação além de um botão de submissão</li></ul><h5>Situação C: Se a página Web incluir uma aplicação de testes:</h5><ul><li><code>TECH:G98</code> — Fornecer ao utilizador a capacidade de rever e corrigir respostas antes de submeter</li><li><code>TECH:G168</code> — Solicitar confirmação para prosseguir com a ação selecionada</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:SCR18</code> — Fornecer validação e alerta no lado do cliente</li></ul><ul><li><code>TECH:G199</code> — Fornecer feedback de sucesso quando os dados são submetidos com êxito</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.5">
+      <h4>3.3.5 — Ajuda <span class="level">AAA</span></h4>
+      <p>Está disponível ajuda sensível ao contexto.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se um formulário exigir introdução de texto:</h5><ul><li><code>TECH:G71</code> — Fornecer uma ligação de ajuda em todas as páginas Web</li><li><code>TECH:G193</code> — Fornecer ajuda por um assistente na página Web</li><li><code>TECH:G194</code> — Fornecer verificação ortográfica e sugestões para introdução de texto</li><li><code>TECH:G184</code> — Fornecer instruções em texto no início de um formulário ou conjunto de campos que descrevam a introdução de dados necessária</li></ul><h5>Situação B: Se um formulário exigir introdução de texto num formato de dados esperado:</h5><ul><li><code>TECH:G89</code> — Fornecer o formato de dados esperado e um exemplo</li><li><code>TECH:G184</code> — Fornecer instruções em texto no início de um formulário ou conjunto de campos que descrevam a introdução de dados necessária</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:H89</code> — Usar o atributo title para fornecer ajuda sensível ao contexto</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.6">
+      <h4>3.3.6 — Prevenção de Erros (Todos) <span class="level">AAA</span></h4>
+      <p>Para páginas Web que exijam que o utilizador submeta informação, pelo menos uma das seguintes condições é verdadeira:</p>
+
+      <ul><li><strong>Reversível:</strong> As submissões são reversíveis.</li><li><strong>Verificado:</strong> Os dados introduzidos pelo utilizador são verificados quanto a erros de introdução e o utilizador tem oportunidade de os corrigir.</li><li><strong>Confirmado:</strong> Está disponível um mecanismo para rever, confirmar e corrigir informação antes de finalizar a submissão.</li></ul>
+      
+    </article>
+    
+    <article class="criterion" id="3.3.7">
+      <h4>3.3.7 — Entrada Redundante <span class="level">A</span></h4>
+      <p>A informação introduzida anteriormente ou fornecida ao utilizador, que seja necessária novamente no mesmo processo, é:</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G221</code> — Fornecer dados de uma etapa anterior de um processo</li></ul><ul><li><code>TECH:future-redundant-entry-1</code> — Não solicitar a mesma informação duas vezes (Técnica potencial futura)</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.8">
+      <h4>3.3.8 — Autenticação Acessível (Mínimo) <span class="level">AA</span></h4>
+      <p>Um teste de função cognitiva (como recordar uma palavra-passe ou resolver um puzzle) não é exigido em qualquer etapa de um processo de autenticação, a menos que essa etapa forneça pelo menos uma das seguintes opções:</p>
+
+      <ul><li><strong>Alternativa:</strong> Outro método de autenticação que não dependa de um teste de função cognitiva.</li><li><strong>Mecanismo:</strong> Está disponível um mecanismo para ajudar o utilizador a completar o teste de função cognitiva.</li><li><strong>Reconhecimento de Objetos:</strong> O teste de função cognitiva consiste em reconhecer objetos.</li><li><strong>Conteúdo Pessoal:</strong> O teste de função cognitiva consiste em identificar conteúdo não textual que o utilizador forneceu ao sítio Web.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G218</code> — Autenticação por ligação enviada por email</li></ul><ul><li><code>TECH:H100</code> — Fornecer campos de email e palavra-passe corretamente marcados</li></ul><ul><li><code>TECH:future-accessible-authentication-minimum-1</code> — Fornecer WebAuthn como alternativa a nome de utilizador/palavra-passe (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-accessible-authentication-minimum-1</code> — Fornecer um início de sessão de terceiros usando OAuth (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-accessible-authentication-minimum-1</code> — Usar duas técnicas para fornecer autenticação de dois fatores (Técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F109</code> — Falha dos Critérios de Sucesso 3.3.8 e 3.3.9 devido a impedir a reintrodução de palavra-passe ou código no mesmo formato</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="3.3.9">
+      <h4>3.3.9 — Autenticação Acessível (Melhorada) <span class="level">AAA</span></h4>
+      <p>Um teste de função cognitiva (como recordar uma palavra-passe ou resolver um puzzle) não é exigido em qualquer etapa de um processo de autenticação, a menos que essa etapa forneça pelo menos uma das seguintes opções:</p>
+
+      <ul><li><strong>Alternativa:</strong> Outro método de autenticação que não dependa de um teste de função cognitiva.</li><li><strong>Mecanismo:</strong> Está disponível um mecanismo para ajudar o utilizador a completar o teste de função cognitiva.</li></ul>
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G218</code> — Autenticação por ligação enviada por email</li></ul><ul><li><code>TECH:future-accessible-authentication-enhanced-1</code> — Fornecer campos de email e palavra-passe corretamente marcados (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-accessible-authentication-enhanced-1</code> — Fornecer WebAuthn como alternativa a nome de utilizador/palavra-passe (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-accessible-authentication-enhanced-1</code> — Fornecer um início de sessão de terceiros usando OAuth (Técnica potencial futura)</li></ul><ul><li><code>TECH:future-accessible-authentication-enhanced-1</code> — Usar duas técnicas para fornecer autenticação de dois fatores (Técnica potencial futura)</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F109</code> — Falha dos Critérios de Sucesso 3.3.8 e 3.3.9 devido a impedir a reintrodução de palavra-passe ou código no mesmo formato</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
+    </section>
+    
+    <section class="principle" id="4">
+      <h2>4 — Robusto</h2>
+      <p>O conteúdo deve ser suficientemente robusto para poder ser interpretado por uma grande variedade de agentes do utilizador, incluindo tecnologias de apoio.</p>
+      
+    <section class="guideline" id="4.1">
+      <h3>4.1 — Compatível</h3>
+      <p>Maximize a compatibilidade com agentes do utilizador atuais e futuros, incluindo tecnologias de apoio.</p>
+      
+    <article class="criterion" id="4.1.1">
+      <h4>4.1.1 — Processamento (Obsoleto e removido) <span class="level"></span></h4>
+      <p>Este critério foi originalmente adotado para resolver problemas em que as tecnologias de apoio faziam processamento direto de HTML. As tecnologias de apoio já não têm necessidade de processar diretamente HTML. Consequentemente, estes problemas deixaram de existir ou são tratados por outros critérios. Este critério deixou de ter utilidade e foi removido.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <ul><li><code>TECH:G134</code> — Validar páginas Web</li></ul><ul><li><code>TECH:G192</code> — Cumprir integralmente as especificações</li></ul><ul><li><code>TECH:H88</code> — Usar HTML de acordo com a especificação</li></ul><ul><li><code>TECH:future-parsing-1</code> — Garantir que as páginas Web podem ser processadas usando uma das seguintes técnicas:<ul><ul><li><code>TECH:H74</code> — Garantir que as etiquetas de abertura e fecho são usadas de acordo com a especificação</li><li><code>TECH:H93</code> — Garantir que os atributos id são únicos numa página Web</li><li><code>TECH:H94</code> — Garantir que os elementos não contêm atributos duplicados</li></ul><li><code>TECH:H75</code> — Garantir que as páginas Web estão bem formadas</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F70</code> — Falha do Critério de Sucesso 4.1.1 devido ao uso incorreto de etiquetas de início e fim ou da marcação de atributos</li></ul><ul><li><code>TECH:F77</code> — Falha do Critério de Sucesso 4.1.1 devido a valores duplicados do tipo ID</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="4.1.2">
+      <h4>4.1.2 — Nome, Papel, Valor <span class="level">A</span></h4>
+      <p>Para todos os componentes da interface do utilizador (incluindo, mas não limitados a: elementos de formulário, ligações e componentes gerados por scripts), o nome e o papel podem ser determinados programaticamente; os estados, propriedades e valores que podem ser definidos pelo utilizador podem ser definidos programaticamente; e a notificação de alterações a estes itens está disponível para agentes do utilizador, incluindo tecnologias de apoio.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se usar um componente padrão da interface do utilizador numa linguagem de marcação (por exemplo, HTML):</h5><ul><li><code>TECH:ARIA14</code> — Usar aria-label para fornecer uma etiqueta invisível quando não é possível usar uma etiqueta visível</li><li><code>TECH:ARIA16</code> — Usar aria-labelledby para fornecer um nome a controlos da interface do utilizador</li><li><code>TECH:G108</code> — Usar funcionalidades de marcação para expor o nome e o papel, permitir que propriedades definidas pelo utilizador sejam definidas diretamente e fornecer notificação de alterações<ul><li><code>TECH:H91</code> — Usar controlos de formulário HTML e ligações</li><li><code>TECH:H44</code> — Usar o elemento label para associar rótulos de texto a controlos de formulário</li><li><code>TECH:H64</code> — Usar o atributo title do elemento iframe</li><li><code>TECH:H65</code> — Usar o atributo title para identificar controlos de formulário quando não é possível usar o elemento label</li><li><code>TECH:H88</code> — Usar HTML de acordo com a especificação</li></ul></li></ul><h5>Situação B: Se usar script ou código para reutilizar um componente padrão da interface do utilizador numa linguagem de marcação:</h5><ul><li><code>TECH:future-name-role-value-1</code> — Expor os nomes e os papéis, permitir que propriedades definidas pelo utilizador sejam definidas diretamente e fornecer notificação de alterações usando uma das seguintes técnicas:<ul><li><code>TECH:ARIA16</code> — Usar aria-labelledby para fornecer um nome a controlos da interface do utilizador</li></ul></li></ul><h5>Situação C: Se usar um componente padrão da interface do utilizador numa tecnologia de programação:</h5><ul><li><code>TECH:G135</code> — Usar funcionalidades da API de acessibilidade de uma tecnologia para expor nomes e notificação de alterações<ul><li><code>TECH:PDF10</code> — Fornecer rótulos para controlos de formulário interativos em documentos PDF</li><li><code>TECH:PDF12</code> — Fornecer informação de nome, papel e valor para campos de formulário em documentos PDF</li></ul></li></ul><h5>Situação D: Se criar o seu próprio componente da interface do utilizador numa linguagem de programação:</h5><ul><li><code>TECH:G10</code> — Criar componentes usando uma tecnologia que suporte a notificação de alterações de acessibilidade<ul><li><code>TECH:ARIA4</code> — Usar um papel WAI-ARIA para expor o papel de um componente da interface do utilizador</li><li><code>TECH:ARIA5</code> — Usar atributos de estado e propriedade WAI-ARIA para expor o estado de um componente da interface do utilizador</li><li><code>TECH:ARIA16</code> — Usar aria-labelledby para fornecer um nome a controlos da interface do utilizador</li></ul></li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F59</code> — Falha do Critério de Sucesso 4.1.2 devido ao uso de script para tornar uma div ou span num controlo de interface do utilizador em HTML sem fornecer um papel para o controlo</li></ul><ul><li><code>TECH:F15</code> — Falha do Critério de Sucesso 4.1.2 devido à implementação de controlos personalizados que não usam uma API de acessibilidade para a tecnologia, ou que a usam de forma incompleta</li></ul><ul><li><code>TECH:F20</code> — Falha dos Critérios de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual</li></ul><ul><li><code>TECH:F68</code> — Falha do Critério de Sucesso 4.1.2 devido a um controlo da interface do utilizador não ter um nome determinável programaticamente</li></ul><ul><li><code>TECH:F79</code> — Falha do Critério de Sucesso 4.1.2 devido ao estado de foco de um componente da interface do utilizador não ser determinável programaticamente ou não existir notificação de alteração do estado de foco disponível</li></ul><ul><li><code>TECH:F86</code> — Falha do Critério de Sucesso 4.1.2 devido a não fornecer nomes para cada parte de um campo de formulário com várias partes, como um número de telefone dos EUA</li></ul><ul><li><code>TECH:F89</code> — Falha dos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo numa ligação</li></ul>
+                </details>
+                
+    </article>
+    
+    <article class="criterion" id="4.1.3">
+      <h4>4.1.3 — Mensagens de Estado <span class="level">AA</span></h4>
+      <p>Em conteúdo implementado utilizando linguagens de marcação, as mensagens de estado podem ser determinadas programaticamente através de papel ou propriedades, de forma a poderem ser apresentadas ao utilizador por tecnologias de apoio sem receberem foco.</p>
+
+      
+      
+                <details>
+                  <summary>Sufficient</summary>
+                  <h5>Situação A: Se uma mensagem de estado aconselha sobre o sucesso ou resultados de uma ação, ou o estado de uma aplicação:</h5><ul><li><code>TECH:ARIA22</code> — Usar role=status para apresentar mensagens de estado<ul><li><code>TECH:G199</code> — Fornecer feedback de sucesso quando os dados são submetidos com êxito</li></ul></li></ul><h5>Situação B: Se uma mensagem de estado transmite uma sugestão, ou um aviso sobre a existência de um erro:</h5><ul><li><code>TECH:ARIA19</code> — Usar o papel ARIA role=alert ou Live Regions para identificar erros<ul><li><code>TECH:G83</code> — Fornecer descrições de texto para identificar campos obrigatórios que não foram preenchidos</li><li><code>TECH:G84</code> — Fornecer uma descrição de texto quando o utilizador fornece informação que não está na lista de valores permitidos</li><li><code>TECH:G85</code> — Fornecer uma descrição de texto quando a entrada do utilizador está fora do formato exigido ou dos valores exigidos</li><li><code>TECH:G177</code> — Fornecer texto com correções sugeridas</li><li><code>TECH:G194</code> — Fornecer verificação ortográfica e sugestões para entrada de texto</li></ul></li></ul><h5>Situação C: Se uma mensagem de estado transmite informação sobre o progresso de um processo:</h5><ul><li><code>TECH:ARIA23</code> — Usar role=log para identificar atualizações sequenciais de informação</li><li><code>TECH:future-status-messages-1</code> — Usar role=&quot;progressbar&quot; (ligação futura)</li><ul><li><code>TECH:ARIA22</code> — Usar role=status para apresentar mensagens de estado</li><li><code>TECH:G193</code> — Fornecer ajuda por um assistente na página Web</li></ul></ul>
+                </details>
+                
+                <details>
+                  <summary>Advisory</summary>
+                  <ul><li><code>TECH:future-status-messages-1</code> — Usar regiões aria-live com clientes de chat (ligação futura)</li></ul><ul><li><code>TECH:future-status-messages-1</code> — Usar role=&quot;marquee&quot; (ligação futura)</li></ul><ul><li><code>TECH:future-status-messages-1</code> — Usar role=&quot;timer&quot; (ligação futura)</li></ul><ul><li><code>TECH:ARIA18</code> — Usar aria-alertdialog para identificar erros</li></ul><ul><li><code>TECH:SCR14</code> — Usar scripts para tornar alertas não essenciais opcionais</li></ul>
+                </details>
+                
+                <details>
+                  <summary>Failure</summary>
+                  <ul><li><code>TECH:F103</code> — Falha do Critério de Sucesso 4.1.3 devido a fornecer mensagens de estado que não podem ser determinadas programaticamente através de papel ou propriedades</li></ul><ul><li><code>TECH:future-status-messages-1</code> — Usar role=&quot;alert&quot; ou aria-live=&quot;assertive&quot; em conteúdo que não é importante e é sensível ao tempo (ligação futura)</li></ul>
+                </details>
+                
+    </article>
+    
+    </section>
+    
     </section>
     
 
