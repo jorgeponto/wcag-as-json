@@ -12,8 +12,8 @@
           "alt_id": ["text-equiv"],
           "num": "1.1",
           "versions": ["2.0", "2.1", "2.2"],
-          "handle": "Alternativas Textuais",
-          "title": "Fornecer alternativas textuais para qualquer conteúdo não textual, de modo a que possa ser convertido noutras formas de que as pessoas necessitem, tais como caracteres de grande dimensão, braille, voz, símbolos ou linguagem mais simples.",
+          "handle": "Alternativas em texto",
+          "title": "Fornecer Alternativas em texto para qualquer conteúdo não texto, de modo a que possa ser convertido noutras formas de que as pessoas necessitem, tais como caracteres de grande dimensão, braille, voz, símbolos ou linguagem mais simples.",
           "successcriteria": [
             {
               "id": "WCAG2:non-text-content",
@@ -21,35 +21,35 @@
               "num": "1.1.1",
               "versions": ["2.0", "2.1", "2.2"],
               "level": "A",
-              "handle": "Conteúdo Não Textual",
-              "title": "Todo o conteúdo não textual apresentado ao utilizador tem uma alternativa textual que serve o mesmo propósito equivalente, exceto nas situações listadas abaixo.",
+              "handle": "Conteúdo não texto",
+              "title": "Todo o conteúdo não texto apresentado ao utilizador tem uma alternativa textual que serve o mesmo propósito equivalente, exceto nas situações listadas abaixo.",
               "details": [
                 {
                   "type": "ulist",
                   "items": [
                     {
                       "handle": "Controlos, Entrada",
-                      "text": "Se o conteúdo não textual for um controlo ou aceitar entrada do utilizador, então tem um nome que descreve o seu propósito. (Consultar o Critério de Sucesso 4.1.2 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada do utilizador.)"
+                      "text": "Se o conteúdo não texto for um controlo ou aceitar entrada do utilizador, então tem um nome que descreve o seu propósito. (Consultar o Critério de Sucesso 4.1.2 para requisitos adicionais relativos a controlos e a conteúdo que aceita entrada do utilizador.)"
                     },
                     {
                       "handle": "Multimédia Baseada no Tempo",
-                      "text": "Se o conteúdo não textual for multimédia baseada no tempo, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual. (Consultar a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)"
+                      "text": "Se o conteúdo não texto for multimédia baseada no tempo, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto. (Consultar a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)"
                     },
                     {
                       "handle": "Teste",
-                      "text": "Se o conteúdo não textual for um teste ou exercício que seria inválido se apresentado em texto, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual."
+                      "text": "Se o conteúdo não texto for um teste ou exercício que seria inválido se apresentado em texto, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
                     },
                     {
                       "handle": "Sensorial",
-                      "text": "Se o conteúdo não textual se destinar principalmente a criar uma experiência sensorial específica, então as alternativas textuais fornecem, pelo menos, uma identificação descritiva do conteúdo não textual."
+                      "text": "Se o conteúdo não texto se destinar principalmente a criar uma experiência sensorial específica, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
                     },
                     {
                       "handle": "CAPTCHA",
-                      "text": "Se o propósito do conteúdo não textual for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas textuais que identificam e descrevem o propósito do conteúdo não textual, bem como formas alternativas de CAPTCHA, usando modos de saída para diferentes tipos de perceção sensorial, para acomodar diferentes deficiências."
+                      "text": "Se o propósito do conteúdo não texto for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas Alternativas em texto que identificam e descrevem o propósito do conteúdo não texto, bem como formas alternativas de CAPTCHA, usando modos de saída para diferentes tipos de perceção sensorial, para acomodar diferentes deficiências."
                     },
                     {
                       "handle": "Decoração, Formatação, Invisível",
-                      "text": "Se o conteúdo não textual for puramente decorativo, for usado apenas para formatação visual ou não for apresentado aos utilizadores, então é implementado de forma a poder ser ignorado por tecnologias de apoio."
+                      "text": "Se o conteúdo não texto for puramente decorativo, for usado apenas para formatação visual ou não for apresentado aos utilizadores, então é implementado de forma a poder ser ignorado por tecnologias de apoio."
                     }
                   ]
                 }
@@ -60,11 +60,11 @@
                     {
                       "situations": [
                         {
-                          "title": "Situação A: Se uma descrição curta puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não textual:",
+                          "title": "Situação A: Se uma descrição curta puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não texto:",
                           "techniques": [
                             {
                               "id": "TECH:G94",
-                              "title": "Fornecer uma alternativa textual curta para conteúdo não textual que sirva o mesmo propósito e apresente a mesma informação que o conteúdo não textual"
+                              "title": "Fornecer uma alternativa textual curta para conteúdo não texto que sirva o mesmo propósito e apresente a mesma informação que o conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -72,7 +72,7 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
@@ -92,20 +92,20 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             }
                           ]
                         },
                         {
-                          "title": "Situação B: Se uma descrição curta não puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não textual (por exemplo, um gráfico ou diagrama):",
+                          "title": "Situação B: Se uma descrição curta não puder servir o mesmo propósito e apresentar a mesma informação que o conteúdo não texto (por exemplo, um gráfico ou diagrama):",
                           "techniques": [
                             {
                               "id": "TECH:G95",
-                              "title": "Fornecer alternativas textuais curtas que forneçam uma breve descrição do conteúdo não textual"
+                              "title": "Fornecer Alternativas em texto curtas que forneçam uma breve descrição do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -113,7 +113,7 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
@@ -137,11 +137,11 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             },
                             {
                               "id": "TECH:ARIA15",
@@ -149,15 +149,15 @@
                             },
                             {
                               "id": "TECH:G73",
-                              "title": "Fornecer uma descrição longa noutro local, com uma ligação para essa descrição imediatamente adjacente ao conteúdo não textual"
+                              "title": "Fornecer uma descrição longa noutro local, com uma ligação para essa descrição imediatamente adjacente ao conteúdo não texto"
                             },
                             {
                               "id": "TECH:G74",
-                              "title": "Fornecer uma descrição longa em texto perto do conteúdo não textual, com uma referência à localização da descrição longa na descrição curta"
+                              "title": "Fornecer uma descrição longa em texto perto do conteúdo não texto, com uma referência à localização da descrição longa na descrição curta"
                             },
                             {
                               "id": "TECH:G92",
-                              "title": "Fornecer uma descrição longa para conteúdo não textual que sirva o mesmo propósito e apresente a mesma informação"
+                              "title": "Fornecer uma descrição longa para conteúdo não texto que sirva o mesmo propósito e apresente a mesma informação"
                             },
                             {
                               "id": "TECH:H53",
@@ -166,11 +166,11 @@
                           ]
                         },
                         {
-                          "title": "Situação C: Se o conteúdo não textual for um controlo ou aceitar entrada do utilizador:",
+                          "title": "Situação C: Se o conteúdo não texto for um controlo ou aceitar entrada do utilizador:",
                           "techniques": [
                             {
                               "id": "TECH:G82",
-                              "title": "Fornecer uma alternativa textual que identifique o propósito do conteúdo não textual"
+                              "title": "Fornecer uma alternativa textual que identifique o propósito do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -182,7 +182,7 @@
                             },
                             {
                               "id": "TECH:H24",
-                              "title": "Fornecer alternativas textuais para elementos area de mapas de imagem"
+                              "title": "Fornecer Alternativas em texto para elementos area de mapas de imagem"
                             },
                             {
                               "id": "TECH:H30",
@@ -203,7 +203,7 @@
                           ]
                         },
                         {
-                          "title": "Situação D: Se o conteúdo não textual for multimédia baseada no tempo (incluindo vídeo apenas ao vivo e áudio apenas ao vivo); um teste ou exercício que seria inválido se apresentado em texto; ou se se destinar principalmente a criar uma experiência sensorial específica:",
+                          "title": "Situação D: Se o conteúdo não texto for multimédia baseada no tempo (incluindo vídeo apenas ao vivo e áudio apenas ao vivo); um teste ou exercício que seria inválido se apresentado em texto; ou se se destinar principalmente a criar uma experiência sensorial específica:",
                           "techniques": [
                             {
                               "id": "TECH:future-non-text-content-1",
@@ -215,7 +215,7 @@
                             },
                             {
                               "id": "TECH:G100",
-                              "title": "Fornecer uma alternativa textual curta que seja o nome aceite ou um nome descritivo do conteúdo não textual"
+                              "title": "Fornecer uma alternativa textual curta que seja o nome aceite ou um nome descritivo do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -223,7 +223,7 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não textual"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
@@ -243,16 +243,16 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer alternativas textuais para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar alternativas textuais a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             }
                           ]
                         },
                         {
-                          "title": "Situação E: Se o conteúdo não textual for um CAPTCHA:",
+                          "title": "Situação E: Se o conteúdo não texto for um CAPTCHA:",
                           "techniques": [
                             {
                               "and": [
@@ -269,11 +269,11 @@
                           ]
                         },
                         {
-                          "title": "Situação F: Se o conteúdo não textual dever ser ignorado por tecnologias de apoio:",
+                          "title": "Situação F: Se o conteúdo não texto dever ser ignorado por tecnologias de apoio:",
                           "techniques": [
                             {
                               "id": "TECH:future-non-text-content-1",
-                              "title": "Implementar ou marcar o conteúdo não textual de forma a que seja ignorado por tecnologias de apoio usando um dos seguintes:"
+                              "title": "Implementar ou marcar o conteúdo não texto de forma a que seja ignorado por tecnologias de apoio usando um dos seguintes:"
                             },
                             {
                               "id": "TECH:C9",
@@ -308,11 +308,11 @@
     },
     {
       "id": "TECH:F20",
-      "title": "Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
+      "title": "Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido a não atualizar Alternativas em texto quando ocorrem alterações em conteúdo não texto"
     },
     {
       "id": "TECH:F30",
-      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de Alternativas em texto que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
     },
     {
       "id": "TECH:F38",
@@ -328,7 +328,7 @@
     },
     {
       "id": "TECH:F67",
-      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação"
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não texto que não serve o mesmo propósito ou não apresenta a mesma informação"
     },
     {
       "id": "TECH:F71",
@@ -419,11 +419,11 @@
           "failure": [
             {
               "id": "TECH:F30",
-              "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas textuais que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
+              "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido ao uso de Alternativas em texto que não são alternativas (por exemplo, nomes de ficheiros ou texto de preenchimento)"
             },
             {
               "id": "TECH:F67",
-              "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não textual que não serve o mesmo propósito ou não apresenta a mesma informação"
+              "title": "Falha do Critério de Sucesso 1.1.1 e 1.2.1 devido a fornecer descrições longas para conteúdo não texto que não serve o mesmo propósito ou não apresenta a mesma informação"
             }
           ]
         }
@@ -506,7 +506,7 @@
               "using": [
                 {
                   "id": "TECH:G58",
-                  "title": "Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não textual"
+                  "title": "Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não texto"
                 }
               ]
             },
@@ -831,7 +831,7 @@
                       "using": [
                         {
                           "id": "TECH:G58",
-                          "title": "Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não textual"
+                          "title": "Colocar uma ligação para a alternativa para multimédia baseada no tempo imediatamente ao lado do conteúdo não texto"
                         }
                       ]
                     },
@@ -2081,7 +2081,7 @@
       "num": "1.4.11",
       "versions": ["2.1", "2.2"],
       "level": "AA",
-      "handle": "Contraste Não Textual",
+      "handle": "Contraste não texto",
       "title": "A apresentação visual do seguinte tem uma relação de contraste de, pelo menos, 3:1 em relação à(s) cor(es) adjacente(s):",
       "details": [
         {
@@ -3151,7 +3151,7 @@
             },
             {
               "id": "TECH:H24",
-              "title": "Fornecer alternativas textuais para os elementos area de mapas de imagem"
+              "title": "Fornecer Alternativas em texto para os elementos area de mapas de imagem"
             },
             {
               "id": "TECH:future-link-purpose-in-context-1",
@@ -3477,7 +3477,7 @@
         },
         {
           "id": "TECH:H24",
-          "title": "Fornecer alternativas textuais para os elementos area de mapas de imagem"
+          "title": "Fornecer Alternativas em texto para os elementos area de mapas de imagem"
         },
         {
           "id": "TECH:future-link-purpose-link-only-1",
@@ -4580,7 +4580,7 @@
               "and": [
                 {
                   "id": "TECH:G197",
-                  "title": "Usar rótulos, nomes e alternativas textuais de forma consistente para conteúdo que tem a mesma funcionalidade"
+                  "title": "Usar rótulos, nomes e Alternativas em texto de forma consistente para conteúdo que tem a mesma funcionalidade"
                 }
               ]
             }
@@ -5270,7 +5270,7 @@
             },
             {
               "handle": "Conteúdo Pessoal",
-              "text": "O teste de função cognitiva consiste em identificar conteúdo não textual que o utilizador forneceu ao sítio Web."
+              "text": "O teste de função cognitiva consiste em identificar conteúdo não texto que o utilizador forneceu ao sítio Web."
             }
           ]
         }
@@ -5590,7 +5590,7 @@
     },
     {
       "id": "TECH:F20",
-      "title": "Falha dos Critérios de Sucesso 1.1.1 e 4.1.2 devido a não atualizar alternativas textuais quando ocorrem alterações em conteúdo não textual"
+      "title": "Falha dos Critérios de Sucesso 1.1.1 e 4.1.2 devido a não atualizar Alternativas em texto quando ocorrem alterações em conteúdo não texto"
     },
     {
       "id": "TECH:F68",
