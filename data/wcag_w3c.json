@@ -12,8 +12,8 @@
           "alt_id": ["text-equiv"],
           "num": "1.1",
           "versions": ["2.0", "2.1", "2.2"],
-          "handle": "Alternativas em texto",
-          "title": "Fornecer Alternativas em texto para qualquer conteúdo não texto, de modo a que possa ser convertido noutras formas de que as pessoas necessitem, tais como caracteres de grande dimensão, braille, voz, símbolos ou linguagem mais simples.",
+          "handle": "Alternativas em Texto",
+          "title": "Fornecer alternativas em texto para qualquer conteúdo não texto, de modo a que possa ser convertido noutras formas de que as pessoas necessitem, tais como caracteres de grande dimensão, braille, voz, símbolos ou linguagem mais simples.",
           "successcriteria": [
             {
               "id": "WCAG2:non-text-content",
@@ -33,19 +33,19 @@
                     },
                     {
                       "handle": "Multimédia Baseada no Tempo",
-                      "text": "Se o conteúdo não texto for multimédia baseada no tempo, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto. (Consultar a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)"
+                      "text": "Se o conteúdo não texto for multimédia baseada no tempo, então as alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto. (Consultar a Diretriz 1.2 para requisitos adicionais relativos a multimédia.)"
                     },
                     {
                       "handle": "Teste",
-                      "text": "Se o conteúdo não texto for um teste ou exercício que seria inválido se apresentado em texto, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
+                      "text": "Se o conteúdo não texto for um teste ou exercício que seria inválido se apresentado em texto, então as alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
                     },
                     {
                       "handle": "Sensorial",
-                      "text": "Se o conteúdo não texto se destinar principalmente a criar uma experiência sensorial específica, então as Alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
+                      "text": "Se o conteúdo não texto se destinar principalmente a criar uma experiência sensorial específica, então as alternativas em texto fornecem, pelo menos, uma identificação descritiva do conteúdo não texto."
                     },
                     {
                       "handle": "CAPTCHA",
-                      "text": "Se o propósito do conteúdo não texto for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas Alternativas em texto que identificam e descrevem o propósito do conteúdo não texto, bem como formas alternativas de CAPTCHA, usando modos de saída para diferentes tipos de perceção sensorial, para acomodar diferentes deficiências."
+                      "text": "Se o propósito do conteúdo não texto for confirmar que o conteúdo está a ser acedido por uma pessoa e não por um computador, então são fornecidas alternativas em texto que identificam e descrevem o propósito do conteúdo não texto, bem como formas alternativas de CAPTCHA, usando modos de saída para diferentes tipos de perceção sensorial, para acomodar diferentes deficiências."
                     },
                     {
                       "handle": "Decoração, Formatação, Invisível",
@@ -92,11 +92,11 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             }
                           ]
                         },
@@ -105,7 +105,7 @@
                           "techniques": [
                             {
                               "id": "TECH:G95",
-                              "title": "Fornecer Alternativas em texto curtas que forneçam uma breve descrição do conteúdo não texto"
+                              "title": "Fornecer alternativas em texto curtas que forneçam uma breve descrição do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -137,11 +137,11 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             },
                             {
                               "id": "TECH:ARIA15",
@@ -182,7 +182,7 @@
                             },
                             {
                               "id": "TECH:H24",
-                              "title": "Fornecer Alternativas em texto para elementos area de mapas de imagem"
+                              "title": "Fornecer alternativas em texto para elementos area de mapas de imagem"
                             },
                             {
                               "id": "TECH:H30",
@@ -243,11 +243,11 @@
                             },
                             {
                               "id": "TECH:H86",
-                              "title": "Fornecer Alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
+                              "title": "Fornecer alternativas em texto para emojis, emoticons, arte ASCII e leetspeak"
                             },
                             {
                               "id": "TECH:PDF1",
-                              "title": "Aplicar Alternativas em texto a imagens usando a entrada Alt em documentos PDF"
+                              "title": "Aplicar alternativas em texto a imagens usando a entrada Alt em documentos PDF"
                             }
                           ]
                         },
