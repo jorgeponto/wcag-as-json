@@ -22,7 +22,7 @@
               "versions": ["2.0", "2.1", "2.2"],
               "level": "A",
               "handle": "Conteúdo não texto",
-              "title": "Todo o conteúdo não texto apresentado ao utilizador tem uma alternativa textual que serve o mesmo propósito equivalente, exceto nas situações listadas abaixo.",
+              "title": "Todo o conteúdo não texto apresentado ao utilizador tem uma alternativa em texto que serve o mesmo propósito equivalente, exceto nas situações listadas abaixo.",
               "details": [
                 {
                   "type": "ulist",
@@ -64,7 +64,7 @@
                           "techniques": [
                             {
                               "id": "TECH:G94",
-                              "title": "Fornecer uma alternativa textual curta para conteúdo não texto que sirva o mesmo propósito e apresente a mesma informação que o conteúdo não texto"
+                              "title": "Fornecer uma alternativa em texto curta para conteúdo não texto que sirva o mesmo propósito e apresente a mesma informação que o conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -72,11 +72,11 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa em texto para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
-                              "title": "Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo"
+                              "title": "Usar uma alternativa em texto num item dentro de um grupo de imagens que descreva todos os itens do grupo"
                             },
                             {
                               "id": "TECH:H2",
@@ -113,11 +113,11 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa em texto para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
-                              "title": "Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo"
+                              "title": "Usar uma alternativa em texto num item dentro de um grupo de imagens que descreva todos os itens do grupo"
                             },
                             {
                               "id": "TECH:H2",
@@ -170,7 +170,7 @@
                           "techniques": [
                             {
                               "id": "TECH:G82",
-                              "title": "Fornecer uma alternativa textual que identifique o propósito do conteúdo não texto"
+                              "title": "Fornecer uma alternativa em texto que identifique o propósito do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -211,11 +211,11 @@
                             },
                             {
                               "id": "TECH:G68",
-                              "title": "Fornecer uma alternativa textual curta que descreva o propósito de conteúdo apenas áudio ao vivo e apenas vídeo ao vivo"
+                              "title": "Fornecer uma alternativa em texto curta que descreva o propósito de conteúdo apenas áudio ao vivo e apenas vídeo ao vivo"
                             },
                             {
                               "id": "TECH:G100",
-                              "title": "Fornecer uma alternativa textual curta que seja o nome aceite ou um nome descritivo do conteúdo não texto"
+                              "title": "Fornecer uma alternativa em texto curta que seja o nome aceite ou um nome descritivo do conteúdo não texto"
                             },
                             {
                               "id": "TECH:ARIA6",
@@ -223,11 +223,11 @@
                             },
                             {
                               "id": "TECH:ARIA10",
-                              "title": "Usar aria-labelledby para fornecer uma alternativa textual para conteúdo não texto"
+                              "title": "Usar aria-labelledby para fornecer uma alternativa em texto para conteúdo não texto"
                             },
                             {
                               "id": "TECH:G196",
-                              "title": "Usar uma alternativa textual num item dentro de um grupo de imagens que descreva todos os itens do grupo"
+                              "title": "Usar uma alternativa em texto num item dentro de um grupo de imagens que descreva todos os itens do grupo"
                             },
                             {
                               "id": "TECH:H2",
@@ -258,7 +258,7 @@
                               "and": [
                                 {
                                   "id": "TECH:G143",
-                                  "title": "Fornecer uma alternativa textual que descreva o propósito do CAPTCHA"
+                                  "title": "Fornecer uma alternativa em texto que descreva o propósito do CAPTCHA"
                                 },
                                 {
                                   "id": "TECH:G144",
@@ -304,7 +304,7 @@
     },
     {
       "id": "TECH:F13",
-      "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem"
+      "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa em texto que não inclui a informação transmitida por diferenças de cor na imagem"
     },
     {
       "id": "TECH:F20",
@@ -320,11 +320,11 @@
     },
     {
       "id": "TECH:F39",
-      "title": "Falha do Critério de Sucesso 1.1.1 devido a fornecer uma alternativa textual que não é vazia (por exemplo, alt=\"spacer\" ou alt=\"image\") para imagens que devem ser ignoradas por tecnologias de apoio"
+      "title": "Falha do Critério de Sucesso 1.1.1 devido a fornecer uma alternativa em texto que não é vazia (por exemplo, alt=\"spacer\" ou alt=\"image\") para imagens que devem ser ignoradas por tecnologias de apoio"
     },
     {
       "id": "TECH:F65",
-      "title": "Falha do Critério de Sucesso 1.1.1 devido à omissão do atributo alt ou de alternativa textual em elementos img, elementos area e elementos input do tipo \"image\""
+      "title": "Falha do Critério de Sucesso 1.1.1 devido à omissão do atributo alt ou de alternativa em texto em elementos img, elementos area e elementos input do tipo \"image\""
     },
     {
       "id": "TECH:F67",
@@ -332,11 +332,11 @@
     },
     {
       "id": "TECH:F71",
-      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de texto semelhante a texto real para representar texto sem fornecer uma alternativa textual"
+      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de texto semelhante a texto real para representar texto sem fornecer uma alternativa em texto"
     },
     {
       "id": "TECH:F72",
-      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de arte ASCII sem fornecer uma alternativa textual"
+      "title": "Falha do Critério de Sucesso 1.1.1 devido ao uso de arte ASCII sem fornecer uma alternativa em texto"
     }
   ]
 }
@@ -562,7 +562,7 @@
             },
             {
               "id": "TECH:G203",
-              "title": "Usar uma alternativa textual estática para descrever um vídeo de uma pessoa a falar (talking head)"
+              "title": "Usar uma alternativa em texto estática para descrever um vídeo de uma pessoa a falar (talking head)"
             }
           ]
         },
@@ -709,7 +709,7 @@
             },
             {
               "id": "TECH:G203",
-              "title": "Usar uma alternativa textual estática para descrever um vídeo de uma pessoa a falar (talking head)"
+              "title": "Usar uma alternativa em texto estática para descrever um vídeo de uma pessoa a falar (talking head)"
             }
           ]
         },
@@ -1476,7 +1476,7 @@
           "failure": [
             {
               "id": "TECH:F13",
-              "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa textual que não inclui a informação transmitida por diferenças de cor na imagem"
+              "title": "Falha do Critério de Sucesso 1.1.1 e 1.4.1 devido a ter uma alternativa em texto que não inclui a informação transmitida por diferenças de cor na imagem"
             },
             {
               "id": "TECH:F73",
